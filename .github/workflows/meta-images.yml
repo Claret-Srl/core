@@ -38,10 +38,10 @@ jobs:
         with:
           type: ${{ env.BUILD_TYPE }}
 
-      - name: Verify version
-        uses: home-assistant/actions/helpers/verify-version@master
-        with:
-          ignore-dev: true
+      # - name: Verify version
+      #   uses: home-assistant/actions/helpers/verify-version@master
+      #   with:
+      #     ignore-dev: true
 
   publish_container:
     name: Publish meta container
