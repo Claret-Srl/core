@@ -111,8 +111,8 @@ jobs:
         uses: docker/login-action@v1.9.0
         with:
           registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ secrets.GIT_USER }}
+          password: ${{ secrets.GIT_TOKEN }}
 
       - name: Build base image
         uses: home-assistant/builder@2021.06.2
@@ -163,8 +163,8 @@ jobs:
         uses: docker/login-action@v1.9.0
         with:
           registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ secrets.GIT_USER }}
+          password: ${{ secrets.GIT_TOKEN }}
 
       - name: Build base image
         uses: home-assistant/builder@2021.06.2
@@ -192,7 +192,7 @@ jobs:
           token: ${{ secrets.GIT_TOKEN }}
 
       - name: Update version file
-        uses: home-assistant/actions/helpers/version-push@master
+        uses: claret-srl/actions/helpers/version-push@claret
         with:
           key: "homeassistant[]"
           key-description: "Home Assistant Core"
@@ -201,7 +201,7 @@ jobs:
 
       - name: Update version file (stable -> beta)
         if: needs.init.outputs.channel == 'stable'
-        uses: home-assistant/actions/helpers/version-push@master
+        uses: claret-srl/actions/helpers/version-push@claret
         with:
           key: "homeassistant[]"
           key-description: "Home Assistant Core"
@@ -226,8 +226,8 @@ jobs:
         uses: docker/login-action@v1.9.0
         with:
           registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
+          username: ${{ secrets.GIT_USER }}
+          password: ${{ secrets.GIT_TOKEN }}
 
       - name: Build Meta Image
         shell: bash
@@ -273,14 +273,14 @@ jobs:
 
           function validate_image() {
             local image=${1}
-            state="$(vcn authenticate --org home-assistant.io --output json docker://${image} | jq '.verification.status // 2')"
+            state="$(vcn authenticate --output json docker://${image} | jq '.verification.status // 2')"
             if [[ "${state}" != "0" ]]; then
               echo "Invalid signature!"
               exit 1
             fi
           }
 
-          for docker_reg in "homeassistant" "ghcr.io/home-assistant"; do
+          for docker_reg in "drypatrick" "ghcr.io/drypatrick"; do
             docker pull "${docker_reg}/amd64-homeassistant:${{ needs.init.outputs.version }}"
             docker pull "${docker_reg}/i386-homeassistant:${{ needs.init.outputs.version }}"
             docker pull "${docker_reg}/armhf-homeassistant:${{ needs.init.outputs.version }}"
