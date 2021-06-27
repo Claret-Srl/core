@@ -1,0 +1,2 @@
+Removed libcec from all machine
+Removed GPIO from thinker
