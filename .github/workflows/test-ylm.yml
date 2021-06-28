@@ -27,7 +27,7 @@ jobs:
               vcn_cli=("--org" "${trust}")
             fi
 
-            echo "${vcn_cli[@]}"
+            echo "${vcn_cli}"
           }
 
           sto_cazzo
