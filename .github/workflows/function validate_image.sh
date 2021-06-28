@@ -37,3 +37,19 @@ for docker_reg in "drypatrick" "ghcr.io/drypatrick"; do
         done
     done
 done
+                  local trust=0x0893a6151eccc2be56274ea043f47cb412b2a7be
+                  local vcn_cli=()
+                  
+                  if [[ "${trust}" =~ ^0x ]]; then
+                    vcn_cli+=("--signerID" "${trust}")
+                  else
+                    vcn_cli+=("--org" "${trust}")
+                  fi
+
+                  echo "${vcn_cli[@]}"
+                  echo "vcn authenticate "${vcn_cli[@]}" --output json docker://${image}"
+                  
+                  # state="$(vcn authenticate "${vcn_cli[@]}" --output json docker://"${image}" | jq '.verification.status // 2')"
+                  # state="$(vcn authenticate --signerID "$VCN_ORG" --output json docker://"${image}" | jq '.verification.status // 2')"
+                  # state="$(vcn authenticate --signerID 0x0893a6151eccc2be56274ea043f47cb412b2a7be --output json docker://"${image}" | jq '.verification.status // 2')"
+                 
