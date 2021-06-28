@@ -1,0 +1,29 @@
+name: Build images
+
+# yamllint disable-line rule:truthy
+on:
+  workflow_dispatch:
+
+env:
+  BUILD_TYPE: core
+  DEFAULT_PYTHON: 3.8
+
+jobs:
+  init:
+    name: Initialize build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Build Meta Image
+        shell: bash
+        env:
+          VCN_ORG: ${{ secrets.VCN_ORG }}
+        run: |
+            local trust="$VCN_ORG"
+
+            if [[ "${trust}" =~ ^0x ]]; then
+              vcn_cli=("--signerID" "${trust}")
+            else
+              vcn_cli=("--org" "${trust}")
+            fi
+
+            echo "${vcn_cli[@]}"
