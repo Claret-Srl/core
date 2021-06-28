@@ -77,16 +77,17 @@ jobs:
           function validate_image() {
                   local image=${1}
                   
-                  if [[ "$VCN_ORG" =~ ^0x ]]; then
-                          vcn_cli="--signerID"
+                  if [[ "$VCN_ORG" =~ ^0x ]]
+                  then
+                    vcn_cli=("--signerID" "$VCN_ORG")
                   else
-                          vcn_cli="--org" 
+                    vcn_cli=("--org" "$VCN_ORG") 
                   fi
 
                   echo "${vcn_cli}"
-                  echo "vcn authenticate ${vcn_cli} $VCN_ORG --output json docker://${image}"
+                  echo "vcn authenticate "${vcn_cli}" --output json docker://${image}"
                   
-                  state="$(vcn authenticate ${vcn_cli} $VCN_ORG --output json docker://"${image}" | jq '.verification.status // 2')"
+                  state="$(vcn authenticate "${vcn_cli}" --output json docker://"${image}" | jq '.verification.status // 2')"
                   
                   if [[ "${state}" != "0" ]]; then
                           echo "Invalid signature!"
