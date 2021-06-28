@@ -79,11 +79,12 @@ jobs:
                   
                   if [[ "$VCN_ORG" =~ ^0x ]]; then
                           vcn_cli="--signerID"
+                          echo "signerID"
                   else
                           vcn_cli="--org" 
+                          echo "org"
                   fi
 
-                  echo "${vcn_cli}"
                   echo "vcn authenticate ${vcn_cli} $VCN_ORG --output json docker://${image}"
                   
                   state="$(vcn authenticate ${vcn_cli} $VCN_ORG--output json docker://"${image}" | jq '.verification.status // 2')"
