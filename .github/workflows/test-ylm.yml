@@ -26,7 +26,8 @@ jobs:
               vcn_cli="--org" 
             fi
 
-            echo ("${vcn_cli}" "$VCN_ORG")
+            echo ${vcn_cli} $VCN_ORG
+
           }
 
           sto_cazzo
