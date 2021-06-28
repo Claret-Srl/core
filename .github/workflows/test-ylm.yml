@@ -1,4 +1,4 @@
-name: Build images
+name: Test Action
 
 # yamllint disable-line rule:truthy
 on:
