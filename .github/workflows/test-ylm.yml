@@ -7,7 +7,6 @@ on:
 env:
   BUILD_TYPE: core
   DEFAULT_PYTHON: 3.8
-  VCN_ORG: ${{ secrets.VCN_ORG }}
 
 jobs:
   init:
@@ -16,9 +15,11 @@ jobs:
     steps:
       - name: Build Meta Image
         shell: bash
+        env:
+          VCN_ORG: ${{ secrets.VCN_ORG }}
         run: |
           function sto_cazzo {
-            local trust="$env.VCN_ORG"
+            local trust="$VCN_ORG"
 
             if [[ "${trust}" =~ ^0x ]]; then
               vcn_cli=("--signerID" "${trust}")
