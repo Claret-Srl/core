@@ -76,7 +76,7 @@ jobs:
 
           function validate_image() {
                   local image=${1}
-                  local trust=$VCN_ORG
+                  local trust=0x0893a6151eccc2be56274ea043f47cb412b2a7be
                   local vcn_cli=()
 
                   if [[ "${trust}" =~ ^0x ]]; then
