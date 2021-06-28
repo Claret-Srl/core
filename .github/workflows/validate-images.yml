@@ -11,13 +11,14 @@ on:
 #   DEFAULT_PYTHON: 3.8
 
 jobs:
-  # init:
-  #   name: Initialize build
-  #   runs-on: ubuntu-latest
-  #   outputs:
+  init:
+    name: Initialize build
+    runs-on: ubuntu-latest
+    outputs:
   #     # architectures: ${{ steps.info.outputs.architectures }}
   #     architectures: "amd64"
   #     version: ${{ steps.version.outputs.version }}
+      version: "2021.6.10"
   #     channel: ${{ steps.version.outputs.channel }}
   #     publish: ${{ steps.version.outputs.publish }}
   #   steps:
