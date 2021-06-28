@@ -19,12 +19,11 @@ jobs:
           VCN_ORG: ${{ secrets.VCN_ORG }}
         run: |
           function sto_cazzo {
-            local trust="$VCN_ORG"
 
-            if [[ "${trust}" =~ ^0x ]]; then
-              vcn_cli=("--signerID" "${trust}")
+            if [[ "$VCN_ORG" =~ ^0x ]]; then
+              vcn_cli=("--signerID" "$VCN_ORG")
             else
-              vcn_cli=("--org" "${trust}")
+              vcn_cli=("--org" "$VCN_ORG")
             fi
 
             echo "${vcn_cli}"
