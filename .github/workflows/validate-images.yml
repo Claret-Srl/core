@@ -85,6 +85,8 @@ jobs:
                   else
                           vcn_cli="--org" 
                   fi
+
+                  echo "${vcn_cli}"
                   
                   state="$(vcn authenticate "${vcn_cli}" "$VCN_ORG" --output json docker://"${image}" | jq '.verification.status // 2')"
                   
