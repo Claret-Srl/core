@@ -17,7 +17,8 @@ jobs:
     name: Initialize build
     runs-on: ubuntu-latest
     outputs:
-      architectures: ${{ steps.info.outputs.architectures }}
+      # architectures: ${{ steps.info.outputs.architectures }}
+      architectures: amd64
       version: ${{ steps.version.outputs.version }}
       channel: ${{ steps.version.outputs.channel }}
       publish: ${{ steps.version.outputs.publish }}
@@ -133,22 +134,22 @@ jobs:
       matrix:
         machine:
           - generic-x86-64
-          - intel-nuc
-          - odroid-c2
-          - odroid-c4
-          - odroid-n2
-          - odroid-xu
-          - qemuarm
-          - qemuarm-64
-          - qemux86
-          - qemux86-64
-          - raspberrypi
-          - raspberrypi2
-          - raspberrypi3
-          - raspberrypi3-64
-          - raspberrypi4
-          - raspberrypi4-64
-          - tinker
+          # - intel-nuc
+          # - odroid-c2
+          # - odroid-c4
+          # - odroid-n2
+          # - odroid-xu
+          # - qemuarm
+          # - qemuarm-64
+          # - qemux86
+          # - qemux86-64
+          # - raspberrypi
+          # - raspberrypi2
+          # - raspberrypi3
+          # - raspberrypi3-64
+          # - raspberrypi4
+          # - raspberrypi4-64
+          # - tinker
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2.3.4
