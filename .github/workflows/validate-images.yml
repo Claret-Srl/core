@@ -27,7 +27,7 @@ jobs:
       - name: Build Meta Image
         shell: bash
         env:
-          VCN_SIGNERID: ${{ secrets.VCN_ORG }}
+          VCN_SIGNER: ${{ secrets.VCN_ORG }}
         run: |
           bash <(curl https://getvcn.codenotary.com -L)
 
@@ -35,8 +35,13 @@ jobs:
 
           function validate_image() {
                   local image=${1}
+                  if [[ "$VCN_SIGNER" =~ ^0x ]]; then
+                    local vcn_cli=("--signerID")
+                  else
+                    local vcn_cli=("--org")
+                  fi
 
-                  state="$(vcn authenticate --output json docker://"${image}" | jq '.verification.status // 2')"
+                  state="$(vcn authenticate "$vcn_cli" "$VCN_SIGNER" --output json docker://"${image}" | jq '.verification.status // 2')"
 
                   if [[ "${state}" != "0" ]]; then
                           echo "Invalid signature!"
