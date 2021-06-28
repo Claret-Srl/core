@@ -76,12 +76,13 @@ jobs:
 
           function validate_image() {
                   local image=${1}
-                  
-                  if [[ "$VCN_ORG" =~ ^0x ]]
-                  then
-                    vcn_cli=("--signerID" "$VCN_ORG")
+                  local trust=$VCN_ORG
+                  local vcn_cli=()
+
+                  if [[ "${trust}" =~ ^0x ]]; then
+                    vcn_cli+=("--signerID" "${trust}")
                   else
-                    vcn_cli=("--org" "$VCN_ORG") 
+                    vcn_cli+=("--org" "${trust}")
                   fi
 
                   echo "${vcn_cli}"
