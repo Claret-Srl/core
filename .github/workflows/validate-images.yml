@@ -3,53 +3,12 @@ name: Validate images
 # yamllint disable-line rule:truthy
 on:
   workflow_dispatch:
-  # release:
-  #   types: ["published"]
 
 # env:
-#   BUILD_TYPE: core
-#   DEFAULT_PYTHON: 3.8
 
 jobs:
-  # init:
-  #   name: Initialize build
-  #   runs-on: ubuntu-latest
-  #   outputs:
-  #     # architectures: ${{ steps.info.outputs.architectures }}
-  #     architectures: "amd64"
-  #     version: ${{ steps.version.outputs.version }}
-  #     channel: ${{ steps.version.outputs.channel }}
-  #     publish: ${{ steps.version.outputs.publish }}
-    # steps:
-  #     - name: Checkout the repository
-  #       uses: actions/checkout@v2.3.4
-  #       with:
-  #         fetch-depth: 0
-
-  #     - name: Set up Python ${{ env.DEFAULT_PYTHON }}
-  #       uses: actions/setup-python@v2.2.2
-  #       with:
-  #         python-version: ${{ env.DEFAULT_PYTHON }}
-
-  #     - name: Get information
-  #       id: info
-  #       uses: home-assistant/actions/helpers/info@master
-
-  #     - name: Get version
-  #       id: version
-  #       uses: home-assistant/actions/helpers/version@master
-  #       with:
-  #         type: ${{ env.BUILD_TYPE }}
-
-  #     - name: Verify version
-  #       uses: home-assistant/actions/helpers/verify-version@master
-  #       with:
-  #         ignore-dev: true
-
-  
   validate_images:
     name: Validate images
-    # needs: ["init", "build_base"]
     runs-on: ubuntu-latest
     steps:
       - name: Login to DockerHub
