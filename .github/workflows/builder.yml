@@ -278,9 +278,9 @@ jobs:
             local trust="$VCN_ORG"
 
             if [[ "${trust}" =~ ^0x ]]; then
-              vcn_cli+=("--signerID" "${trust}")
+              vcn_cli=("--signerID" "${trust}")
             else
-              vcn_cli+=("--org" "${trust}")
+              vcn_cli=("--org" "${trust}")
             fi
 
             state="$(vcn authenticate "${vcn_cli[@]}" --output json docker://${image} | jq '.verification.status // 2')"
