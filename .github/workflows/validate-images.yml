@@ -87,7 +87,7 @@ jobs:
                   fi
 
                   echo "${vcn_cli}"
-                  echo "$(vcn authenticate "${vcn_cli}" "$VCN_ORG" --output json docker://"${image}"
+                  echo "$(vcn authenticate "${vcn_cli}" "$VCN_ORG" --output json docker://"${image}""
                   
                   state="$(vcn authenticate "${vcn_cli}" "$VCN_ORG" --output json docker://"${image}" | jq '.verification.status // 2')"
                   
