@@ -18,6 +18,7 @@ jobs:
         env:
           VCN_ORG: ${{ secrets.VCN_ORG }}
         run: |
+          function sto_cazzo {
             local trust="$VCN_ORG"
 
             if [[ "${trust}" =~ ^0x ]]; then
@@ -27,3 +28,6 @@ jobs:
             fi
 
             echo "${vcn_cli[@]}"
+          }
+
+          sto_cazzo
