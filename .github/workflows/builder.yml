@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       # architectures: ${{ steps.info.outputs.architectures }}
-      architectures: amd64
+      architectures: "amd64"
       version: ${{ steps.version.outputs.version }}
       channel: ${{ steps.version.outputs.channel }}
       publish: ${{ steps.version.outputs.publish }}
@@ -82,7 +82,9 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        arch: ${{ fromJson(needs.init.outputs.architectures) }}
+        # arch: ${{ fromJson(needs.init.outputs.architectures) }}
+        arch:
+          - amd64
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2.3.4
@@ -294,16 +296,16 @@ jobs:
 
           for docker_reg in "drypatrick" "ghcr.io/drypatrick"; do
             docker pull "${docker_reg}/amd64-homeassistant:${{ needs.init.outputs.version }}"
-            docker pull "${docker_reg}/i386-homeassistant:${{ needs.init.outputs.version }}"
-            docker pull "${docker_reg}/armhf-homeassistant:${{ needs.init.outputs.version }}"
-            docker pull "${docker_reg}/armv7-homeassistant:${{ needs.init.outputs.version }}"
-            docker pull "${docker_reg}/aarch64-homeassistant:${{ needs.init.outputs.version }}"
+            # docker pull "${docker_reg}/i386-homeassistant:${{ needs.init.outputs.version }}"
+            # docker pull "${docker_reg}/armhf-homeassistant:${{ needs.init.outputs.version }}"
+            # docker pull "${docker_reg}/armv7-homeassistant:${{ needs.init.outputs.version }}"
+            # docker pull "${docker_reg}/aarch64-homeassistant:${{ needs.init.outputs.version }}"
 
             validate_image "${docker_reg}/amd64-homeassistant:${{ needs.init.outputs.version }}"
-            validate_image "${docker_reg}/i386-homeassistant:${{ needs.init.outputs.version }}"
-            validate_image "${docker_reg}/armhf-homeassistant:${{ needs.init.outputs.version }}"
-            validate_image "${docker_reg}/armv7-homeassistant:${{ needs.init.outputs.version }}"
-            validate_image "${docker_reg}/aarch64-homeassistant:${{ needs.init.outputs.version }}"
+            # validate_image "${docker_reg}/i386-homeassistant:${{ needs.init.outputs.version }}"
+            # validate_image "${docker_reg}/armhf-homeassistant:${{ needs.init.outputs.version }}"
+            # validate_image "${docker_reg}/armv7-homeassistant:${{ needs.init.outputs.version }}"
+            # validate_image "${docker_reg}/aarch64-homeassistant:${{ needs.init.outputs.version }}"
 
             # Create version tag
             create_manifest "${docker_reg}" "${{ needs.init.outputs.version }}" "${{ needs.init.outputs.version }}"
