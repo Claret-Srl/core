@@ -21,12 +21,12 @@ jobs:
           function sto_cazzo {
 
             if [[ "$VCN_ORG" =~ ^0x ]]; then
-              vcn_cli=("--signerID" "$VCN_ORG")
+              vcn_cli="--signerID"
             else
-              vcn_cli=("--org" "$VCN_ORG")
+              vcn_cli="--org" 
             fi
 
-            echo "${vcn_cli}"
+            echo ("${vcn_cli}" "$VCN_ORG")
           }
 
           sto_cazzo
