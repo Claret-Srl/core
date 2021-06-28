@@ -17,8 +17,7 @@ jobs:
     name: Initialize build
     runs-on: ubuntu-latest
     outputs:
-      # architectures: ${{ steps.info.outputs.architectures }}
-      architectures: "amd64"
+      architectures: ${{ steps.info.outputs.architectures }}
       version: ${{ steps.version.outputs.version }}
       channel: ${{ steps.version.outputs.channel }}
       publish: ${{ steps.version.outputs.publish }}
@@ -82,9 +81,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        # arch: ${{ fromJson(needs.init.outputs.architectures) }}
-        arch:
-          - amd64
+        arch: ${{ fromJson(needs.init.outputs.architectures) }}
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2.3.4
@@ -136,22 +133,22 @@ jobs:
       matrix:
         machine:
           - generic-x86-64
-          # - intel-nuc
-          # - odroid-c2
-          # - odroid-c4
-          # - odroid-n2
-          # - odroid-xu
-          # - qemuarm
-          # - qemuarm-64
-          # - qemux86
-          # - qemux86-64
-          # - raspberrypi
-          # - raspberrypi2
-          # - raspberrypi3
-          # - raspberrypi3-64
-          # - raspberrypi4
-          # - raspberrypi4-64
-          # - tinker
+          - intel-nuc
+          - odroid-c2
+          - odroid-c4
+          - odroid-n2
+          - odroid-xu
+          - qemuarm
+          - qemuarm-64
+          - qemux86
+          - qemux86-64
+          - raspberrypi
+          - raspberrypi2
+          - raspberrypi3
+          - raspberrypi3-64
+          - raspberrypi4
+          - raspberrypi4-64
+          - tinker
     steps:
       - name: Checkout the repository
         uses: actions/checkout@v2.3.4
@@ -279,13 +276,7 @@ jobs:
           function validate_image() {
             local image=${1}
 
-            if [[ "$VCN_ORG" =~ ^0x ]]; then
-              vcn_cli="--signerID"
-            else
-              vcn_cli="--org" 
-            fi
-
-            state="$(vcn authenticate ${vcn_cli} $VCN_ORG --output json docker://${image} | jq '.verification.status // 2')"
+            state="$(vcn authenticate --output json docker://${image} | jq '.verification.status // 2')"
 
             if [[ "${state}" != "0" ]]; then
               echo "Invalid signature!"
@@ -296,16 +287,16 @@ jobs:
 
           for docker_reg in "drypatrick" "ghcr.io/drypatrick"; do
             docker pull "${docker_reg}/amd64-homeassistant:${{ needs.init.outputs.version }}"
-            # docker pull "${docker_reg}/i386-homeassistant:${{ needs.init.outputs.version }}"
-            # docker pull "${docker_reg}/armhf-homeassistant:${{ needs.init.outputs.version }}"
-            # docker pull "${docker_reg}/armv7-homeassistant:${{ needs.init.outputs.version }}"
-            # docker pull "${docker_reg}/aarch64-homeassistant:${{ needs.init.outputs.version }}"
+            docker pull "${docker_reg}/i386-homeassistant:${{ needs.init.outputs.version }}"
+            docker pull "${docker_reg}/armhf-homeassistant:${{ needs.init.outputs.version }}"
+            docker pull "${docker_reg}/armv7-homeassistant:${{ needs.init.outputs.version }}"
+            docker pull "${docker_reg}/aarch64-homeassistant:${{ needs.init.outputs.version }}"
 
             validate_image "${docker_reg}/amd64-homeassistant:${{ needs.init.outputs.version }}"
-            # validate_image "${docker_reg}/i386-homeassistant:${{ needs.init.outputs.version }}"
-            # validate_image "${docker_reg}/armhf-homeassistant:${{ needs.init.outputs.version }}"
-            # validate_image "${docker_reg}/armv7-homeassistant:${{ needs.init.outputs.version }}"
-            # validate_image "${docker_reg}/aarch64-homeassistant:${{ needs.init.outputs.version }}"
+            validate_image "${docker_reg}/i386-homeassistant:${{ needs.init.outputs.version }}"
+            validate_image "${docker_reg}/armhf-homeassistant:${{ needs.init.outputs.version }}"
+            validate_image "${docker_reg}/armv7-homeassistant:${{ needs.init.outputs.version }}"
+            validate_image "${docker_reg}/aarch64-homeassistant:${{ needs.init.outputs.version }}"
 
             # Create version tag
             create_manifest "${docker_reg}" "${{ needs.init.outputs.version }}" "${{ needs.init.outputs.version }}"
