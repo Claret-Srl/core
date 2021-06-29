@@ -32,7 +32,7 @@ jobs:
           if [[ ${{ github.event_name }} =~ (schedule|workflow_dispatch) ]]; then
             touch requirements_diff.txt
           else
-            curl -s -o requirements_diff.txt https://raw.githubusercontent.com/claret-srl/core/master/requirements.txt
+            curl -s -o requirements_diff.txt https://raw.githubusercontent.com/${{ github.repository_owner }}/core/master/requirements.txt
           fi
 
       - name: Write env-file
