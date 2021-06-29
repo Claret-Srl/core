@@ -95,10 +95,10 @@ jobs:
           pip: "Cython;numpy"
           skip-binary: aiohttp
           constraints: "homeassistant/package_constraints.txt"
-          requirements-diff: 'requirements_diff.txt'
+          requirements-diff: "requirements_diff.txt"
           requirements: "requirements.txt"
           upload: "lftp"
-          wheels-host: ${{ secrets.WHEELS_HOST }}      
+          wheels-host: ${{ secrets.WHEELS_HOST }}
           wheels-port: ${{ secrets.WHEELS_PORT }}
           wheels-user: ${{ secrets.WHEELS_USER }}
           wheels-key: ${{ secrets.WHEELS_KEY }}
@@ -173,10 +173,10 @@ jobs:
           pip: "Cython;numpy;scikit-build"
           skip-binary: aiohttp
           constraints: "homeassistant/package_constraints.txt"
-          requirements-diff: 'requirements_diff.txt'
+          requirements-diff: "requirements_diff.txt"
           requirements: "requirements_all.txt"
           upload: "lftp"
-          wheels-host: ${{ secrets.WHEELS_HOST }}      
+          wheels-host: ${{ secrets.WHEELS_HOST }}
           wheels-port: ${{ secrets.WHEELS_PORT }}
           wheels-user: ${{ secrets.WHEELS_USER }}
           wheels-key: ${{ secrets.WHEELS_KEY }}
