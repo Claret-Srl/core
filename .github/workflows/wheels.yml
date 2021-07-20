@@ -32,7 +32,7 @@ jobs:
           if [[ ${{ github.event_name }} =~ (schedule|workflow_dispatch) ]]; then
             touch requirements_diff.txt
           else
-            curl -s -o requirements_diff.txt https://raw.githubusercontent.com/home-assistant/core/master/requirements.txt
+            curl -s -o requirements_diff.txt https://raw.githubusercontent.com/${{ github.repository_owner }}/core/master/requirements.txt
           fi
 
       - name: Write env-file
@@ -67,6 +67,10 @@ jobs:
         tag:
           - "3.9-alpine3.13"
     steps:
+      - name: Pause script to prevent refused connection from remote server
+        shell: bash
+        run: sleep 1200
+
       - name: Checkout the repository
         uses: actions/checkout@v2.3.4
 
@@ -81,20 +85,28 @@ jobs:
           name: requirements_diff
 
       - name: Build wheels
-        uses: home-assistant/wheels@2021.06.0
+        uses: claret-srl/wheels@master
         with:
           tag: ${{ matrix.tag }}
           arch: ${{ matrix.arch }}
-          wheels-host: wheels.hass.io
-          wheels-key: ${{ secrets.WHEELS_KEY }}
-          wheels-user: wheels
           env-file: true
           apk: "build-base;cmake;git;linux-headers;bluez-dev;libffi-dev;openssl-dev;glib-dev;eudev-dev;libxml2-dev;libxslt-dev"
           pip: "Cython;numpy"
           skip-binary: aiohttp
           constraints: "homeassistant/package_constraints.txt"
-          requirements-diff: 'requirements_diff.txt'
+          requirements-diff: "requirements_diff.txt"
           requirements: "requirements.txt"
+          upload: "lftp"
+          wheels-host: ${{ secrets.WHEELS_HOST }}
+          wheels-port: ${{ secrets.WHEELS_PORT }}
+          wheels-user: ${{ secrets.WHEELS_USER }}
+          wheels-key: ${{ secrets.WHEELS_KEY }}
+          wheels-index: "https://claret.io/sandbox/drypatrick/wheels"
+          ftp-host: ${{ secrets.FTP_HOST }}
+          ftp-user: ${{ secrets.FTP_USER }}
+          ftp-password: ${{ secrets.FTP_PSW }}
+          ftp-remote: "www/sandbox/drypatrick/wheels/"
+          ftp-mirror-options: "--reverse --no-perms --only-missing" # --verbose
 
   integrations:
     name: Build wheels with ${{ matrix.tag }} (${{ matrix.arch }}) for integrations
@@ -150,17 +162,25 @@ jobs:
           done
 
       - name: Build wheels
-        uses: home-assistant/wheels@2021.06.0
+        uses: claret-srl/wheels@master
         with:
           tag: ${{ matrix.tag }}
           arch: ${{ matrix.arch }}
-          wheels-host: wheels.hass.io
-          wheels-key: ${{ secrets.WHEELS_KEY }}
-          wheels-user: wheels
           env-file: true
           apk: "build-base;cmake;git;linux-headers;libexecinfo-dev;bluez-dev;libffi-dev;openssl-dev;glib-dev;eudev-dev;libxml2-dev;libxslt-dev;libpng-dev;libjpeg-turbo-dev;tiff-dev;autoconf;automake;cups-dev;gmp-dev;mpfr-dev;mpc1-dev;ffmpeg-dev;gammu-dev"
           pip: "Cython;numpy;scikit-build"
           skip-binary: aiohttp
           constraints: "homeassistant/package_constraints.txt"
-          requirements-diff: 'requirements_diff.txt'
+          requirements-diff: "requirements_diff.txt"
           requirements: "requirements_all.txt"
+          upload: "lftp"
+          wheels-host: ${{ secrets.WHEELS_HOST }}
+          wheels-port: ${{ secrets.WHEELS_PORT }}
+          wheels-user: ${{ secrets.WHEELS_USER }}
+          wheels-key: ${{ secrets.WHEELS_KEY }}
+          wheels-index: "https://claret.io/sandbox/drypatrick/wheels"
+          ftp-host: ${{ secrets.FTP_HOST }}
+          ftp-user: ${{ secrets.FTP_USER }}
+          ftp-password: ${{ secrets.FTP_PSW }}
+          ftp-remote: "www/sandbox/drypatrick/wheels/"
+          ftp-mirror-options: "--reverse --no-perms --only-missing" # --verbose

@@ -1,0 +1,55 @@
+name: Validate images
+
+# yamllint disable-line rule:truthy
+on:
+  workflow_dispatch:
+
+env:
+  VCN_SIGNER: ${{ secrets.VCN_ORG }}
+
+jobs:
+  validate_images:
+    name: Validate images
+    runs-on: ubuntu-latest
+    steps:
+      - name: Login to DockerHub
+        uses: docker/login-action@v1.9.0
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+
+      - name: Login to GitHub Container Registry
+        uses: docker/login-action@v1.9.0
+        with:
+          registry: ghcr.io
+          username: ${{ secrets.GIT_USER }}
+          password: ${{ secrets.GIT_TOKEN }}
+
+      - name: Build Meta Image
+        shell: bash
+        run: |
+          bash <(curl https://getvcn.codenotary.com -L)
+
+          export DOCKER_CLI_EXPERIMENTAL=enabled
+
+          function validate_image() {
+            local image=${1}
+            if [[ "$VCN_SIGNER" =~ ^0x ]]; then
+              local vcn_cli=("--signerID")
+            else
+              local vcn_cli=("--org")
+            fi
+
+            state="$(vcn authenticate "$vcn_cli" "$VCN_SIGNER" --output json docker://"${image}" | jq '.verification.status // 2')"
+
+            if [[ "${state}" != "0" ]]; then
+              echo "Invalid signature!"
+              exit 1
+            fi
+
+          }
+
+          for docker_reg in "drypatrick" "ghcr.io/drypatrick"; do
+          docker pull "${docker_reg}/amd64-homeassistant:2021.6.10"
+          validate_image "${docker_reg}/amd64-homeassistant:2021.6.10"
+          done

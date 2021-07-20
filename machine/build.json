@@ -1,16 +1,16 @@
 {
-    "image": "homeassistant/{machine}-homeassistant",
-    "shadow_repository": "ghcr.io/home-assistant",
-    "build_from": {
-        "aarch64": "ghcr.io/home-assistant/aarch64-homeassistant:",
-        "armv7": "ghcr.io/home-assistant/armv7-homeassistant:",
-        "armhf": "ghcr.io/home-assistant/armhf-homeassistant:",
-        "amd64": "ghcr.io/home-assistant/amd64-homeassistant:",
-        "i386": "ghcr.io/home-assistant/i386-homeassistant:"
-    },
-    "labels": {
-        "io.hass.type": "core",
-        "org.opencontainers.image.source": "https://github.com/home-assistant/core"
-    },
-    "version_tag": true
+  "image": "drypatrick/{machine}-homeassistant",
+  "shadow_repository": "ghcr.io/drypatrick",
+  "build_from": {
+    "aarch64": "ghcr.io/drypatrick/aarch64-homeassistant:",
+    "armv7": "ghcr.io/drypatrick/armv7-homeassistant:",
+    "armhf": "ghcr.io/drypatrick/armhf-homeassistant:",
+    "amd64": "ghcr.io/drypatrick/amd64-homeassistant:",
+    "i386": "ghcr.io/drypatrick/i386-homeassistant:"
+  },
+  "labels": {
+    "io.hass.type": "core",
+    "org.opencontainers.image.source": "https://github.com/drypatrick/core"
+  },
+  "version_tag": true
 }
