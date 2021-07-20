@@ -193,7 +193,7 @@ jobs:
           token: ${{ secrets.GIT_TOKEN }}
 
       - name: Update version file
-        uses: claret-srl/actions/helpers/version-push@claret
+        uses: claret-srl/actions/helpers/version-push@master
         with:
           key: "homeassistant[]"
           key-description: "Home Assistant Core"
@@ -202,7 +202,7 @@ jobs:
 
       - name: Update version file (stable -> beta)
         if: needs.init.outputs.channel == 'stable'
-        uses: claret-srl/actions/helpers/version-push@claret
+        uses: claret-srl/actions/helpers/version-push@master
         with:
           key: "homeassistant[]"
           key-description: "Home Assistant Core"
