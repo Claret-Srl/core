@@ -86,7 +86,7 @@ jobs:
           name: requirements_diff
 
       - name: Build wheels
-        uses: claret-srl/wheels@claret
+        uses: claret-srl/wheels@master
         with:
           tag: ${{ matrix.tag }}
           arch: ${{ matrix.arch }}
@@ -164,7 +164,7 @@ jobs:
           done
 
       - name: Build wheels
-        uses: claret-srl/wheels@claret
+        uses: claret-srl/wheels@master
         with:
           tag: ${{ matrix.tag }}
           arch: ${{ matrix.arch }}
