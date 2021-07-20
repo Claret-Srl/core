@@ -17,7 +17,6 @@ env:
   SQLALCHEMY_WARN_20: 1
 
 jobs:
-
   # Separate job to pre-populate the base dependency cache
   # This prevent upcoming jobs to do the same individually
   prepare-base:
