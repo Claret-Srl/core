@@ -1,4 +1,4 @@
-name: Build single wheels
+name: Build wheels (single integration)
 
 # yamllint disable-line rule:truthy
 on:
@@ -55,58 +55,6 @@ jobs:
         with:
           name: requirements_diff
           path: ./requirements_diff.txt
-
-  # core:
-  #   name: Build wheels with ${{ matrix.tag }} (${{ matrix.arch }}) for core
-  #   needs: init
-  #   runs-on: ubuntu-latest
-  #   strategy:
-  #     fail-fast: false
-  #     matrix:
-  #       arch: ${{ fromJson(needs.init.outputs.architectures) }}
-  #       tag:
-  #         - "3.9-alpine3.13"
-  #   steps:
-  #     - name: Pause script to prevent refused connection from remote server
-  #       shell: bash
-  #       run: sleep 1200
-
-  #     - name: Checkout the repository
-  #       uses: actions/checkout@v2.3.4
-
-  #     - name: Download env_file
-  #       uses: actions/download-artifact@v2
-  #       with:
-  #         name: env_file
-
-  #     - name: Download requirements_diff
-  #       uses: actions/download-artifact@v2
-  #       with:
-  #         name: requirements_diff
-
-  #     - name: Build wheels
-  #       uses: claret-srl/wheels@master
-  #       with:
-  #         tag: ${{ matrix.tag }}
-  #         arch: ${{ matrix.arch }}
-  #         env-file: true
-  #         apk: "build-base;cmake;git;linux-headers;bluez-dev;libffi-dev;openssl-dev;glib-dev;eudev-dev;libxml2-dev;libxslt-dev"
-  #         pip: "Cython;numpy"
-  #         skip-binary: aiohttp
-  #         constraints: "homeassistant/package_constraints.txt"
-  #         requirements-diff: "requirements_diff.txt"
-  #         requirements: "requirements.txt"
-  #         upload: "lftp"
-  #         wheels-host: ${{ secrets.WHEELS_HOST }}
-  #         wheels-port: ${{ secrets.WHEELS_PORT }}
-  #         wheels-user: ${{ secrets.WHEELS_USER }}
-  #         wheels-key: ${{ secrets.WHEELS_KEY }}
-  #         wheels-index: "https://claret.io/sandbox/drypatrick/wheels"
-  #         ftp-host: ${{ secrets.FTP_HOST }}
-  #         ftp-user: ${{ secrets.FTP_USER }}
-  #         ftp-password: ${{ secrets.FTP_PSW }}
-  #         ftp-remote: "www/sandbox/drypatrick/wheels/"
-  #         ftp-mirror-options: "--reverse --no-perms --only-missing" # --verbose
 
   integrations:
     name: Build wheels with ${{ matrix.tag }} (${{ matrix.arch }}) for integrations
@@ -184,4 +132,4 @@ jobs:
           ftp-user: ${{ secrets.FTP_USER }}
           ftp-password: ${{ secrets.FTP_PSW }}
           ftp-remote: "www/sandbox/drypatrick/wheels/"
-          ftp-mirror-options: "--reverse --no-perms --only-missing" # --verbose
+          ftp-mirror-options: "--reverse --no-perms --only-missing"
