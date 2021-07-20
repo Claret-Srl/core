@@ -1,4 +1,4 @@
-[![Build wheels](https://github.com/claret-srl/core/actions/workflows/wheels.yml/badge.svg)](https://github.com/claret-srl/core/actions/workflows/wheels.yml) [![Build images](https://github.com/claret-srl/core/actions/workflows/builder.yml/badge.svg)](https://github.com/claret-srl/core/actions/workflows/builder.yml)
+[![Build wheels](https://github.com/claret-srl/core/actions/workflows/wheels.yml/badge.svg)](https://github.com/claret-srl/core/actions/workflows/wheels.yml) [![CI](https://github.com/claret-srl/core/actions/workflows/ci.yaml/badge.svg)](https://github.com/claret-srl/core/actions/workflows/ci.yaml) [![Build images](https://github.com/claret-srl/core/actions/workflows/builder.yml/badge.svg)](https://github.com/claret-srl/core/actions/workflows/builder.yml)
 
 Home Assistant
 =================================================================================
