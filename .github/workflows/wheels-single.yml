@@ -115,7 +115,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        arch: ${{ fromJson(needs.init.outputs.architectures) }}
+        arch:
+          - "aarch64"
         tag:
           - "3.9-alpine3.13"
     steps:
@@ -165,7 +166,7 @@ jobs:
         uses: claret-srl/wheels@master
         with:
           tag: ${{ matrix.tag }}
-          arch: aarch64
+          arch: ${{ matrix.arch }}
           env-file: true
           apk: "build-base;cmake;git;linux-headers;libexecinfo-dev;bluez-dev;libffi-dev;openssl-dev;glib-dev;eudev-dev;libxml2-dev;libxslt-dev;libpng-dev;libjpeg-turbo-dev;tiff-dev;autoconf;automake;cups-dev;gmp-dev;mpfr-dev;mpc1-dev;ffmpeg-dev;gammu-dev"
           pip: "Cython;numpy;scikit-build"
