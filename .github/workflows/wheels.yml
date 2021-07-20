@@ -106,7 +106,7 @@ jobs:
           ftp-user: ${{ secrets.FTP_USER }}
           ftp-password: ${{ secrets.FTP_PSW }}
           ftp-remote: "www/sandbox/drypatrick/wheels/"
-          ftp-mirror-options: "--reverse --no-perms --only-missing" # --verbose
+          ftp-mirror-options: "--reverse --no-perms --only-missing"
 
   integrations:
     name: Build wheels with ${{ matrix.tag }} (${{ matrix.arch }}) for integrations
