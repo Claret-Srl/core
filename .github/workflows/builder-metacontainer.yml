@@ -105,6 +105,7 @@ jobs:
   publish_container:
     name: Publish meta container
     # needs: ["init", "build_base"]
+    needs: ["init"]
     runs-on: ubuntu-latest
     steps:
       - name: Checkout the repository
