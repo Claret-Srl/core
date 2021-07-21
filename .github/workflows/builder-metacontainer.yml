@@ -14,15 +14,16 @@ env:
   VCN_SIGNER: ${{ secrets.VCN_ORG }}
 
 jobs:
-  # init:
-  #   name: Initialize build
-  #   runs-on: ubuntu-latest
-  #   outputs:
+  init:
+    name: Initialize build
+    runs-on: ubuntu-latest
+    outputs:
   #     architectures: ${{ steps.info.outputs.architectures }}
-  #     version: ${{ steps.version.outputs.version }}
+      # version: ${{ steps.version.outputs.version }}
+      version: "2021.7.4"
   #     channel: ${{ steps.version.outputs.channel }}
   #     publish: ${{ steps.version.outputs.publish }}
-  #   steps:
+    # steps:
   #     - name: Checkout the repository
   #       uses: actions/checkout@v2.3.4
   #       with:
