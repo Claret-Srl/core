@@ -23,7 +23,10 @@ jobs:
       version: "2021.7.4"
   #     channel: ${{ steps.version.outputs.channel }}
   #     publish: ${{ steps.version.outputs.publish }}
-    # steps:
+    steps:
+        - name: Sleep
+          shell: bash
+          run: sleep 1
   #     - name: Checkout the repository
   #       uses: actions/checkout@v2.3.4
   #       with:
