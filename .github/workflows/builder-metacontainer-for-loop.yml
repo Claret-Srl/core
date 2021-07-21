@@ -186,9 +186,9 @@ jobs:
             }
 
             for docker_reg in "drypatrick" "ghcr.io/drypatrick"; do
-              for arch in  "amd64" "i386" "armhf" "armv7" "aarch64"; do
-                docker pull "${docker_reg}/arch-homeassistant:${{ needs.init.outputs.version }}"
-                validate_image "${docker_reg}/arch-homeassistant:${{ needs.init.outputs.version }}"
+              for arch in "amd64" "i386" "armhf" "armv7" "aarch64"; do
+                docker pull "${docker_reg}/"${arch}"-homeassistant:${{ needs.init.outputs.version }}"
+                validate_image "${docker_reg}/"${arch}"-homeassistant:${{ needs.init.outputs.version }}"
               done
 
               # Create version tag
