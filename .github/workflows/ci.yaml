@@ -3,11 +3,11 @@ name: CI
 # yamllint disable-line rule:truthy
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - dev
-      - rc
-      - master
+#   push:
+#     branches:
+#       - dev
+#       - rc
+#       - master
   pull_request: ~
 
 env:
