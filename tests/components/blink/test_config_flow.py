@@ -38,7 +38,7 @@ async def test_form(hass):
     assert result2["data"] == {
         "username": "blink@example.com",
         "password": "example",
-        "device_id": "Home Assistant",
+        "device_id": "Safegate Pro",
         "token": None,
         "host": None,
         "account_id": None,

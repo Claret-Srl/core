@@ -52,7 +52,7 @@ class CurrentEnergyUsageSensor(SensorEntity):
 
     @property
     def unique_id(self):
-        """Return a unique, Home Assistant friendly identifier for this entity."""
+        """Return a unique, Safegate Pro friendly identifier for this entity."""
         return self.meter.meter_id
 
     @property

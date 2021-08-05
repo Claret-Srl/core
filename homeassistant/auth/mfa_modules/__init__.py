@@ -1,4 +1,4 @@
-"""Pluggable auth modules for Home Assistant."""
+"""Pluggable auth modules for Safegate Pro."""
 from __future__ import annotations
 
 import importlib

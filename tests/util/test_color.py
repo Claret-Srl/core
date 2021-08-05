@@ -1,4 +1,4 @@
-"""Test Home Assistant color util methods."""
+"""Test Safegate Pro color util methods."""
 import pytest
 import voluptuous as vol
 

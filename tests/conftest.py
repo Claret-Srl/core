@@ -134,7 +134,7 @@ def load_registries():
 
 @pytest.fixture
 def hass(loop, load_registries, hass_storage, request):
-    """Fixture to provide a test instance of Home Assistant."""
+    """Fixture to provide a test instance of Safegate Pro."""
 
     def exc_handle(loop, context):
         """Handle exceptions by rethrowing them, which will fail the test."""
@@ -242,7 +242,7 @@ async def hass_admin_credential(hass, local_auth):
 
 @pytest.fixture
 async def hass_access_token(hass, hass_admin_user, hass_admin_credential):
-    """Return an access token to access Home Assistant."""
+    """Return an access token to access Safegate Pro."""
     await hass.auth.async_link_user(hass_admin_user, hass_admin_credential)
 
     refresh_token = await hass.auth.async_create_refresh_token(
@@ -253,13 +253,13 @@ async def hass_access_token(hass, hass_admin_user, hass_admin_credential):
 
 @pytest.fixture
 def hass_owner_user(hass, local_auth):
-    """Return a Home Assistant admin user."""
+    """Return a Safegate Pro admin user."""
     return MockUser(is_owner=True).add_to_hass(hass)
 
 
 @pytest.fixture
 def hass_admin_user(hass, local_auth):
-    """Return a Home Assistant admin user."""
+    """Return a Safegate Pro admin user."""
     admin_group = hass.loop.run_until_complete(
         hass.auth.async_get_group(GROUP_ID_ADMIN)
     )
@@ -268,7 +268,7 @@ def hass_admin_user(hass, local_auth):
 
 @pytest.fixture
 def hass_read_only_user(hass, local_auth):
-    """Return a Home Assistant read only user."""
+    """Return a Safegate Pro read only user."""
     read_only_group = hass.loop.run_until_complete(
         hass.auth.async_get_group(GROUP_ID_READ_ONLY)
     )
@@ -277,7 +277,7 @@ def hass_read_only_user(hass, local_auth):
 
 @pytest.fixture
 def hass_read_only_access_token(hass, hass_read_only_user, local_auth):
-    """Return a Home Assistant read only user."""
+    """Return a Safegate Pro read only user."""
     credential = Credentials(
         id="mock-readonly-credential-id",
         auth_provider_type="homeassistant",
@@ -611,7 +611,7 @@ def enable_statistics():
 
 @pytest.fixture
 def hass_recorder(enable_statistics):
-    """Home Assistant fixture with in-memory recorder."""
+    """Safegate Pro fixture with in-memory recorder."""
     hass = get_test_home_assistant()
     stats = recorder.Recorder.async_hourly_statistics if enable_statistics else None
     with patch(

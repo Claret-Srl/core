@@ -19,7 +19,7 @@ from homeassistant.loader import async_get_config_flows
 
 
 async def async_setup(hass):
-    """Enable the Home Assistant views."""
+    """Enable the Safegate Pro views."""
     hass.http.register_view(ConfigManagerEntryIndexView)
     hass.http.register_view(ConfigManagerEntryResourceView)
     hass.http.register_view(ConfigManagerEntryResourceReloadView)

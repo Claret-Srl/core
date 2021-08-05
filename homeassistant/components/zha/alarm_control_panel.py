@@ -1,4 +1,4 @@
-"""Alarm control panels on Zigbee Home Automation networks."""
+"""Alarm control panels on Zigbee Safegate Pro networks."""
 import functools
 import logging
 
@@ -59,7 +59,7 @@ IAS_ACE_STATE_MAP = {
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    """Set up the Zigbee Home Automation alarm control panel from config entry."""
+    """Set up the Zigbee Safegate Pro alarm control panel from config entry."""
     entities_to_create = hass.data[DATA_ZHA][DOMAIN]
 
     unsub = async_dispatcher_connect(

@@ -1,4 +1,4 @@
-"""Manage config entries in Home Assistant."""
+"""Manage config entries in Safegate Pro."""
 from __future__ import annotations
 
 import asyncio
@@ -370,7 +370,7 @@ class ConfigEntry:
             self.reason = error_reason
 
     async def async_shutdown(self) -> None:
-        """Call when Home Assistant is stopping."""
+        """Call when Safegate Pro is stopping."""
         self.async_cancel_retry_setup()
 
     @callback
@@ -848,7 +848,7 @@ class ConfigEntries:
         return {"require_restart": not unload_success}
 
     async def _async_shutdown(self, event: Event) -> None:
-        """Call when Home Assistant is stopping."""
+        """Call when Safegate Pro is stopping."""
         await asyncio.gather(
             *[entry.async_shutdown() for entry in self._entries.values()]
         )

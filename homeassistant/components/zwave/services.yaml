@@ -299,7 +299,7 @@ start_network:
 
 stop_network:
   name: Stop network
-  description: Stop the Z-Wave network, all updates into Home Assistant will stop.
+  description: Stop the Z-Wave network, all updates into Safegate Pro will stop.
 
 soft_reset:
   name: Soft reset

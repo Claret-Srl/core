@@ -1,4 +1,4 @@
-"""Test Home Assistant config flow for BleBox devices."""
+"""Test Safegate Pro config flow for BleBox devices."""
 
 from unittest.mock import DEFAULT, AsyncMock, PropertyMock, patch
 

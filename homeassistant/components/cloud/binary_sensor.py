@@ -1,4 +1,4 @@
-"""Support for Home Assistant Cloud binary sensors."""
+"""Support for Safegate Pro Cloud binary sensors."""
 import asyncio
 
 from homeassistant.components.binary_sensor import (

@@ -115,7 +115,7 @@ class ModbusThermostat(BasePlatform, RestoreEntity, ClimateEntity):
 
     async def async_set_hvac_mode(self, hvac_mode: str) -> None:
         """Set new target hvac mode."""
-        # Home Assistant expects this method.
+        # Safegate Pro expects this method.
         # We'll keep it here to avoid getting exceptions.
 
     @property

@@ -278,7 +278,7 @@ class AlexaEntity:
     def description(self):
         """Return the Alexa API description."""
         description = self.entity_conf.get(CONF_DESCRIPTION) or self.entity_id
-        return f"{description} via Home Assistant".translate(TRANSLATION_TABLE)
+        return f"{description} via Safegate Pro".translate(TRANSLATION_TABLE)
 
     def alexa_id(self):
         """Return the Alexa API entity id."""
@@ -294,7 +294,7 @@ class AlexaEntity:
     def default_display_categories(self):
         """Return a list of default display categories.
 
-        This can be overridden by the user in the Home Assistant configuration.
+        This can be overridden by the user in the Safegate Pro configuration.
 
         See also DisplayCategory.
         """
@@ -330,9 +330,9 @@ class AlexaEntity:
             "endpointId": self.alexa_id(),
             "friendlyName": self.friendly_name(),
             "description": self.description(),
-            "manufacturerName": "Home Assistant",
+            "manufacturerName": "Safegate Pro",
             "additionalAttributes": {
-                "manufacturer": "Home Assistant",
+                "manufacturer": "Safegate Pro",
                 "model": self.entity.domain,
                 "softwareVersion": __version__,
                 "customIdentifier": f"{self.config.user_identifier()}-{self.entity_id}",

@@ -116,8 +116,8 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     # Spin up the platforms
     hass.config_entries.async_setup_platforms(entry, PLATFORMS)
 
-    # If Home Assistant is already in a running state, register the webhook
-    # immediately, else trigger it after Home Assistant has finished starting.
+    # If Safegate Pro is already in a running state, register the webhook
+    # immediately, else trigger it after Safegate Pro has finished starting.
     if hass.state == CoreState.running:
         await coordinator.register_webhook()
     else:

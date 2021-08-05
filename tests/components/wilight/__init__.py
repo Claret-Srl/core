@@ -60,7 +60,7 @@ MOCK_SSDP_DISCOVERY_INFO_MISSING_MANUFACTURER = {
 async def setup_integration(
     hass: HomeAssistant,
 ) -> MockConfigEntry:
-    """Mock ConfigEntry in Home Assistant."""
+    """Mock ConfigEntry in Safegate Pro."""
 
     entry = MockConfigEntry(
         domain=DOMAIN,

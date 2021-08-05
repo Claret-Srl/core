@@ -1,4 +1,4 @@
-"""Support for Zigbee Home Automation devices."""
+"""Support for Zigbee Safegate Pro devices."""
 
 import asyncio
 import logging

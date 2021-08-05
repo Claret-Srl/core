@@ -46,17 +46,17 @@ STATE_ATTR_NEXT_SETTING = "next_setting"
 
 # As documented in wikipedia: https://en.wikipedia.org/wiki/Twilight
 # sun is:
-# < -18Â° of horizon - all stars visible
+# < -18° of horizon - all stars visible
 PHASE_NIGHT = "night"
-# 18Â°-12Â° - some stars not visible
+# 18°-12° - some stars not visible
 PHASE_ASTRONOMICAL_TWILIGHT = "astronomical_twilight"
-# 12Â°-6Â° - horizon visible
+# 12°-6° - horizon visible
 PHASE_NAUTICAL_TWILIGHT = "nautical_twilight"
-# 6Â°-0Â° - objects visible
+# 6°-0° - objects visible
 PHASE_TWILIGHT = "twilight"
-# 0Â°-10Â° above horizon, sun low on horizon
+# 0°-10° above horizon, sun low on horizon
 PHASE_SMALL_DAY = "small_day"
-# > 10Â° above horizon
+# > 10° above horizon
 PHASE_DAY = "day"
 
 # 4 mins is one degree of arc change of the sun on its circle.
@@ -76,7 +76,7 @@ async def async_setup(hass, config):
     """Track the state of the sun."""
     if config.get(CONF_ELEVATION) is not None:
         _LOGGER.warning(
-            "Elevation is now configured in Home Assistant core. "
+            "Elevation is now configured in Safegate Pro core. "
             "See https://www.home-assistant.io/docs/configuration/basic/"
         )
     Sun(hass)

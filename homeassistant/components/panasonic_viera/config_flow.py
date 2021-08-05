@@ -136,7 +136,7 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
         try:
             await self.hass.async_add_executor_job(
-                partial(self._remote.request_pin_code, name="Home Assistant")
+                partial(self._remote.request_pin_code, name="Safegate Pro")
             )
         except (URLError, SOAPError, OSError) as err:
             _LOGGER.error("The remote connection was lost: %s", err)

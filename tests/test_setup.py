@@ -628,7 +628,7 @@ async def test_parallel_entry_setup(hass):
 
 async def test_integration_disabled(hass, caplog):
     """Test we can disable an integration."""
-    disabled_reason = "Dependency contains code that breaks Home Assistant"
+    disabled_reason = "Dependency contains code that breaks Safegate Pro"
     mock_integration(
         hass,
         MockModule("test_component1", partial_manifest={"disabled": disabled_reason}),

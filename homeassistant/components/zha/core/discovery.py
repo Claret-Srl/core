@@ -1,4 +1,4 @@
-"""Device discovery functions for Zigbee Home Automation."""
+"""Device discovery functions for Zigbee Safegate Pro."""
 from __future__ import annotations
 
 from collections import Counter

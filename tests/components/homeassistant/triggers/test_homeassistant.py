@@ -9,7 +9,7 @@ from tests.common import async_mock_service
 
 
 async def test_if_fires_on_hass_start(hass):
-    """Test the firing when Home Assistant starts."""
+    """Test the firing when Safegate Pro starts."""
     calls = async_mock_service(hass, "test", "automation")
     hass.state = CoreState.not_running
     config = {
@@ -46,7 +46,7 @@ async def test_if_fires_on_hass_start(hass):
 
 
 async def test_if_fires_on_hass_shutdown(hass):
-    """Test the firing when Home Assistant shuts down."""
+    """Test the firing when Safegate Pro shuts down."""
     calls = async_mock_service(hass, "test", "automation")
     hass.state = CoreState.not_running
 

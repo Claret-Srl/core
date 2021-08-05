@@ -1,4 +1,4 @@
-"""Fans on Zigbee Home Automation networks."""
+"""Fans on Zigbee Safegate Pro networks."""
 from __future__ import annotations
 
 from abc import abstractmethod
@@ -58,7 +58,7 @@ GROUP_MATCH = functools.partial(ZHA_ENTITIES.group_match, DOMAIN)
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    """Set up the Zigbee Home Automation fan from config entry."""
+    """Set up the Zigbee Safegate Pro fan from config entry."""
     entities_to_create = hass.data[DATA_ZHA][DOMAIN]
 
     unsub = async_dispatcher_connect(

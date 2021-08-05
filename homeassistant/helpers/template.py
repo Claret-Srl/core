@@ -1,4 +1,4 @@
-"""Template helper methods for rendering strings with Home Assistant data."""
+"""Template helper methods for rendering strings with Safegate Pro data."""
 from __future__ import annotations
 
 from ast import literal_eval
@@ -1398,7 +1398,7 @@ class LoggingUndefined(jinja2.Undefined):
 
 
 class TemplateEnvironment(ImmutableSandboxedEnvironment):
-    """The Home Assistant template environment."""
+    """The Safegate Pro template environment."""
 
     def __init__(self, hass, limited=False, strict=False):
         """Initialise template environment."""

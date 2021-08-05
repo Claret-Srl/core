@@ -81,7 +81,7 @@ def message():
         "testuser",
         "testpass",
         ["recip1@example.com", "testrecip@test.com"],
-        "Home Assistant",
+        "Safegate Pro",
         0,
     )
     yield mailer
@@ -150,10 +150,10 @@ def test_send_text_message(hass, message):
         '^Content-Type: text/plain; charset="us-ascii"\n'
         "MIME-Version: 1.0\n"
         "Content-Transfer-Encoding: 7bit\n"
-        "Subject: Home Assistant\n"
+        "Subject: Safegate Pro\n"
         "To: recip1@example.com,testrecip@test.com\n"
-        "From: Home Assistant <test@test.com>\n"
-        "X-Mailer: Home Assistant\n"
+        "From: Safegate Pro <test@test.com>\n"
+        "X-Mailer: Safegate Pro\n"
         "Date: [^\n]+\n"
         "Message-Id: <[^@]+@[^>]+>\n"
         "\n"

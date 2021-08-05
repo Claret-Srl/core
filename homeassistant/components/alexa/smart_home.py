@@ -28,7 +28,7 @@ async def async_handle_message(hass, config, request, context=None, enabled=True
     try:
         if not enabled:
             raise AlexaBridgeUnreachableError(
-                "Alexa API not enabled in Home Assistant configuration"
+                "Alexa API not enabled in Safegate Pro configuration"
             )
 
         if directive.has_endpoint:

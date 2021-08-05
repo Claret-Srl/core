@@ -40,7 +40,7 @@ def is_installed(package: str) -> bool:
     except (pkg_resources.ResolutionError, pkg_resources.ExtractionError):
         req = pkg_resources.Requirement.parse(package)
     except ValueError:
-        # This is a zip file. We no longer use this in Home Assistant,
+        # This is a zip file. We no longer use this in Safegate Pro,
         # leaving it in for custom components.
         req = pkg_resources.Requirement.parse(urlparse(package).fragment)
 

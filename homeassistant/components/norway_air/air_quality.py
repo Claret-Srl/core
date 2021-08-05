@@ -44,7 +44,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
     name = config.get(CONF_NAME)
 
     if None in (latitude, longitude):
-        _LOGGER.error("Latitude or longitude not set in Home Assistant config")
+        _LOGGER.error("Latitude or longitude not set in Safegate Pro config")
         return
 
     coordinates = {"lat": str(latitude), "lon": str(longitude)}

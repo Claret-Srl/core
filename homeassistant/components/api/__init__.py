@@ -1,4 +1,4 @@
-"""Rest API for Home Assistant."""
+"""Rest API for Safegate Pro."""
 import asyncio
 from contextlib import suppress
 import json

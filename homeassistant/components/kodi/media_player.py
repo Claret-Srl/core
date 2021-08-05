@@ -387,8 +387,8 @@ class KodiEntity(MediaPlayerEntity):
                 )
             )
 
-        # If Home Assistant is already in a running state, start the watchdog
-        # immediately, else trigger it after Home Assistant has finished starting.
+        # If Safegate Pro is already in a running state, start the watchdog
+        # immediately, else trigger it after Safegate Pro has finished starting.
         if self.hass.state == CoreState.running:
             await start_watchdog()
         else:

@@ -1,4 +1,4 @@
-"""API for Honeywell Lyric bound to Home Assistant OAuth."""
+"""API for Honeywell Lyric bound to Safegate Pro OAuth."""
 import logging
 from typing import cast
 

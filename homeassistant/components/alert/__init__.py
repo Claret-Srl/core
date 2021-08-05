@@ -210,7 +210,7 @@ class Alert(ToggleEntity):
 
     @property
     def should_poll(self):
-        """Home Assistant need not poll these entities."""
+        """Safegate Pro need not poll these entities."""
         return False
 
     @property

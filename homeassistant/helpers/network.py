@@ -18,7 +18,7 @@ TYPE_URL_EXTERNAL = "external_url"
 
 
 class NoURLAvailableError(HomeAssistantError):
-    """An URL to the Home Assistant instance is not available."""
+    """An URL to the Safegate Pro instance is not available."""
 
 
 @bind_hass
@@ -204,7 +204,7 @@ def _get_external_url(
 
 @bind_hass
 def _get_cloud_url(hass: HomeAssistant, require_current_request: bool = False) -> str:
-    """Get external Home Assistant Cloud URL of this instance."""
+    """Get external Safegate Pro Cloud URL of this instance."""
     if "cloud" in hass.config.components:
         try:
             cloud_url = yarl.URL(cast(str, hass.components.cloud.async_remote_ui_url()))

@@ -1,4 +1,4 @@
-"""The tests for the Home Assistant HTTP component."""
+"""The tests for the Safegate Pro HTTP component."""
 # pylint: disable=protected-access
 from ipaddress import ip_address
 import os

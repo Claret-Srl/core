@@ -123,7 +123,7 @@ class HMDevice(Entity):
             self._available = not self._hmdevice.UNREACH
             has_changed = True
 
-        # If it has changed data point, update Home Assistant
+        # If it has changed data point, update Safegate Pro
         if has_changed:
             self.schedule_update_ha_state()
 

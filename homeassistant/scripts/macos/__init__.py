@@ -33,7 +33,7 @@ def install_osx():
     os.popen(f"launchctl load -w -F {path}")
 
     print(
-        "Home Assistant has been installed. \
+        "Safegate Pro has been installed. \
         Open it here: http://localhost:8123"
     )
 
@@ -43,7 +43,7 @@ def uninstall_osx():
     path = os.path.expanduser("~/Library/LaunchAgents/org.homeassistant.plist")
     os.popen(f"launchctl unload {path}")
 
-    print("Home Assistant has been uninstalled.")
+    print("Safegate Pro has been uninstalled.")
 
 
 def run(args):

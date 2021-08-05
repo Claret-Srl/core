@@ -64,7 +64,7 @@ from .discovery import ZwaveDiscoveryInfo
 from .entity import ZWaveBaseEntity
 from .helpers import get_value_of_zwave_value
 
-# Map Z-Wave HVAC Mode to Home Assistant value
+# Map Z-Wave HVAC Mode to Safegate Pro value
 # Note: We treat "auto" as "heat_cool" as most Z-Wave devices
 # report auto_changeover as auto without schedule support.
 ZW_HVAC_MODE_MAP: dict[int, str] = {
@@ -215,7 +215,7 @@ class ZWaveClimate(ZWaveBaseEntity, ClimateEntity):
         return val
 
     def _set_modes_and_presets(self) -> None:
-        """Convert Z-Wave Thermostat modes into Home Assistant modes and presets."""
+        """Convert Z-Wave Thermostat modes into Safegate Pro modes and presets."""
         all_modes: dict[str, int | None] = {}
         all_presets: dict[str, int | None] = {PRESET_NONE: None}
 

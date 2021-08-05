@@ -45,7 +45,7 @@ class EcoalTempSensor(SensorEntity):
     def update(self):
         """Fetch new state data for the sensor.
 
-        This is the only method that should fetch new data for Home Assistant.
+        This is the only method that should fetch new data for Safegate Pro.
         """
         # Old values read 0.5 back can still be used
         status = self._ecoal_contr.get_cached_status()

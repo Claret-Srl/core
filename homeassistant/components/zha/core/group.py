@@ -1,4 +1,4 @@
-"""Group for Zigbee Home Automation."""
+"""Group for Zigbee Safegate Pro."""
 from __future__ import annotations
 
 import asyncio

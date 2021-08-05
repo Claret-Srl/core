@@ -74,7 +74,7 @@ class VerisureDataUpdateCoordinator(DataUpdateCoordinator):
                 return {}
             raise
 
-        # Store data in a way Home Assistant can easily consume it
+        # Store data in a way Safegate Pro can easily consume it
         return {
             "alarm": overview["armState"],
             "ethernet": overview.get("ethernetConnectedNow"),

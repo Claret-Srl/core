@@ -85,9 +85,9 @@ UNITS = {
     59: "Millimeters-of-mercury",
     60: "Centimeters-of-mercury",
     61: "Inches-of-mercury",
-    62: "Â°C",
-    63: "Â°K",
-    64: "Â°F",
+    62: "°C",
+    63: "°K",
+    64: "°F",
     65: "Degree-days-Celsius",
     66: "Degree-days-Fahrenheit",
     67: "Years",
@@ -234,7 +234,7 @@ ICONS = {
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    """Set up the Zigbee Home Automation Analog Output from config entry."""
+    """Set up the Zigbee Safegate Pro Analog Output from config entry."""
     entities_to_create = hass.data[DATA_ZHA][DOMAIN]
 
     unsub = async_dispatcher_connect(

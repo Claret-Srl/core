@@ -59,10 +59,10 @@ async def test_handler_alexa(hass):
     assert len(endpoints) == 1
     device = endpoints[0]
 
-    assert device["description"] == "Config description via Home Assistant"
+    assert device["description"] == "Config description via Safegate Pro"
     assert device["friendlyName"] == "Config name"
     assert device["displayCategories"] == ["LIGHT"]
-    assert device["manufacturerName"] == "Home Assistant"
+    assert device["manufacturerName"] == "Safegate Pro"
 
 
 async def test_handler_alexa_disabled(hass, mock_cloud_fixture):

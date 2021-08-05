@@ -8,7 +8,7 @@ from tests.common import MockConfigEntry
 
 
 async def init_integration(hass, track_home=False) -> MockConfigEntry:
-    """Set up the Met integration in Home Assistant."""
+    """Set up the Met integration in Safegate Pro."""
     entry_data = {
         CONF_NAME: "test",
         CONF_LATITUDE: 0,

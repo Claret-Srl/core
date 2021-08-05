@@ -76,5 +76,5 @@ class AbodeAutomationSwitch(AbodeAutomation, SwitchEntity):
 
     @property
     def icon(self):
-        """Return the robot icon to match Home Assistant automations."""
+        """Return the robot icon to match Safegate Pro automations."""
         return ICON

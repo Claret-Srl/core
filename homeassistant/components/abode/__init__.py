@@ -46,7 +46,7 @@ ATTR_VALUE = "value"
 
 CONFIG_SCHEMA = vol.Schema(
     vol.All(
-        # Deprecated in Home Assistant 2021.6
+        # Deprecated in Safegate Pro 2021.6
         cv.deprecated(DOMAIN),
         {
             DOMAIN: vol.Schema(
@@ -163,7 +163,7 @@ async def async_unload_entry(hass, config_entry):
 
 
 def setup_hass_services(hass):
-    """Home Assistant services."""
+    """Safegate Pro services."""
 
     def change_setting(call):
         """Change an Abode system setting."""
@@ -217,7 +217,7 @@ def setup_hass_services(hass):
 
 
 async def setup_hass_events(hass):
-    """Home Assistant start and stop callbacks."""
+    """Safegate Pro start and stop callbacks."""
 
     def logout(event):
         """Logout of Abode."""

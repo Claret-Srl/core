@@ -76,11 +76,11 @@ def _figure_out_source(record, call_stack, hass):
             stack = call_stack[0 : index + 1]
 
     # Iterate through the stack call (in reverse) and find the last call from
-    # a file in Home Assistant. Try to figure out where error happened.
+    # a file in Safegate Pro. Try to figure out where error happened.
     paths_re = r"(?:{})/(.*)".format("|".join([re.escape(x) for x in paths]))
     for pathname in reversed(stack):
 
-        # Try to match with a file within Home Assistant
+        # Try to match with a file within Safegate Pro
         match = re.match(paths_re, pathname[0])
         if match:
             return [match.group(1), pathname[1]]
@@ -240,7 +240,7 @@ async def async_setup(hass, config):
             getattr(logger, level)(service.data[CONF_MESSAGE])
 
     async def async_shutdown_handler(event):
-        """Remove logging handler when Home Assistant is shutdown."""
+        """Remove logging handler when Safegate Pro is shutdown."""
         # This is needed as older logger instances will remain
         logging.getLogger().removeHandler(handler)
 

@@ -298,7 +298,7 @@ class Thermostat(HomeAccessory):
                 service = SERVICE_SET_TEMPERATURE_THERMOSTAT
                 temperature = self._temperature_to_states(hc_target_temp)
                 events.append(
-                    f"{CHAR_TARGET_TEMPERATURE} to {char_values[CHAR_TARGET_TEMPERATURE]}째C"
+                    f"{CHAR_TARGET_TEMPERATURE} to {char_values[CHAR_TARGET_TEMPERATURE]}캜"
                 )
                 params[ATTR_TEMPERATURE] = temperature
             elif features & SUPPORT_TARGET_TEMPERATURE_RANGE:
@@ -329,7 +329,7 @@ class Thermostat(HomeAccessory):
             min_temp, max_temp = self.get_temperature_range()
             if CHAR_COOLING_THRESHOLD_TEMPERATURE in char_values:
                 events.append(
-                    f"{CHAR_COOLING_THRESHOLD_TEMPERATURE} to {char_values[CHAR_COOLING_THRESHOLD_TEMPERATURE]}째C"
+                    f"{CHAR_COOLING_THRESHOLD_TEMPERATURE} to {char_values[CHAR_COOLING_THRESHOLD_TEMPERATURE]}캜"
                 )
                 high = char_values[CHAR_COOLING_THRESHOLD_TEMPERATURE]
                 # If the device doesn't support TARGET_TEMPATURE
@@ -338,7 +338,7 @@ class Thermostat(HomeAccessory):
                     low = high - HEAT_COOL_DEADBAND
             if CHAR_HEATING_THRESHOLD_TEMPERATURE in char_values:
                 events.append(
-                    f"{CHAR_HEATING_THRESHOLD_TEMPERATURE} to {char_values[CHAR_HEATING_THRESHOLD_TEMPERATURE]}째C"
+                    f"{CHAR_HEATING_THRESHOLD_TEMPERATURE} to {char_values[CHAR_HEATING_THRESHOLD_TEMPERATURE]}캜"
                 )
                 low = char_values[CHAR_HEATING_THRESHOLD_TEMPERATURE]
                 # If the device doesn't support TARGET_TEMPATURE
@@ -377,7 +377,7 @@ class Thermostat(HomeAccessory):
         #
         # HEAT_COOL is preferred over auto because HomeKit Accessory Protocol describes
         # heating or cooling comes on to maintain a target temp which is closest to
-        # the Home Assistant spec
+        # the Safegate Pro spec
         #
         # HVAC_MODE_HEAT_COOL: The device supports heating/cooling to a range
         self.hc_homekit_to_hass = {
@@ -585,7 +585,7 @@ class WaterHeater(HomeAccessory):
 
     def set_target_temperature(self, value):
         """Set target temperature to value if call came from HomeKit."""
-        _LOGGER.debug("%s: Set target temperature to %.1f째C", self.entity_id, value)
+        _LOGGER.debug("%s: Set target temperature to %.1f캜", self.entity_id, value)
         temperature = temperature_to_states(value, self._unit)
         params = {ATTR_ENTITY_ID: self.entity_id, ATTR_TEMPERATURE: temperature}
         self.async_call_service(

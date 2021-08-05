@@ -243,7 +243,7 @@ class Camera(HomeAccessory, PyhapCamera):
     async def run(self):
         """Handle accessory driver started event.
 
-        Run inside the Home Assistant event loop.
+        Run inside the Safegate Pro event loop.
         """
         if self._char_motion_detected:
             async_track_state_change_event(

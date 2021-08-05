@@ -72,7 +72,7 @@ def request_configuration(hass, config, url, add_entities_callback):
             {
                 "namespace": "connect",
                 "method": "connect",
-                "arguments": ["Home Assistant"],
+                "arguments": ["Safegate Pro"],
             }
         )
     )
@@ -95,7 +95,7 @@ def request_configuration(hass, config, url, add_entities_callback):
                     {
                         "namespace": "connect",
                         "method": "connect",
-                        "arguments": ["Home Assistant", pin],
+                        "arguments": ["Safegate Pro", pin],
                     }
                 )
             )
@@ -116,7 +116,7 @@ def request_configuration(hass, config, url, add_entities_callback):
                     {
                         "namespace": "connect",
                         "method": "connect",
-                        "arguments": ["Home Assistant", code],
+                        "arguments": ["Safegate Pro", code],
                     }
                 )
             )
@@ -197,7 +197,7 @@ class GPMDP(MediaPlayerEntity):
                     {
                         "namespace": "connect",
                         "method": "connect",
-                        "arguments": ["Home Assistant", self._authorization_code],
+                        "arguments": ["Safegate Pro", self._authorization_code],
                     }
                 )
                 self._ws.send(msg)

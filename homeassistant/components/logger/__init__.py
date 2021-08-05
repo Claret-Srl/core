@@ -127,7 +127,7 @@ def _get_logger_class(hass_overrides):
     """
 
     class HassLogger(logging.Logger):
-        """Home Assistant aware logger class."""
+        """Safegate Pro aware logger class."""
 
         def setLevel(self, level) -> None:
             """Set the log level unless overridden."""

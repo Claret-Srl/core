@@ -243,9 +243,9 @@ class AnalyticsOnboardingView(_BaseOnboardingView):
 
 @callback
 def _async_get_hass_provider(hass):
-    """Get the Home Assistant auth provider."""
+    """Get the Safegate Pro auth provider."""
     for prv in hass.auth.auth_providers:
         if prv.type == "homeassistant":
             return prv
 
-    raise RuntimeError("No Home Assistant provider found")
+    raise RuntimeError("No Safegate Pro provider found")

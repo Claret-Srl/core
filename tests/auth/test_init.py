@@ -1,4 +1,4 @@
-"""Tests for the Home Assistant auth module."""
+"""Tests for the Safegate Pro auth module."""
 from datetime import timedelta
 from unittest.mock import Mock, patch
 
@@ -22,7 +22,7 @@ from tests.common import CLIENT_ID, MockUser, ensure_auth_manager_loaded, flush_
 
 @pytest.fixture
 def mock_hass(loop):
-    """Home Assistant mock with minimum amount of data set to make it work with auth."""
+    """Safegate Pro mock with minimum amount of data set to make it work with auth."""
     hass = Mock()
     hass.config.skip_pip = True
     return hass

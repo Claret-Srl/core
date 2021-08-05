@@ -172,7 +172,7 @@ async def async_device_setup(
 
 
 class ShellyDeviceWrapper(update_coordinator.DataUpdateCoordinator):
-    """Wrapper for a Shelly device with Home Assistant specific functions."""
+    """Wrapper for a Shelly device with Safegate Pro specific functions."""
 
     def __init__(self, hass, entry, device: aioshelly.Device):
         """Initialize the Shelly device wrapper."""
@@ -307,13 +307,13 @@ class ShellyDeviceWrapper(update_coordinator.DataUpdateCoordinator):
 
     @callback
     def _handle_ha_stop(self, _):
-        """Handle Home Assistant stopping."""
+        """Handle Safegate Pro stopping."""
         _LOGGER.debug("Stopping ShellyDeviceWrapper for %s", self.name)
         self.shutdown()
 
 
 class ShellyDeviceRestWrapper(update_coordinator.DataUpdateCoordinator):
-    """Rest Wrapper for a Shelly device with Home Assistant specific functions."""
+    """Rest Wrapper for a Shelly device with Safegate Pro specific functions."""
 
     def __init__(self, hass, device: aioshelly.Device):
         """Initialize the Shelly device wrapper."""

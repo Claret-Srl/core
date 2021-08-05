@@ -61,7 +61,7 @@ def assistant_client(loop, hass, aiohttp_client):
 
 @pytest.fixture
 def hass_fixture(loop, hass):
-    """Set up a Home Assistant instance for these tests."""
+    """Set up a Safegate Pro instance for these tests."""
     # We need to do this to get access to homeassistant/turn_(on,off)
     loop.run_until_complete(setup.async_setup_component(hass, core.DOMAIN, {}))
 

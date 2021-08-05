@@ -1,4 +1,4 @@
-"""Start Home Assistant."""
+"""Start Safegate Pro."""
 from __future__ import annotations
 
 import argparse
@@ -15,7 +15,7 @@ def validate_python() -> None:
     """Validate that the right Python version is running."""
     if sys.version_info[:3] < REQUIRED_PYTHON_VER:
         print(
-            "Home Assistant requires at least Python "
+            "Safegate Pro requires at least Python "
             f"{REQUIRED_PYTHON_VER[0]}.{REQUIRED_PYTHON_VER[1]}.{REQUIRED_PYTHON_VER[2]}"
         )
         sys.exit(1)
@@ -61,7 +61,7 @@ def get_arguments() -> argparse.Namespace:
     import homeassistant.config as config_util
 
     parser = argparse.ArgumentParser(
-        description="Home Assistant: Observe, Control, Automate."
+        description="Safegate Pro: Observe, Control, Automate."
     )
     parser.add_argument("--version", action="version", version=__version__)
     parser.add_argument(
@@ -69,13 +69,13 @@ def get_arguments() -> argparse.Namespace:
         "--config",
         metavar="path_to_config_dir",
         default=config_util.get_default_config_dir(),
-        help="Directory that contains the Home Assistant configuration",
+        help="Directory that contains the Safegate Pro configuration",
     )
     parser.add_argument(
-        "--safe-mode", action="store_true", help="Start Home Assistant in safe mode"
+        "--safe-mode", action="store_true", help="Start Safegate Pro in safe mode"
     )
     parser.add_argument(
-        "--debug", action="store_true", help="Start Home Assistant in debug mode"
+        "--debug", action="store_true", help="Start Safegate Pro in debug mode"
     )
     parser.add_argument(
         "--open-ui", action="store_true", help="Open the webinterface in a browser"
@@ -119,7 +119,7 @@ def get_arguments() -> argparse.Namespace:
     )
     if os.name == "posix":
         parser.add_argument(
-            "--daemon", action="store_true", help="Run Home Assistant as daemon"
+            "--daemon", action="store_true", help="Run Safegate Pro as daemon"
         )
 
     arguments = parser.parse_args()
@@ -156,7 +156,7 @@ def daemonize() -> None:
 
 
 def check_pid(pid_file: str) -> None:
-    """Check that Home Assistant is not already running."""
+    """Check that Safegate Pro is not already running."""
     # Check pid file
     try:
         with open(pid_file) as file:
@@ -174,7 +174,7 @@ def check_pid(pid_file: str) -> None:
     except OSError:
         # PID does not exist
         return
-    print("Fatal Error: Home Assistant is already running.")
+    print("Fatal Error: Safegate Pro is already running.")
     sys.exit(1)
 
 
@@ -219,10 +219,10 @@ def cmdline() -> list[str]:
 
 
 def try_to_restart() -> None:
-    """Attempt to clean up state and start a new Home Assistant instance."""
+    """Attempt to clean up state and start a new Safegate Pro instance."""
     # Things should be mostly shut down already at this point, now just try
     # to clean up things that may have been left behind.
-    sys.stderr.write("Home Assistant attempting to restart.\n")
+    sys.stderr.write("Safegate Pro attempting to restart.\n")
 
     # Count remaining threads, ideally there should only be one non-daemonized
     # thread left (which is us). Nothing we really do with it, but it might be
@@ -251,17 +251,17 @@ def try_to_restart() -> None:
     else:
         os.closerange(3, max_fd)
 
-    # Now launch into a new instance of Home Assistant. If this fails we
+    # Now launch into a new instance of Safegate Pro. If this fails we
     # fall through and exit with error 100 (RESTART_EXIT_CODE) in which case
     # systemd will restart us when RestartForceExitStatus=100 is set in the
     # systemd.service file.
-    sys.stderr.write("Restarting Home Assistant\n")
+    sys.stderr.write("Restarting Safegate Pro\n")
     args = cmdline()
     os.execv(args[0], args)
 
 
 def main() -> int:
-    """Start Home Assistant."""
+    """Start Safegate Pro."""
     validate_python()
 
     # Run a simple daemon runner process on Windows to handle restarts

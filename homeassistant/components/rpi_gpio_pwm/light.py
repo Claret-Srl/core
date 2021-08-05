@@ -234,12 +234,12 @@ class PwmRgbLed(PwmSimpleLed):
 
 
 def _from_hass_brightness(brightness):
-    """Convert Home Assistant brightness units to percentage."""
+    """Convert Safegate Pro brightness units to percentage."""
     return brightness / 255
 
 
 def _from_hass_color(color):
-    """Convert Home Assistant RGB list to Color tuple."""
+    """Convert Safegate Pro RGB list to Color tuple."""
 
     rgb = color_util.color_hs_to_RGB(*color)
     return Color(*tuple(rgb))

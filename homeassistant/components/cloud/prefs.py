@@ -293,14 +293,14 @@ class CloudPreferences:
         return self._prefs.get(PREF_TTS_DEFAULT_VOICE, DEFAULT_TTS_DEFAULT_VOICE)
 
     async def get_cloud_user(self) -> str:
-        """Return ID from Home Assistant Cloud system user."""
+        """Return ID from Safegate Pro Cloud system user."""
         user = await self._load_cloud_user()
 
         if user:
             return user.id
 
         user = await self._hass.auth.async_create_system_user(
-            "Home Assistant Cloud", [GROUP_ID_ADMIN]
+            "Safegate Pro Cloud", [GROUP_ID_ADMIN]
         )
         await self.async_update(cloud_user=user.id)
         return user.id

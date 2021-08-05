@@ -15,7 +15,7 @@ async def init_integration(
     color: bool = False,
     mode_color: bool = False,
 ) -> MockConfigEntry:
-    """Set up the Elgato Key Light integration in Home Assistant."""
+    """Set up the Elgato Key Light integration in Safegate Pro."""
     aioclient_mock.get(
         "http://127.0.0.1:9123/elgato/accessory-info",
         text=load_fixture("elgato/info.json"),

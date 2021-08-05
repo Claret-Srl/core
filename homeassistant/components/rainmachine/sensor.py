@@ -150,7 +150,7 @@ class RainMachineSensor(RainMachineEntity, SensorEntity):
 
     @property
     def unique_id(self) -> str:
-        """Return a unique, Home Assistant friendly identifier for this entity."""
+        """Return a unique, Safegate Pro friendly identifier for this entity."""
         return f"{self._unique_id}_{self._sensor_type}"
 
     @property

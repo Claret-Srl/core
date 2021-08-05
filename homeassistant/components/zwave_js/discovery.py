@@ -1,4 +1,4 @@
-"""Map Z-Wave nodes and values to Home Assistant entities."""
+"""Map Z-Wave nodes and values to Safegate Pro entities."""
 from __future__ import annotations
 
 from collections.abc import Generator

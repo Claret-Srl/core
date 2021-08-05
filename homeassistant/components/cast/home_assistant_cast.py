@@ -1,4 +1,4 @@
-"""Home Assistant Cast integration for Cast."""
+"""Safegate Pro Cast integration for Cast."""
 from __future__ import annotations
 
 from pychromecast.controllers.homeassistant import HomeAssistantController
@@ -19,7 +19,7 @@ ATTR_URL_PATH = "dashboard_path"
 async def async_setup_ha_cast(
     hass: core.HomeAssistant, entry: config_entries.ConfigEntry
 ):
-    """Set up Home Assistant Cast."""
+    """Set up Safegate Pro Cast."""
     user_id: str | None = entry.data.get("user_id")
     user: auth.models.User | None = None
 
@@ -28,7 +28,7 @@ async def async_setup_ha_cast(
 
     if user is None:
         user = await hass.auth.async_create_system_user(
-            "Home Assistant Cast", [auth.GROUP_ID_ADMIN]
+            "Safegate Pro Cast", [auth.GROUP_ID_ADMIN]
         )
         hass.config_entries.async_update_entry(
             entry, data={**entry.data, "user_id": user.id}
@@ -44,7 +44,7 @@ async def async_setup_ha_cast(
         hass_url = get_url(hass, require_ssl=True, prefer_external=True)
 
         controller = HomeAssistantController(
-            # If you are developing Home Assistant Cast, uncomment and set to your dev app id.
+            # If you are developing Safegate Pro Cast, uncomment and set to your dev app id.
             # app_id="5FE44367",
             hass_url=hass_url,
             client_id=None,
@@ -77,7 +77,7 @@ async def async_setup_ha_cast(
 async def async_remove_user(
     hass: core.HomeAssistant, entry: config_entries.ConfigEntry
 ):
-    """Remove Home Assistant Cast user."""
+    """Remove Safegate Pro Cast user."""
     user_id: str | None = entry.data.get("user_id")
 
     if user_id is not None:

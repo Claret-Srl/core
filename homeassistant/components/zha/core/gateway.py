@@ -1,4 +1,4 @@
-"""Virtual gateway for Zigbee Home Automation."""
+"""Virtual gateway for Zigbee Safegate Pro."""
 from __future__ import annotations
 
 import asyncio

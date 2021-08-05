@@ -58,7 +58,7 @@ def setup(hass, config):
         message = event.data.get("message")
 
         statsd.event(
-            title="Home Assistant",
+            title="Safegate Pro",
             text=f"%%% \n **{name}** {message} \n %%%",
             tags=[
                 f"entity:{event.data.get('entity_id')}",

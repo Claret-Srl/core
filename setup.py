@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Home Assistant setup script."""
+"""Safegate Pro setup script."""
 from datetime import datetime as dt
 
 from setuptools import find_packages, setup
@@ -9,7 +9,7 @@ import homeassistant.const as hass_const
 PROJECT_NAME = "Dry Patrick"
 PROJECT_PACKAGE_NAME = "drypatrick"
 PROJECT_LICENSE = "Apache License 2.0"
-PROJECT_AUTHOR = "The Home Assistant Authors"
+PROJECT_AUTHOR = "The Safegate Pro Authors"
 PROJECT_COPYRIGHT = f" 2013-{dt.now().year}, {PROJECT_AUTHOR}"
 PROJECT_URL = "https://www.home-assistant.io/"
 PROJECT_EMAIL = "hello@home-assistant.io"

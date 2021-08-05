@@ -1,4 +1,4 @@
-"""Tests for the Home Assistant Websocket API."""
+"""Tests for the Safegate Pro Websocket API."""
 from unittest.mock import Mock, patch
 
 from aiohttp import WSMsgType

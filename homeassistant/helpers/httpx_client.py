@@ -70,7 +70,7 @@ def create_async_httpx_client(
     original_aclose = client.aclose
 
     client.aclose = warn_use(  # type: ignore
-        client.aclose, "closes the Home Assistant httpx client"
+        client.aclose, "closes the Safegate Pro httpx client"
     )
 
     if auto_cleanup:
@@ -85,7 +85,7 @@ def _async_register_async_client_shutdown(
     client: httpx.AsyncClient,
     original_aclose: Callable[..., Any],
 ) -> None:
-    """Register httpx AsyncClient aclose on Home Assistant shutdown.
+    """Register httpx AsyncClient aclose on Safegate Pro shutdown.
 
     This method must be run in the event loop.
     """

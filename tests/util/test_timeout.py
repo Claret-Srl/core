@@ -1,4 +1,4 @@
-"""Test Home Assistant timeout handler."""
+"""Test Safegate Pro timeout handler."""
 import asyncio
 from contextlib import suppress
 import time

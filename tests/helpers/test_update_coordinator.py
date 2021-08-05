@@ -314,7 +314,7 @@ async def test_async_set_updated_data(crd):
 
 
 async def test_stop_refresh_on_ha_stop(hass, crd):
-    """Test no update interval refresh when Home Assistant is stopping."""
+    """Test no update interval refresh when Safegate Pro is stopping."""
     # Add subscriber
     update_callback = Mock()
     crd.async_add_listener(update_callback)
@@ -326,7 +326,7 @@ async def test_stop_refresh_on_ha_stop(hass, crd):
     await hass.async_block_till_done()
     assert crd.data == 1
 
-    # Fire Home Assistant stop event
+    # Fire Safegate Pro stop event
     hass.bus.async_fire(EVENT_HOMEASSISTANT_STOP)
     hass.state = CoreState.stopping
     await hass.async_block_till_done()

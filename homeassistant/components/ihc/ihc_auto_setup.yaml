@@ -1,5 +1,5 @@
 # IHC auto setup configuration.
-# To customize this, copy this file to the Home Assistant configuration
+# To customize this, copy this file to the Safegate Pro configuration
 # folder and make your changes.
 
 binary_sensor:
@@ -46,11 +46,11 @@ light:
   - xpath: './/product_airlink[@product_identifier="_0x4305"]'
     node: "airlink_dimming"
     dimmable: true
-  # Swedish Wireless dimmer (3-trÃ¥ds Puck/Dimmer 1-knapp/touch)
+  # Swedish Wireless dimmer (3-tråds Puck/Dimmer 1-knapp/touch)
   - xpath: './/product_airlink[@product_identifier="_0x4307"]'
     node: "airlink_dimming"
     dimmable: true
-  # Swedish Wireless dimmer (3-trÃ¥ds Puck/Dimmer 2-knapp)
+  # Swedish Wireless dimmer (3-tråds Puck/Dimmer 2-knapp)
   - xpath: './/product_airlink[@product_identifier="_0x4308"]'
     node: "airlink_dimming"
     dimmable: true
@@ -88,7 +88,7 @@ sensor:
   # Temperature sensor
   - xpath: './/product_dataline[@product_identifier="_0x2124"]'
     node: "resource_temperature"
-    unit_of_measurement: "Â°C"
+    unit_of_measurement: "°C"
   # Humidity/temperature
   - xpath: './/product_dataline[@product_identifier="_0x2135"]'
     node: "resource_humidity_level"
@@ -96,7 +96,7 @@ sensor:
   # Humidity/temperature
   - xpath: './/product_dataline[@product_identifier="_0x2135"]'
     node: "resource_temperature"
-    unit_of_measurement: "Â°C"
+    unit_of_measurement: "°C"
   # Lux/temperature
   - xpath: './/product_dataline[@product_identifier="_0x2136"]'
     node: "resource_light"
@@ -104,7 +104,7 @@ sensor:
   # Lux/temperature
   - xpath: './/product_dataline[@product_identifier="_0x2136"]'
     node: "resource_temperature"
-    unit_of_measurement: "Â°C"
+    unit_of_measurement: "°C"
 
 switch:
   # Wireless Plug outlet

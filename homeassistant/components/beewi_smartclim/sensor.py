@@ -84,7 +84,7 @@ class BeewiSmartclimSensor(SensorEntity):
 
     @property
     def unique_id(self):
-        """Return a unique, Home Assistant friendly identifier for this entity."""
+        """Return a unique, Safegate Pro friendly identifier for this entity."""
         return f"{self._mac}_{self._device}"
 
     @property

@@ -100,7 +100,7 @@ ENTITY_NUMBERS_BY_ID = {v: k for k, v in ENTITY_IDS_BY_NUMBER.items()}
 
 @pytest.fixture
 def hass_hue(loop, hass):
-    """Set up a Home Assistant instance for these tests."""
+    """Set up a Safegate Pro instance for these tests."""
     # We need to do this to get access to homeassistant/turn_(on,off)
     loop.run_until_complete(setup.async_setup_component(hass, "homeassistant", {}))
 

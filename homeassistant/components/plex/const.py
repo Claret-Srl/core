@@ -41,9 +41,9 @@ CONF_MONITORED_USERS = "monitored_users"
 AUTH_CALLBACK_PATH = "/auth/plex/callback"
 AUTH_CALLBACK_NAME = "auth:plex:callback"
 
-X_PLEX_DEVICE_NAME = "Home Assistant"
-X_PLEX_PLATFORM = "Home Assistant"
-X_PLEX_PRODUCT = "Home Assistant"
+X_PLEX_DEVICE_NAME = "Safegate Pro"
+X_PLEX_PLATFORM = "Safegate Pro"
+X_PLEX_PRODUCT = "Safegate Pro"
 X_PLEX_VERSION = __version__
 
 AUTOMATIC_SETUP_STRING = "Obtain a new token from plex.tv"

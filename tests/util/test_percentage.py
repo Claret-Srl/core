@@ -1,4 +1,4 @@
-"""Test Home Assistant percentage conversions."""
+"""Test Safegate Pro percentage conversions."""
 
 import math
 

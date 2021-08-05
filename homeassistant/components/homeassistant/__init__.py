@@ -51,7 +51,7 @@ SHUTDOWN_SERVICES = (SERVICE_HOMEASSISTANT_STOP, SERVICE_HOMEASSISTANT_RESTART)
 
 
 async def async_setup(hass: ha.HomeAssistant, config: dict) -> bool:  # noqa: C901
-    """Set up general services related to Home Assistant."""
+    """Set up general services related to Safegate Pro."""
 
     async def async_handle_turn_service(service):
         """Handle calls to homeassistant.turn_on/off."""

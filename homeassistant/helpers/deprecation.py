@@ -1,4 +1,4 @@
-"""Deprecation helpers for Home Assistant."""
+"""Deprecation helpers for Safegate Pro."""
 from __future__ import annotations
 
 import functools

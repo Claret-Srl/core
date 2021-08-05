@@ -1,4 +1,4 @@
-"""The tests for the Home Assistant SpaceAPI component."""
+"""The tests for the Safegate Pro SpaceAPI component."""
 # pylint: disable=protected-access
 from unittest.mock import patch
 
@@ -71,7 +71,7 @@ SENSOR_OUTPUT = {
 
 @pytest.fixture
 def mock_client(hass, hass_client):
-    """Start the Home Assistant HTTP component."""
+    """Start the Safegate Pro HTTP component."""
     with patch("homeassistant.components.spaceapi", return_value=mock_coro(True)):
         hass.loop.run_until_complete(async_setup_component(hass, "spaceapi", CONFIG))
 
@@ -89,7 +89,7 @@ def mock_client(hass, hass_client):
 
 
 async def test_spaceapi_get(hass, mock_client):
-    """Test response after start-up Home Assistant."""
+    """Test response after start-up Safegate Pro."""
     resp = await mock_client.get(URL_API_SPACEAPI)
     assert resp.status == 200
 

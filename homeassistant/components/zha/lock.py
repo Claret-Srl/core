@@ -1,4 +1,4 @@
-"""Locks on Zigbee Home Automation networks."""
+"""Locks on Zigbee Safegate Pro networks."""
 import functools
 
 import voluptuous as vol
@@ -38,7 +38,7 @@ SERVICE_CLEAR_LOCK_USER_CODE = "clear_lock_user_code"
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    """Set up the Zigbee Home Automation Door Lock from config entry."""
+    """Set up the Zigbee Safegate Pro Door Lock from config entry."""
     entities_to_create = hass.data[DATA_ZHA][DOMAIN]
 
     unsub = async_dispatcher_connect(

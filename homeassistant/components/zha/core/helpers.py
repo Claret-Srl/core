@@ -1,5 +1,5 @@
 """
-Helpers for Zigbee Home Automation.
+Helpers for Zigbee Safegate Pro.
 
 For more details about this component, please refer to the documentation at
 https://home-assistant.io/integrations/zha/

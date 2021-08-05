@@ -1,4 +1,4 @@
-"""Handle the frontend for Home Assistant."""
+"""Handle the frontend for Safegate Pro."""
 from __future__ import annotations
 
 from collections.abc import Iterator
@@ -172,7 +172,7 @@ MANIFEST_JSON = Manifest(
             }
         ],
         "lang": "en-US",
-        "name": "Home Assistant",
+        "name": "Safegate Pro",
         "short_name": "Assistant",
         "start_url": "/?homescreen=1",
         "theme_color": DEFAULT_THEME_COLOR,

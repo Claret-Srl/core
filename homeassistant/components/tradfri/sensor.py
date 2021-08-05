@@ -27,7 +27,7 @@ async def async_setup_entry(hass, config_entry, async_add_entities):
 
 
 class TradfriSensor(TradfriBaseDevice, SensorEntity):
-    """The platform class required by Home Assistant."""
+    """The platform class required by Safegate Pro."""
 
     _attr_device_class = DEVICE_CLASS_BATTERY
     _attr_unit_of_measurement = PERCENTAGE

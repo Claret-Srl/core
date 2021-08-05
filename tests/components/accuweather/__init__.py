@@ -10,7 +10,7 @@ from tests.common import MockConfigEntry, load_fixture
 async def init_integration(
     hass, forecast=False, unsupported_icon=False
 ) -> MockConfigEntry:
-    """Set up the AccuWeather integration in Home Assistant."""
+    """Set up the AccuWeather integration in Safegate Pro."""
     options = {}
     if forecast:
         options["forecast"] = True

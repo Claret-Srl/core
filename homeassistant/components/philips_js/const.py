@@ -5,4 +5,4 @@ CONF_SYSTEM = "system"
 CONF_ALLOW_NOTIFY = "allow_notify"
 
 CONST_APP_ID = "homeassistant.io"
-CONST_APP_NAME = "Home Assistant"
+CONST_APP_NAME = "Safegate Pro"

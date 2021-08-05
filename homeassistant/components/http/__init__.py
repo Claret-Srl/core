@@ -1,4 +1,4 @@
-"""Support to serve the Home Assistant API as WSGI application."""
+"""Support to serve the Safegate Pro API as WSGI application."""
 from __future__ import annotations
 
 from contextvars import ContextVar
@@ -205,7 +205,7 @@ async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
 
 
 class HomeAssistantHTTP:
-    """HTTP server for Home Assistant."""
+    """HTTP server for Safegate Pro."""
 
     def __init__(
         self,
@@ -222,7 +222,7 @@ class HomeAssistantHTTP:
         is_ban_enabled: bool,
         ssl_profile: str,
     ) -> None:
-        """Initialize the HTTP Home Assistant server."""
+        """Initialize the HTTP Safegate Pro server."""
         app = self.app = web.Application(
             middlewares=[], client_max_size=MAX_CLIENT_SIZE
         )
@@ -353,7 +353,7 @@ class HomeAssistantHTTP:
             context = None
 
         # Aiohttp freezes apps after start so that no changes can be made.
-        # However in Home Assistant components can be discovered after boot.
+        # However in Safegate Pro components can be discovered after boot.
         # This will now raise a RunTimeError.
         # To work around this we now prevent the router from getting frozen
         # pylint: disable=protected-access

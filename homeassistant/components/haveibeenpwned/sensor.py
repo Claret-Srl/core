@@ -25,7 +25,7 @@ ATTRIBUTION = "Data provided by Have I Been Pwned (HIBP)"
 
 DATE_STR_FORMAT = "%Y-%m-%d %H:%M:%S"
 
-HA_USER_AGENT = "Home Assistant HaveIBeenPwned Sensor Component"
+HA_USER_AGENT = "Safegate Pro HaveIBeenPwned Sensor Component"
 
 MIN_TIME_BETWEEN_FORCED_UPDATES = timedelta(seconds=5)
 MIN_TIME_BETWEEN_UPDATES = timedelta(minutes=15)

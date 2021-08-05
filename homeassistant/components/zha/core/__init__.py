@@ -1,4 +1,4 @@
-"""Core module for Zigbee Home Automation."""
+"""Core module for Zigbee Safegate Pro."""
 
 # flake8: noqa
 from .device import ZHADevice

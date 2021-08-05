@@ -1,4 +1,4 @@
-"""Definition and setup of the Omnilogic Sensors for Home Assistant."""
+"""Definition and setup of the Omnilogic Sensors for Safegate Pro."""
 from homeassistant.components.sensor import DEVICE_CLASS_TEMPERATURE, SensorEntity
 from homeassistant.const import (
     CONCENTRATION_PARTS_PER_MILLION,

@@ -25,27 +25,27 @@ DEFAULT_NAME = "Brottsplatskartan"
 SCAN_INTERVAL = timedelta(minutes=30)
 
 AREAS = [
-    "Blekinge l√§n",
-    "Dalarnas l√§n",
-    "Gotlands l√§n",
-    "G√§vleborgs l√§n",
-    "Hallands l√§n",
-    "J√§mtlands l√§n",
-    "J√∂nk√∂pings l√§n",
-    "Kalmar l√§n",
-    "Kronobergs l√§n",
-    "Norrbottens l√§n",
-    "Sk√•ne l√§n",
-    "Stockholms l√§n",
-    "S√∂dermanlands l√§n",
-    "Uppsala l√§n",
-    "V√§rmlands l√§n",
-    "V√§sterbottens l√§n",
-    "V√§sternorrlands l√§n",
-    "V√§stmanlands l√§n",
-    "V√§stra G√∂talands l√§n",
-    "√ñrebro l√§n",
-    "√ñsterg√∂tlands l√§n",
+    "Blekinge l‰n",
+    "Dalarnas l‰n",
+    "Gotlands l‰n",
+    "G‰vleborgs l‰n",
+    "Hallands l‰n",
+    "J‰mtlands l‰n",
+    "Jˆnkˆpings l‰n",
+    "Kalmar l‰n",
+    "Kronobergs l‰n",
+    "Norrbottens l‰n",
+    "SkÂne l‰n",
+    "Stockholms l‰n",
+    "Sˆdermanlands l‰n",
+    "Uppsala l‰n",
+    "V‰rmlands l‰n",
+    "V‰sterbottens l‰n",
+    "V‰sternorrlands l‰n",
+    "V‰stmanlands l‰n",
+    "V‰stra Gˆtalands l‰n",
+    "÷rebro l‰n",
+    "÷stergˆtlands l‰n",
 ]
 
 PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
@@ -66,7 +66,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     longitude = config.get(CONF_LONGITUDE, hass.config.longitude)
     name = config[CONF_NAME]
 
-    # Every Home Assistant instance should have their own unique
+    # Every Safegate Pro instance should have their own unique
     # app parameter: https://brottsplatskartan.se/sida/api
     app = f"ha-{uuid.getnode()}"
 

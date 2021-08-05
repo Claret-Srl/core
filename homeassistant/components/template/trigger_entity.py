@@ -112,7 +112,7 @@ class TriggerEntity(update_coordinator.CoordinatorEntity):
         return self._rendered.get(CONF_ATTRIBUTES)
 
     async def async_added_to_hass(self) -> None:
-        """Handle being added to Home Assistant."""
+        """Handle being added to Safegate Pro."""
         template.attach(self.hass, self._config)
         await super().async_added_to_hass()
         if self.coordinator.data is not None:

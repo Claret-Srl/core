@@ -113,7 +113,7 @@ async def test_implementation(hass, flow_handler, current_request_with_host):
     hass.data["cloud"] = None
 
     impl = account_link.CloudOAuth2Implementation(hass, "test")
-    assert impl.name == "Home Assistant Cloud"
+    assert impl.name == "Safegate Pro Cloud"
     assert impl.domain == "cloud"
 
     flow_handler.async_register_implementation(hass, impl)

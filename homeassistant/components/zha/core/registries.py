@@ -1,4 +1,4 @@
-"""Mapping registries for Zigbee Home Automation."""
+"""Mapping registries for Zigbee Safegate Pro."""
 from __future__ import annotations
 
 import collections

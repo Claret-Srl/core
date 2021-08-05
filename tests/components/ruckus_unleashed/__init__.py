@@ -66,7 +66,7 @@ def mock_config_entry() -> MockConfigEntry:
 
 
 async def init_integration(hass) -> MockConfigEntry:
-    """Set up the Ruckus Unleashed integration in Home Assistant."""
+    """Set up the Ruckus Unleashed integration in Safegate Pro."""
     entry = mock_config_entry()
     with patch(
         "homeassistant.components.ruckus_unleashed.Ruckus.connect",

@@ -1,4 +1,4 @@
-"""All methods needed to bootstrap a Home Assistant instance."""
+"""All methods needed to bootstrap a Safegate Pro instance."""
 from __future__ import annotations
 
 import asyncio
@@ -163,7 +163,7 @@ async def _async_process_dependencies(
 async def _async_setup_component(
     hass: core.HomeAssistant, domain: str, config: ConfigType
 ) -> bool:
-    """Set up a component for Home Assistant.
+    """Set up a component for Safegate Pro.
 
     This method is a coroutine.
     """

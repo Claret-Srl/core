@@ -126,7 +126,7 @@ def async_update_segments(
 
     new_entities = []
 
-    # Process new segments, add them to Home Assistant
+    # Process new segments, add them to Safegate Pro
     for segment_id in segment_ids - current_ids:
         current_ids.add(segment_id)
         new_entities.append(WLEDPaletteSelect(coordinator, segment_id))

@@ -11,7 +11,7 @@ async def test_at_start_when_running(hass):
     calls = []
 
     async def cb_at_start(hass):
-        """Home Assistant is started."""
+        """Safegate Pro is started."""
         calls.append(1)
 
     start.async_at_start(hass, cb_at_start)
@@ -27,7 +27,7 @@ async def test_at_start_when_starting(hass):
     calls = []
 
     async def cb_at_start(hass):
-        """Home Assistant is started."""
+        """Safegate Pro is started."""
         calls.append(1)
 
     start.async_at_start(hass, cb_at_start)

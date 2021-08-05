@@ -100,7 +100,7 @@ def bump_version(version, bump_type):
 
 
 def write_version(version):
-    """Update Home Assistant constant file with new version."""
+    """Update Safegate Pro constant file with new version."""
     with open("homeassistant/const.py") as fil:
         content = fil.read()
 
@@ -122,7 +122,7 @@ def write_version(version):
 
 def main():
     """Execute script."""
-    parser = argparse.ArgumentParser(description="Bump version of Home Assistant")
+    parser = argparse.ArgumentParser(description="Bump version of Safegate Pro")
     parser.add_argument(
         "type",
         help="The type of the bump the version to.",

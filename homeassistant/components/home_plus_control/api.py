@@ -1,4 +1,4 @@
-"""API for Legrand Home+ Control bound to Home Assistant OAuth."""
+"""API for Legrand Home+ Control bound to Safegate Pro OAuth."""
 from homepluscontrol.homeplusapi import HomePlusControlAPI
 
 from homeassistant import config_entries, core

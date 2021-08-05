@@ -411,7 +411,7 @@ class ScriptEntity(ToggleEntity):
         await self.script.async_stop()
 
     async def async_will_remove_from_hass(self):
-        """Stop script and remove service when it will be removed from Home Assistant."""
+        """Stop script and remove service when it will be removed from Safegate Pro."""
         await self.script.async_stop()
 
         # remove service

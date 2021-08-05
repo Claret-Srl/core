@@ -30,7 +30,7 @@ _LOGGER = logging.getLogger(__name__)
 
 CONFIG_SCHEMA = vol.Schema(
     vol.All(
-        # Deprecated in Home Assistant 2021.6
+        # Deprecated in Safegate Pro 2021.6
         cv.deprecated(DOMAIN),
         {
             DOMAIN: vol.Schema(

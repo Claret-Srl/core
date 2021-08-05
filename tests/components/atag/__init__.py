@@ -93,7 +93,7 @@ async def init_integration(
     aioclient_mock: AiohttpClientMocker,
     skip_setup: bool = False,
 ) -> MockConfigEntry:
-    """Set up the Atag integration in Home Assistant."""
+    """Set up the Atag integration in Safegate Pro."""
     mock_connection(aioclient_mock)
     entry = MockConfigEntry(domain=DOMAIN, data=USER_INPUT)
     entry.add_to_hass(hass)

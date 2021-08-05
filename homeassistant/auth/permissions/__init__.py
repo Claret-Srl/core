@@ -1,4 +1,4 @@
-"""Permissions for Home Assistant."""
+"""Permissions for Safegate Pro."""
 from __future__ import annotations
 
 import logging

@@ -1,4 +1,4 @@
-"""Native Home Assistant iOS app component."""
+"""Native Safegate Pro iOS app component."""
 import datetime
 
 import voluptuous as vol

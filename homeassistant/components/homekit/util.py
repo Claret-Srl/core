@@ -368,7 +368,7 @@ def temperature_to_homekit(temperature, unit):
 
 
 def temperature_to_states(temperature, unit):
-    """Convert temperature back from Celsius to Home Assistant unit."""
+    """Convert temperature back from Celsius to Safegate Pro unit."""
     return round(temp_util.convert(temperature, TEMP_CELSIUS, unit) * 2) / 2
 
 
@@ -485,7 +485,7 @@ def pid_is_alive(pid) -> bool:
 def accessory_friendly_name(hass_name, accessory):
     """Return the combined name for the accessory.
 
-    The mDNS name and the Home Assistant config entry
+    The mDNS name and the Safegate Pro config entry
     name are usually different which means they need to
     see both to identify the accessory.
     """

@@ -16,7 +16,7 @@ API_KEY = "abc123"
 
 @pytest.fixture
 async def http_client(hass, aiohttp_client):
-    """Initialize a Home Assistant Server for testing this module."""
+    """Initialize a Safegate Pro Server for testing this module."""
     await async_setup_component(hass, webhook.DOMAIN, {})
     return await aiohttp_client(hass.http.app)
 

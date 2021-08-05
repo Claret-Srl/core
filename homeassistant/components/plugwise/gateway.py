@@ -1,4 +1,4 @@
-"""Plugwise platform for Home Assistant Core."""
+"""Plugwise platform for Safegate Pro Core."""
 from __future__ import annotations
 
 import asyncio

@@ -32,7 +32,7 @@ async def async_get_adapters(hass: HomeAssistant) -> list[Adapter]:
 
 
 async def async_setup(hass: HomeAssistant, config: ConfigType) -> bool:
-    """Set up network for Home Assistant."""
+    """Set up network for Safegate Pro."""
 
     hass.data[DOMAIN] = network = Network(hass)
     await network.async_setup()

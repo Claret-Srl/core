@@ -47,7 +47,7 @@ from homeassistant.util.dt import now, parse_datetime
 
 _LOGGER = logging.getLogger(__name__)
 
-ATTRIBUTION = "Instituto PortuguÃªs do Mar e Atmosfera"
+ATTRIBUTION = "Instituto Português do Mar e Atmosfera"
 
 MIN_TIME_BETWEEN_UPDATES = timedelta(minutes=30)
 
@@ -91,7 +91,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
     longitude = config.get(CONF_LONGITUDE, hass.config.longitude)
 
     if None in (latitude, longitude):
-        _LOGGER.error("Latitude or longitude not set in Home Assistant config")
+        _LOGGER.error("Latitude or longitude not set in Safegate Pro config")
         return
 
     api = await async_get_api(hass)

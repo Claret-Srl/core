@@ -18,7 +18,7 @@ def setup(hass, config):
         PFIO.deinit()
 
     def prepare_pfio(event):
-        """Stuff to do when Home Assistant starts."""
+        """Stuff to do when Safegate Pro starts."""
         hass.bus.listen_once(EVENT_HOMEASSISTANT_STOP, cleanup_pfio)
 
     hass.bus.listen_once(EVENT_HOMEASSISTANT_START, prepare_pfio)

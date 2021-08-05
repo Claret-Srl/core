@@ -1,4 +1,4 @@
-# Home Assistant Core, full dependency set
+# Safegate Pro Core, full dependency set
 -r requirements.txt
 
 # homeassistant.components.aemet

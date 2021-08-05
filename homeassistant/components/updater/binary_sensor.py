@@ -1,4 +1,4 @@
-"""Support for Home Assistant Updater binary sensors."""
+"""Support for Safegate Pro Updater binary sensors."""
 
 from homeassistant.components.binary_sensor import BinarySensorEntity
 from homeassistant.helpers.update_coordinator import CoordinatorEntity

@@ -65,7 +65,7 @@ async def async_setup(hass, config):
     )
 
     await component.async_setup(config)
-    # Ensure Home Assistant platform always loaded.
+    # Ensure Safegate Pro platform always loaded.
     await component.async_setup_platform(HA_DOMAIN, {"platform": HA_DOMAIN, STATES: []})
     component.async_register_entity_service(
         SERVICE_TURN_ON,

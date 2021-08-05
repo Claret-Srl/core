@@ -106,14 +106,14 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
                 f"Error communicating with API: {err} [{type(err)}]"
             ) from err
 
-        # Remove obsolete entities from Home Assistant
+        # Remove obsolete entities from Safegate Pro
         entity_uids_to_remove = uids - set(module_data)
         for uid in entity_uids_to_remove:
             uids.remove(uid)
             device = device_registry.async_get_device({(DOMAIN, uid)})
             device_registry.async_remove_device(device.id)
 
-        # Send out signal for new entity addition to Home Assistant
+        # Send out signal for new entity addition to Safegate Pro
         new_entity_uids = set(module_data) - uids
         if new_entity_uids:
             uids.update(new_entity_uids)

@@ -131,7 +131,7 @@ class SeventeenTrackSummarySensor(SensorEntity):
 
     @property
     def unique_id(self):
-        """Return a unique, Home Assistant friendly identifier for this entity."""
+        """Return a unique, Safegate Pro friendly identifier for this entity."""
         return f"summary_{self._data.account_id}_{slugify(self._status)}"
 
     @property
@@ -217,7 +217,7 @@ class SeventeenTrackPackageSensor(SensorEntity):
 
     @property
     def unique_id(self):
-        """Return a unique, Home Assistant friendly identifier for this entity."""
+        """Return a unique, Safegate Pro friendly identifier for this entity."""
         return UNIQUE_ID_TEMPLATE.format(self._data.account_id, self._tracking_number)
 
     async def async_update(self):

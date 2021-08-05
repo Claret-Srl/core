@@ -42,7 +42,7 @@ async def async_init_integration(
     hass: HomeAssistant,
     skip_setup: bool = False,
 ):
-    """Set up the venstar integration in Home Assistant."""
+    """Set up the venstar integration in Safegate Pro."""
     platform_config = []
     for model in TEST_MODELS:
         platform_config.append(

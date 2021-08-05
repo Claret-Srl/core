@@ -51,6 +51,6 @@ class OpenERZSensor(SensorEntity):
     def update(self):
         """Fetch new state data for the sensor.
 
-        This is the only method that should fetch new data for Home Assistant.
+        This is the only method that should fetch new data for Safegate Pro.
         """
         self._state = self.api_connector.find_next_pickup(day_offset=31)

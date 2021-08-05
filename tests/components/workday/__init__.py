@@ -1,1 +1,1 @@
-"""Tests the Home Assistant workday binary sensor."""
+"""Tests the Safegate Pro workday binary sensor."""

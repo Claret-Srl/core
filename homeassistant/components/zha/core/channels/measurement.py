@@ -1,4 +1,4 @@
-"""Measurement channels module for Zigbee Home Automation."""
+"""Measurement channels module for Zigbee Safegate Pro."""
 import zigpy.zcl.clusters.measurement as measurement
 
 from .. import registries

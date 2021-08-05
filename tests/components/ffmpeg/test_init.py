@@ -1,4 +1,4 @@
-"""The tests for Home Assistant ffmpeg."""
+"""The tests for Safegate Pro ffmpeg."""
 from unittest.mock import MagicMock
 
 import homeassistant.components.ffmpeg as ffmpeg

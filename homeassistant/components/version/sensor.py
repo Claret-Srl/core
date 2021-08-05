@@ -1,4 +1,4 @@
-"""Sensor that can display the current Home Assistant versions."""
+"""Sensor that can display the current Safegate Pro versions."""
 from datetime import timedelta
 import logging
 
@@ -129,7 +129,7 @@ class VersionData:
 
 
 class VersionSensor(SensorEntity):
-    """Representation of a Home Assistant version sensor."""
+    """Representation of a Safegate Pro version sensor."""
 
     def __init__(self, data: VersionData, name: str) -> None:
         """Initialize the Version sensor."""

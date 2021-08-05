@@ -1,4 +1,4 @@
-"""Helper methods for components within Home Assistant."""
+"""Helper methods for components within Safegate Pro."""
 from __future__ import annotations
 
 from collections.abc import Iterable, Sequence

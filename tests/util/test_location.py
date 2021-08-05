@@ -1,4 +1,4 @@
-"""Test Home Assistant location util methods."""
+"""Test Safegate Pro location util methods."""
 from unittest.mock import Mock
 
 import aiohttp

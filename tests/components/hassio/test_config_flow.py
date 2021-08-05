@@ -1,4 +1,4 @@
-"""Test the Home Assistant Supervisor config flow."""
+"""Test the Safegate Pro Supervisor config flow."""
 from unittest.mock import patch
 
 from homeassistant import setup

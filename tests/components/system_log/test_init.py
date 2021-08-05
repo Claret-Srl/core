@@ -307,7 +307,7 @@ async def async_log_error_from_test_path(hass, path, sq):
 
 
 async def test_homeassistant_path(hass, simple_queue, hass_client):
-    """Test error logged from Home Assistant path."""
+    """Test error logged from Safegate Pro path."""
     await async_setup_component(hass, system_log.DOMAIN, BASIC_CONFIG)
     with patch(
         "homeassistant.components.system_log.HOMEASSISTANT_PATH",

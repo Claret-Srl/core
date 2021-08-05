@@ -1,4 +1,4 @@
-"""Test Home Assistant ruamel.yaml loader."""
+"""Test Safegate Pro ruamel.yaml loader."""
 import os
 from tempfile import mkdtemp
 

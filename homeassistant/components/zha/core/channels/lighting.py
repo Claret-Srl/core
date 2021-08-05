@@ -1,4 +1,4 @@
-"""Lighting channels module for Zigbee Home Automation."""
+"""Lighting channels module for Zigbee Safegate Pro."""
 from __future__ import annotations
 
 from collections.abc import Coroutine

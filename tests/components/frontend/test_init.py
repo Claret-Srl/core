@@ -1,4 +1,4 @@
-"""The tests for Home Assistant frontend."""
+"""The tests for Safegate Pro frontend."""
 from datetime import timedelta
 import re
 from unittest.mock import patch
@@ -81,25 +81,25 @@ async def frontend_themes(hass):
 
 @pytest.fixture
 async def mock_http_client(hass, aiohttp_client, frontend):
-    """Start the Home Assistant HTTP component."""
+    """Start the Safegate Pro HTTP component."""
     return await aiohttp_client(hass.http.app)
 
 
 @pytest.fixture
 async def themes_ws_client(hass, hass_ws_client, frontend_themes):
-    """Start the Home Assistant HTTP component."""
+    """Start the Safegate Pro HTTP component."""
     return await hass_ws_client(hass)
 
 
 @pytest.fixture
 async def ws_client(hass, hass_ws_client, frontend):
-    """Start the Home Assistant HTTP component."""
+    """Start the Safegate Pro HTTP component."""
     return await hass_ws_client(hass)
 
 
 @pytest.fixture
 async def mock_http_client_with_urls(hass, aiohttp_client, ignore_frontend_deps):
-    """Start the Home Assistant HTTP component."""
+    """Start the Safegate Pro HTTP component."""
     assert await async_setup_component(
         hass,
         "frontend",

@@ -1,4 +1,4 @@
-"""Web socket API for Zigbee Home Automation devices."""
+"""Web socket API for Zigbee Safegate Pro devices."""
 
 import asyncio
 import collections

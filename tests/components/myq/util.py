@@ -18,7 +18,7 @@ async def async_init_integration(
     hass: HomeAssistant,
     skip_setup: bool = False,
 ) -> MockConfigEntry:
-    """Set up the myq integration in Home Assistant."""
+    """Set up the myq integration in Safegate Pro."""
 
     devices_fixture = "myq/devices.json"
     devices_json = load_fixture(devices_fixture)

@@ -72,13 +72,13 @@ def setup(hass, config):
         return False
 
     def start_pilight_client(_):
-        """Run when Home Assistant starts."""
+        """Run when Safegate Pro starts."""
         pilight_client.start()
 
     hass.bus.listen_once(EVENT_HOMEASSISTANT_START, start_pilight_client)
 
     def stop_pilight_client(_):
-        """Run once when Home Assistant stops."""
+        """Run once when Safegate Pro stops."""
         pilight_client.stop()
 
     hass.bus.listen_once(EVENT_HOMEASSISTANT_STOP, stop_pilight_client)

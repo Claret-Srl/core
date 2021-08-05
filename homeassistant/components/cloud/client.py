@@ -26,7 +26,7 @@ from .prefs import CloudPreferences
 
 
 class CloudClient(Interface):
-    """Interface class for Home Assistant Cloud."""
+    """Interface class for Safegate Pro Cloud."""
 
     def __init__(
         self,

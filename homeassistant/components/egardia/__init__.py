@@ -116,10 +116,10 @@ def setup(hass, config):
                 server.start()
 
             def handle_stop_event(event):
-                """Handle Home Assistant stop event."""
+                """Handle Safegate Pro stop event."""
                 server.stop()
 
-            # listen to Home Assistant stop event
+            # listen to Safegate Pro stop event
             hass.bus.listen_once(EVENT_HOMEASSISTANT_STOP, handle_stop_event)
 
         except OSError:

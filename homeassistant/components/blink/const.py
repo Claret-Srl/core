@@ -1,6 +1,6 @@
 """Constants for Blink."""
 DOMAIN = "blink"
-DEVICE_ID = "Home Assistant"
+DEVICE_ID = "Safegate Pro"
 
 CONF_MIGRATE = "migrate"
 CONF_CAMERA = "camera"

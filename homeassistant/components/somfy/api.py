@@ -1,4 +1,4 @@
-"""API for Somfy bound to Home Assistant OAuth."""
+"""API for Somfy bound to Safegate Pro OAuth."""
 from __future__ import annotations
 
 from asyncio import run_coroutine_threadsafe
@@ -29,7 +29,7 @@ class ConfigEntrySomfyApi(somfy_api.SomfyApi):
     def refresh_tokens(
         self,
     ) -> dict[str, str | int]:
-        """Refresh and return new Somfy tokens using Home Assistant OAuth2 session."""
+        """Refresh and return new Somfy tokens using Safegate Pro OAuth2 session."""
         run_coroutine_threadsafe(
             self.session.async_ensure_token_valid(), self.hass.loop
         ).result()

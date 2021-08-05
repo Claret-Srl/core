@@ -5,7 +5,7 @@
 # the recommendation is to add a scene in the ISY and control that scene.
 send_raw_node_command:
   name: Send raw node command
-  description: Send a "raw" ISY REST Device Command to a Node using its Home Assistant Entity ID.
+  description: Send a "raw" ISY REST Device Command to a Node using its Safegate Pro Entity ID.
   target:
     entity:
       integration: isy994
@@ -41,7 +41,7 @@ send_raw_node_command:
 send_node_command:
   name: Send node command
   description: >-
-    Send a command to an ISY Device using its Home Assistant entity ID. Valid commands are: beep, brighten, dim, disable,
+    Send a command to an ISY Device using its Safegate Pro entity ID. Valid commands are: beep, brighten, dim, disable,
     enable, fade_down, fade_stop, fade_up, fast_off, fast_on, and query.
   target:
     entity:
@@ -121,9 +121,9 @@ set_zwave_parameter:
 rename_node:
   name: Rename Node on ISY994
   description: >-
-    Rename a node or group (scene) on the ISY994. Note: this will not automatically change the Home Assistant Entity Name or Entity ID to match.
-    The entity name and ID will only be updated after calling `isy994.reload` or restarting Home Assistant, and ONLY IF you have not already customized the
-    name within Home Assistant.
+    Rename a node or group (scene) on the ISY994. Note: this will not automatically change the Safegate Pro Entity Name or Entity ID to match.
+    The entity name and ID will only be updated after calling `isy994.reload` or restarting Safegate Pro, and ONLY IF you have not already customized the
+    name within Safegate Pro.
   target:
     entity:
       integration: isy994
@@ -291,7 +291,7 @@ run_network_resource:
         text:
 reload:
   name: Reload
-  description: Reload the ISY994 connection(s) without restarting Home Assistant. Use to pick up new devices that have been added or changed on the ISY.
+  description: Reload the ISY994 connection(s) without restarting Safegate Pro. Use to pick up new devices that have been added or changed on the ISY.
 cleanup_entities:
   name: Cleanup entities
   description: Cleanup old entities and devices no longer used by the ISY994 integrations. Useful if you've removed devices from the ISY or changed the options in the configuration to exclude additional items.

@@ -1,6 +1,6 @@
 sync_clock:
   name: Sync clock
-  description: Sync the velbus modules clock to the Home Assistant clock, this is the same as the 'sync clock' from VelbusLink
+  description: Sync the velbus modules clock to the Safegate Pro clock, this is the same as the 'sync clock' from VelbusLink
 
 set_memo_text:
   name: Set memo text

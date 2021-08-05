@@ -1,4 +1,4 @@
-"""Offer Home Assistant core automation rules."""
+"""Offer Safegate Pro core automation rules."""
 import voluptuous as vol
 
 from homeassistant.const import CONF_EVENT, CONF_PLATFORM, EVENT_HOMEASSISTANT_STOP
@@ -28,7 +28,7 @@ async def async_attach_trigger(hass, config, action, automation_info):
 
         @callback
         def hass_shutdown(event):
-            """Execute when Home Assistant is shutting down."""
+            """Execute when Safegate Pro is shutting down."""
             hass.async_run_hass_job(
                 job,
                 {
@@ -36,7 +36,7 @@ async def async_attach_trigger(hass, config, action, automation_info):
                         **trigger_data,
                         "platform": "homeassistant",
                         "event": event,
-                        "description": "Home Assistant stopping",
+                        "description": "Safegate Pro stopping",
                     }
                 },
                 event.context,
@@ -54,7 +54,7 @@ async def async_attach_trigger(hass, config, action, automation_info):
                     **trigger_data,
                     "platform": "homeassistant",
                     "event": event,
-                    "description": "Home Assistant starting",
+                    "description": "Safegate Pro starting",
                 }
             },
         )

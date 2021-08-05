@@ -20,7 +20,7 @@ adb_command:
         text:
 download:
   name: Download
-  description: Download a file from your Android TV / Fire TV device to your Home Assistant instance.
+  description: Download a file from your Android TV / Fire TV device to your Safegate Pro instance.
   fields:
     entity_id:
       description: Name of Android TV / Fire TV entity.
@@ -38,14 +38,14 @@ download:
         text:
     local_path:
       name: Local path
-      description: The filepath on your Home Assistant instance.
+      description: The filepath on your Safegate Pro instance.
       required: true
       example: "/config/www/example.txt"
       selector:
         text:
 upload:
   name: Upload
-  description: Upload a file from your Home Assistant instance to an Android TV / Fire TV device.
+  description: Upload a file from your Safegate Pro instance to an Android TV / Fire TV device.
   fields:
     entity_id:
       description: Name(s) of Android TV / Fire TV entities.
@@ -63,7 +63,7 @@ upload:
         text:
     local_path:
       name: Local path
-      description: The filepath on your Home Assistant instance.
+      description: The filepath on your Safegate Pro instance.
       required: true
       example: "/config/www/example.txt"
       selector:

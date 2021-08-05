@@ -328,7 +328,7 @@ class MqttClimate(MqttEntity, ClimateEntity):
         return PLATFORM_SCHEMA
 
     async def async_added_to_hass(self):
-        """Handle being added to Home Assistant."""
+        """Handle being added to Safegate Pro."""
         await super().async_added_to_hass()
         await self._subscribe_topics()
 

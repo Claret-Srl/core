@@ -1,4 +1,4 @@
-"""Provide methods to bootstrap a Home Assistant instance."""
+"""Provide methods to bootstrap a Safegate Pro instance."""
 from __future__ import annotations
 
 import asyncio
@@ -83,7 +83,7 @@ STAGE_1_INTEGRATIONS = {
 async def async_setup_hass(
     runtime_config: RuntimeConfig,
 ) -> core.HomeAssistant | None:
-    """Set up Home Assistant."""
+    """Set up Safegate Pro."""
     hass = core.HomeAssistant()
     hass.config.config_dir = runtime_config.config_dir
 
@@ -188,7 +188,7 @@ def open_hass_ui(hass: core.HomeAssistant) -> None:
 
     if not webbrowser.open(url):
         _LOGGER.warning(
-            "Unable to open the Home Assistant UI in a browser. Open it yourself at %s",
+            "Unable to open the Safegate Pro UI in a browser. Open it yourself at %s",
             url,
         )
 
@@ -196,7 +196,7 @@ def open_hass_ui(hass: core.HomeAssistant) -> None:
 async def async_from_config_dict(
     config: ConfigType, hass: core.HomeAssistant
 ) -> core.HomeAssistant | None:
-    """Try to configure Home Assistant from a configuration dictionary.
+    """Try to configure Safegate Pro from a configuration dictionary.
 
     Dynamically loads required components and its dependencies.
     This method is a coroutine.
@@ -217,10 +217,10 @@ async def async_from_config_dict(
             )
         )
     ):
-        _LOGGER.error("Home Assistant core failed to initialize. ")
+        _LOGGER.error("Safegate Pro core failed to initialize. ")
         return None
 
-    _LOGGER.debug("Home Assistant core initialized")
+    _LOGGER.debug("Safegate Pro core initialized")
 
     core_config = config.get(core.DOMAIN, {})
 
@@ -231,7 +231,7 @@ async def async_from_config_dict(
         return None
     except HomeAssistantError:
         _LOGGER.error(
-            "Home Assistant core failed to initialize. "
+            "Safegate Pro core failed to initialize. "
             "Further initialization aborted"
         )
         return None
@@ -239,7 +239,7 @@ async def async_from_config_dict(
     await _async_set_up_integrations(hass, config)
 
     stop = monotonic()
-    _LOGGER.info("Home Assistant initialized in %.2fs", stop - start)
+    _LOGGER.info("Safegate Pro initialized in %.2fs", stop - start)
 
     if REQUIRED_NEXT_PYTHON_DATE and sys.version_info[:3] < REQUIRED_NEXT_PYTHON_VER:
         msg = (

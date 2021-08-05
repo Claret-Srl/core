@@ -108,7 +108,7 @@ async def async_setup(hass, config):
     password = conf.get(CONF_PASSWORD)
 
     if hass.config.time_zone is None:
-        _LOGGER.error("Timezone is not set in Home Assistant")
+        _LOGGER.error("Timezone is not set in Safegate Pro")
         return False
 
     timezone = str(hass.config.time_zone)

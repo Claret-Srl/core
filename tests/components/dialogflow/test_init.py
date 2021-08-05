@@ -35,7 +35,7 @@ async def calls(hass, fixture):
 
 @pytest.fixture
 async def fixture(hass, aiohttp_client):
-    """Initialize a Home Assistant server for testing this module."""
+    """Initialize a Safegate Pro server for testing this module."""
     await async_setup_component(hass, dialogflow.DOMAIN, {"dialogflow": {}})
     await async_setup_component(
         hass,
@@ -422,7 +422,7 @@ async def test_intent_with_unknown_action_v1(fixture):
     )
     assert response.status == 200
     text = (await response.json()).get("speech")
-    assert text == "This intent is not yet configured within Home Assistant."
+    assert text == "This intent is not yet configured within Safegate Pro."
 
 
 async def test_intent_with_unknown_action_v2(fixture):
@@ -435,4 +435,4 @@ async def test_intent_with_unknown_action_v2(fixture):
     )
     assert response.status == 200
     text = (await response.json()).get("fulfillmentText")
-    assert text == "This intent is not yet configured within Home Assistant."
+    assert text == "This intent is not yet configured within Safegate Pro."

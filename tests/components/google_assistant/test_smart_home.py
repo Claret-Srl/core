@@ -1007,8 +1007,8 @@ async def test_identify(hass):
                 "isProxy": True,
                 "deviceInfo": {
                     "hwVersion": "UNKNOWN_HW_VERSION",
-                    "manufacturer": "Home Assistant",
-                    "model": "Home Assistant",
+                    "manufacturer": "Safegate Pro",
+                    "model": "Safegate Pro",
                     "swVersion": __version__,
                 },
             }

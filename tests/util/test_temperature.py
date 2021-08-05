@@ -1,4 +1,4 @@
-"""Test Home Assistant temperature utility functions."""
+"""Test Safegate Pro temperature utility functions."""
 import pytest
 
 from homeassistant.const import TEMP_CELSIUS, TEMP_FAHRENHEIT, TEMP_KELVIN

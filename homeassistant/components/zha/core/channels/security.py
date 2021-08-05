@@ -1,5 +1,5 @@
 """
-Security channels module for Zigbee Home Automation.
+Security channels module for Zigbee Safegate Pro.
 
 For more details about this component, please refer to the documentation at
 https://home-assistant.io/integrations/zha/
@@ -322,7 +322,7 @@ class IasWd(ZigbeeChannel):
         Valid range is 0-100 in increments of 10. All other values SHALL be rounded to the
         nearest valid value. Strobe SHALL calculate duty cycle over a duration of one second.
         The ON state SHALL precede the OFF state. For example, if Strobe Duty Cycle Field specifies
-        ‚Äú40,‚Äù then the strobe SHALL flash ON for 4/10ths of a second and then turn OFF for
+        ì40,î then the strobe SHALL flash ON for 4/10ths of a second and then turn OFF for
         6/10ths of a second.
         """
         value = 0

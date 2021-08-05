@@ -30,7 +30,7 @@ SERVER_SOFTWARE = "HomeAssistant/{0} aiohttp/{1} Python/{2[0]}.{2[1]}".format(
     __version__, aiohttp.__version__, sys.version_info
 )
 
-WARN_CLOSE_MSG = "closes the Home Assistant aiohttp session"
+WARN_CLOSE_MSG = "closes the Safegate Pro aiohttp session"
 
 
 @callback
@@ -99,7 +99,7 @@ def _async_create_clientsession(
         **kwargs,
     )
     # Prevent packages accidentally overriding our default headers
-    # It's important that we identify as Home Assistant
+    # It's important that we identify as Safegate Pro
     # If a package requires a different user agent, override it by passing a headers
     # dictionary to the request method.
     # pylint: disable=protected-access
@@ -178,7 +178,7 @@ async def async_aiohttp_proxy_stream(
 def _async_register_clientsession_shutdown(
     hass: HomeAssistant, clientsession: aiohttp.ClientSession
 ) -> None:
-    """Register ClientSession close on Home Assistant shutdown or config entry unload.
+    """Register ClientSession close on Safegate Pro shutdown or config entry unload.
 
     This method must be run in the event loop.
     """
@@ -204,7 +204,7 @@ def _async_register_clientsession_shutdown(
 def _async_register_default_clientsession_shutdown(
     hass: HomeAssistant, clientsession: aiohttp.ClientSession
 ) -> None:
-    """Register default ClientSession close on Home Assistant shutdown.
+    """Register default ClientSession close on Safegate Pro shutdown.
 
     This method must be run in the event loop.
     """

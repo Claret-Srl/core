@@ -38,7 +38,7 @@ nam_data = {
 
 
 async def init_integration(hass, co2_sensor=True) -> MockConfigEntry:
-    """Set up the Nettigo Air Monitor integration in Home Assistant."""
+    """Set up the Nettigo Air Monitor integration in Safegate Pro."""
     entry = MockConfigEntry(
         domain=DOMAIN,
         title="10.10.2.3",

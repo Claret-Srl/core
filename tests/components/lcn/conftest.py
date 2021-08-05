@@ -82,7 +82,7 @@ def create_config_entry_myhome():
 
 
 async def init_integration(hass, entry):
-    """Set up the LCN integration in Home Assistant."""
+    """Set up the LCN integration in Safegate Pro."""
     entry.add_to_hass(hass)
     await hass.config_entries.async_setup(entry.entry_id)
     await hass.async_block_till_done()

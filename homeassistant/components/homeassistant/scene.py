@@ -151,7 +151,7 @@ def entities_in_scene(hass: HomeAssistant, entity_id: str) -> list[str]:
 
 
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
-    """Set up Home Assistant scene entries."""
+    """Set up Safegate Pro scene entries."""
     _process_scenes_config(hass, async_add_entities, config)
 
     # This platform can be loaded multiple times. Only first time register the service.
@@ -178,7 +178,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
 
         await platform.async_reset()
 
-        # Extract only the config for the Home Assistant platform, ignore the rest.
+        # Extract only the config for the Safegate Pro platform, ignore the rest.
         for p_type, p_config in config_per_platform(conf, SCENE_DOMAIN):
             if p_type != HA_DOMAIN:
                 continue

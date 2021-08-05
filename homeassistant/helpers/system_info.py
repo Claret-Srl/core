@@ -37,9 +37,9 @@ async def async_get_system_info(hass: HomeAssistant) -> dict[str, Any]:
 
     # Determine installation type on current data
     if info_object["docker"]:
-        info_object["installation_type"] = "Home Assistant Container"
+        info_object["installation_type"] = "Safegate Pro Container"
     elif is_virtual_env():
-        info_object["installation_type"] = "Home Assistant Core"
+        info_object["installation_type"] = "Safegate Pro Core"
 
     # Enrich with Supervisor information
     if hass.components.hassio.is_hassio():
@@ -52,8 +52,8 @@ async def async_get_system_info(hass: HomeAssistant) -> dict[str, Any]:
         info_object["chassis"] = host.get("chassis")
 
         if info.get("hassos") is not None:
-            info_object["installation_type"] = "Home Assistant OS"
+            info_object["installation_type"] = "Safegate Pro OS"
         else:
-            info_object["installation_type"] = "Home Assistant Supervised"
+            info_object["installation_type"] = "Safegate Pro Supervised"
 
     return info_object

@@ -1,4 +1,4 @@
-"""General channels module for Zigbee Home Automation."""
+"""General channels module for Zigbee Safegate Pro."""
 from __future__ import annotations
 
 import asyncio

@@ -122,7 +122,7 @@ class FluNearYouSensor(CoordinatorEntity, SensorEntity):
 
     @property
     def unique_id(self):
-        """Return a unique, Home Assistant friendly identifier for this entity."""
+        """Return a unique, Safegate Pro friendly identifier for this entity."""
         return (
             f"{self._config_entry.data[CONF_LATITUDE]},"
             f"{self._config_entry.data[CONF_LONGITUDE]}_{self._sensor_type}"

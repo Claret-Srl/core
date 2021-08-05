@@ -1,4 +1,4 @@
-"""Test Home Assistant scenes."""
+"""Test Safegate Pro scenes."""
 from unittest.mock import patch
 
 import pytest

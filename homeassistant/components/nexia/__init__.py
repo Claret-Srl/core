@@ -25,7 +25,7 @@ DEFAULT_UPDATE_RATE = 120
 
 
 async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
-    """Configure the base Nexia device for Home Assistant."""
+    """Configure the base Nexia device for Safegate Pro."""
 
     conf = entry.data
     username = conf[CONF_USERNAME]

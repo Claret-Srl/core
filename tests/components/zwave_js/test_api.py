@@ -1858,7 +1858,7 @@ async def test_data_collection(hass, client, integration, hass_ws_client):
     assert len(client.async_send_command.call_args_list) == 1
     args = client.async_send_command.call_args[0][0]
     assert args["command"] == "driver.enable_statistics"
-    assert args["applicationName"] == "Home Assistant"
+    assert args["applicationName"] == "Safegate Pro"
     assert entry.data[CONF_DATA_COLLECTION_OPTED_IN]
 
     client.async_send_command.reset_mock()

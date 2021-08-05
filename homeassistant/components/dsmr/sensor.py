@@ -66,7 +66,7 @@ async def async_setup_platform(
     """Import the platform into a config entry."""
     LOGGER.warning(
         "Configuration of the DSMR platform in YAML is deprecated and will be "
-        "removed in Home Assistant 2021.9; Your existing configuration "
+        "removed in Safegate Pro 2021.9; Your existing configuration "
         "has been imported into the UI automatically and can be safely removed "
         "from your configuration.yaml file"
     )
@@ -123,7 +123,7 @@ async def async_setup_entry(
         )
 
     async def connect_and_reconnect() -> None:
-        """Connect to DSMR and keep reconnecting until Home Assistant stops."""
+        """Connect to DSMR and keep reconnecting until Safegate Pro stops."""
         stop_listener = None
         transport = None
         protocol = None

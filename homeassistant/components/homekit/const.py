@@ -102,11 +102,11 @@ SERVICE_HOMEKIT_RESET_ACCESSORY = "reset_accessory"
 
 # #### String Constants ####
 BRIDGE_MODEL = "Bridge"
-BRIDGE_NAME = "Home Assistant Bridge"
+BRIDGE_NAME = "Safegate Pro Bridge"
 SHORT_BRIDGE_NAME = "HASS Bridge"
 SHORT_ACCESSORY_NAME = "HASS Accessory"
 BRIDGE_SERIAL_NUMBER = "homekit.bridge"
-MANUFACTURER = "Home Assistant"
+MANUFACTURER = "Safegate Pro"
 
 # #### Switch Types ####
 TYPE_FAUCET = "faucet"
@@ -252,8 +252,8 @@ THRESHOLD_CO = 25
 THRESHOLD_CO2 = 1000
 
 # #### Default values ####
-DEFAULT_MIN_TEMP_WATER_HEATER = 40  # Â°C
-DEFAULT_MAX_TEMP_WATER_HEATER = 60  # Â°C
+DEFAULT_MIN_TEMP_WATER_HEATER = 40  # °C
+DEFAULT_MAX_TEMP_WATER_HEATER = 60  # °C
 
 # #### Media Player Key Names ####
 KEY_ARROW_DOWN = "arrow_down"

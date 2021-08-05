@@ -31,7 +31,7 @@ from .const import (
     TYPE_DISEASE_INDEX,
 )
 
-DEFAULT_ATTRIBUTION = "Data provided by IQVIAâ„¢"
+DEFAULT_ATTRIBUTION = "Data provided by IQVIA™"
 DEFAULT_SCAN_INTERVAL = timedelta(minutes=30)
 
 PLATFORMS = ["sensor"]
@@ -133,7 +133,7 @@ class IQVIAEntity(CoordinatorEntity, SensorEntity):
 
     @property
     def unique_id(self):
-        """Return a unique, Home Assistant friendly identifier for this entity."""
+        """Return a unique, Safegate Pro friendly identifier for this entity."""
         return f"{self._entry.data[CONF_ZIP_CODE]}_{self._type}"
 
     @property

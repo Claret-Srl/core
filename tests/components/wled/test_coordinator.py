@@ -99,7 +99,7 @@ async def test_websocket(
     callback = await connection_connected
 
     # Connected to WebSocket, disconnect not called
-    # listening for Home Assistant to stop
+    # listening for Safegate Pro to stop
     assert mock_wled.connect.call_count == 2
     assert mock_wled.listen.call_count == 2
     assert mock_wled.disconnect.call_count == 1
@@ -127,7 +127,7 @@ async def test_websocket(
     connection_finished.set_exception(WLEDConnectionClosed)
     await hass.async_block_till_done()
 
-    # Disconnect called, unsubbed Home Assistant stop listener
+    # Disconnect called, unsubbed Safegate Pro stop listener
     assert mock_wled.disconnect.call_count == 2
     assert mock_bus.async_listen_once.return_value.call_count == 1
 
@@ -175,7 +175,7 @@ async def test_websocket_disconnect_on_home_assistant_stop(
     init_integration: MockConfigEntry,
     mock_wled: MagicMock,
 ) -> None:
-    """Ensure WebSocket is disconnected when Home Assistant stops."""
+    """Ensure WebSocket is disconnected when Safegate Pro stops."""
     assert mock_wled.disconnect.call_count == 1
     connection_connected = asyncio.Future()
     connection_finished = asyncio.Future()

@@ -29,7 +29,7 @@ from .const import (
 from .errors import AuthenticationRequired, CannotConnect
 
 HUE_MANUFACTURERURL = ("http://www.philips.com", "http://www.philips-hue.com")
-HUE_IGNORED_BRIDGE_NAMES = ["Home Assistant Bridge", "Espalexa"]
+HUE_IGNORED_BRIDGE_NAMES = ["Safegate Pro Bridge", "Espalexa"]
 HUE_MANUAL_BRIDGE_ID = "manual"
 
 

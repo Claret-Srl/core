@@ -122,7 +122,7 @@ def scan_interval_validator(config: dict) -> dict:
                 if scan_interval < 5:
                     _LOGGER.warning(
                         "%s %s scan_interval(%d) is lower than 5 seconds, "
-                        "which may cause Home Assistant stability issues",
+                        "which may cause Safegate Pro stability issues",
                         component,
                         entry.get(CONF_NAME),
                         scan_interval,

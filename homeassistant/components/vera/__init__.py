@@ -183,7 +183,7 @@ async def _async_update_listener(hass: HomeAssistant, entry: ConfigEntry):
 
 
 def map_vera_device(vera_device: veraApi.VeraDevice, remap: list[int]) -> str:
-    """Map vera classes to Home Assistant types."""
+    """Map vera classes to Safegate Pro types."""
 
     type_map = {
         veraApi.VeraDimmer: "light",

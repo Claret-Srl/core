@@ -1,4 +1,4 @@
-"""Webhooks for Home Assistant."""
+"""Webhooks for Safegate Pro."""
 import logging
 import secrets
 

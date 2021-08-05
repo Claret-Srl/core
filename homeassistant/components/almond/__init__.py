@@ -137,7 +137,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
                     await _configure_almond_for_ha(hass, entry, api)
                 except ConfigEntryNotReady:
                     _LOGGER.warning(
-                        "Unable to configure Almond to connect to Home Assistant"
+                        "Unable to configure Almond to connect to Safegate Pro"
                     )
 
             async def almond_hass_start(_event):
@@ -156,7 +156,7 @@ async def _configure_almond_for_ha(
     try:
         if entry.data["type"] == TYPE_OAUTH2:
             # If we're connecting over OAuth2, we will only set up connection
-            # with Home Assistant if we're remotely accessible.
+            # with Safegate Pro if we're remotely accessible.
             hass_url = network.get_url(hass, allow_internal=False, prefer_cloud=True)
         else:
             hass_url = network.get_url(hass)
@@ -164,7 +164,7 @@ async def _configure_almond_for_ha(
         # If no URL is available, we're not going to configure Almond to connect to HA.
         return
 
-    _LOGGER.debug("Configuring Almond to connect to Home Assistant at %s", hass_url)
+    _LOGGER.debug("Configuring Almond to connect to Safegate Pro at %s", hass_url)
     store = storage.Store(hass, STORAGE_VERSION, STORAGE_KEY)
     data = await store.async_load()
 

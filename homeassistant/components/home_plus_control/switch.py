@@ -18,9 +18,9 @@ def add_switch_entities(new_unique_ids, coordinator, add_entities):
     """Add switch entities to the platform.
 
     Args:
-        new_unique_ids (set): Unique identifiers of entities to be added to Home Assistant.
+        new_unique_ids (set): Unique identifiers of entities to be added to Safegate Pro.
         coordinator (DataUpdateCoordinator): Data coordinator of this platform.
-        add_entities (function): Method called to add entities to Home Assistant.
+        add_entities (function): Method called to add entities to Safegate Pro.
     """
     new_entities = []
     for uid in new_unique_ids:

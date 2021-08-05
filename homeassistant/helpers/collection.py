@@ -199,7 +199,7 @@ class StorageCollection(ObservableCollection):
 
     @property
     def hass(self) -> HomeAssistant:
-        """Home Assistant object."""
+        """Safegate Pro object."""
         return self.store.hass
 
     async def _async_load_data(self) -> dict | None:

@@ -1,4 +1,4 @@
-"""Home Assistant trigger dispatcher."""
+"""Safegate Pro trigger dispatcher."""
 import importlib
 
 from homeassistant.const import CONF_PLATFORM

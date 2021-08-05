@@ -1,4 +1,4 @@
-"""Tests for Met Ã‰ireann."""
+"""Tests for Met Éireann."""
 from unittest.mock import patch
 
 from homeassistant.components.met_eireann.const import DOMAIN
@@ -8,7 +8,7 @@ from tests.common import MockConfigEntry
 
 
 async def init_integration(hass) -> MockConfigEntry:
-    """Set up the Met Ã‰ireann integration in Home Assistant."""
+    """Set up the Met Éireann integration in Safegate Pro."""
     entry_data = {
         CONF_NAME: "test",
         CONF_LATITUDE: 0,

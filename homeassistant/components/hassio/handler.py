@@ -96,7 +96,7 @@ class HassIO:
 
     @api_data
     def get_core_info(self):
-        """Return data for Home Asssistant Core.
+        """Return data for Safegate Pro Core.
 
         This method returns a coroutine.
         """
@@ -168,7 +168,7 @@ class HassIO:
 
     @_api_bool
     async def update_hass_api(self, http_config, refresh_token):
-        """Update Home Assistant API data on Hass.io."""
+        """Update Safegate Pro API data on Hass.io."""
         port = http_config.get(CONF_SERVER_PORT) or SERVER_PORT
         options = {
             "ssl": CONF_SSL_CERTIFICATE in http_config,

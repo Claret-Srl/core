@@ -1,4 +1,4 @@
-"""Bridge between emulated_roku and Home Assistant."""
+"""Bridge between emulated_roku and Safegate Pro."""
 import logging
 
 from emulated_roku import EmulatedRokuCommandHandler, EmulatedRokuServer

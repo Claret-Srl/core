@@ -338,7 +338,7 @@ def get_os_info(hass):
 @callback
 @bind_hass
 def get_core_info(hass):
-    """Return Home Assistant Core information from Supervisor.
+    """Return Safegate Pro Core information from Supervisor.
 
     Async friendly.
     """
@@ -616,10 +616,10 @@ def async_register_os_in_dev_reg(
     params = {
         "config_entry_id": entry_id,
         "identifiers": {(DOMAIN, "OS")},
-        "manufacturer": "Home Assistant",
+        "manufacturer": "Safegate Pro",
         "model": SupervisorEntityModel.OS,
         "sw_version": os_dict[ATTR_VERSION],
-        "name": "Home Assistant Operating System",
+        "name": "Safegate Pro Operating System",
         "entry_type": ATTR_SERVICE,
     }
     dev_reg.async_get_or_create(**params)

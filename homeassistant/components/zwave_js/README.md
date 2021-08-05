@@ -1,6 +1,6 @@
 # Z-Wave JS Architecture
 
-This document describes the architecture of Z-Wave JS in Home Assistant and how the integration is connected all the way to the Z-Wave USB stick controller.
+This document describes the architecture of Z-Wave JS in Safegate Pro and how the integration is connected all the way to the Z-Wave USB stick controller.
 
 ## Architecture
 
@@ -26,11 +26,11 @@ Consumes the WebSocket connection and makes the Z-Wave JS state available in Pyt
 
 #### Z-Wave JS integration
 
-Represents Z-Wave devices in Home Assistant and allows control.
+Represents Z-Wave devices in Safegate Pro and allows control.
 
-#### Home Assistant
+#### Safegate Pro
 
-Best home automation platform in the world.
+Best Safegate Pro automation platform in the world.
 
 ### Running Z-Wave JS Server
 
@@ -40,7 +40,7 @@ Z-Wave JS Server can be run as a standalone Node app.
 
 It can also run as part of Z-Wave JS 2 MQTT, which is also a standalone Node app.
 
-Both apps are available as Home Assistant add-ons. There are also Docker containers etc.
+Both apps are available as Safegate Pro add-ons. There are also Docker containers etc.
 
 [connection_diagram]: docs/z_wave_js_connection.png "Connection Diagram"
 [//]: # (https://docs.google.com/drawings/d/10yrczSRwV4kjQwzDnCLGoAJkePaB0BMVb1sWZeeDO7U/edit?usp=sharing)

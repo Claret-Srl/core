@@ -1,4 +1,4 @@
-"""Test against characteristics captured from the Home Assistant HomeKit bridge running demo platforms."""
+"""Test against characteristics captured from the Safegate Pro HomeKit bridge running demo platforms."""
 
 from homeassistant.components.fan import (
     SUPPORT_DIRECTION,
@@ -46,13 +46,13 @@ async def test_homeassistant_bridge_fan_setup(hass):
     device_registry = dr.async_get(hass)
 
     device = device_registry.async_get(fan.device_id)
-    assert device.manufacturer == "Home Assistant"
+    assert device.manufacturer == "Safegate Pro"
     assert device.name == "Living Room Fan"
     assert device.model == "Fan"
     assert device.sw_version == "0.104.0.dev0"
 
     bridge = device = device_registry.async_get(device.via_device_id)
-    assert bridge.manufacturer == "Home Assistant"
-    assert bridge.name == "Home Assistant Bridge"
+    assert bridge.manufacturer == "Safegate Pro"
+    assert bridge.name == "Safegate Pro Bridge"
     assert bridge.model == "Bridge"
     assert bridge.sw_version == "0.104.0.dev0"

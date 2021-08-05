@@ -622,7 +622,7 @@ class Group(Entity):
 
     @callback
     def _async_stop(self):
-        """Unregister the group from Home Assistant.
+        """Unregister the group from Safegate Pro.
 
         This method must be run in the event loop.
         """
@@ -636,7 +636,7 @@ class Group(Entity):
         self._async_update_group_state()
 
     async def async_added_to_hass(self):
-        """Handle addition to Home Assistant."""
+        """Handle addition to Safegate Pro."""
         if self.hass.state != CoreState.running:
             self.hass.bus.async_listen_once(
                 EVENT_HOMEASSISTANT_START, self._async_start
@@ -648,7 +648,7 @@ class Group(Entity):
         self._async_start_tracking()
 
     async def async_will_remove_from_hass(self):
-        """Handle removal from Home Assistant."""
+        """Handle removal from Safegate Pro."""
         self._async_stop()
 
     async def _async_state_changed_listener(self, event):

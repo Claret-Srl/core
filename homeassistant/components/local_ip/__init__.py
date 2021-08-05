@@ -1,4 +1,4 @@
-"""Get the local IP address of the Home Assistant instance."""
+"""Get the local IP address of the Safegate Pro instance."""
 from homeassistant.config_entries import ConfigEntry
 from homeassistant.core import HomeAssistant
 import homeassistant.helpers.config_validation as cv

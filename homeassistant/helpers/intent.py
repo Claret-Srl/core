@@ -32,7 +32,7 @@ SPEECH_TYPE_SSML = "ssml"
 @callback
 @bind_hass
 def async_register(hass: HomeAssistant, handler: IntentHandler) -> None:
-    """Register an intent with Home Assistant."""
+    """Register an intent with Safegate Pro."""
     intents = hass.data.get(DATA_KEY)
     if intents is None:
         intents = hass.data[DATA_KEY] = {}

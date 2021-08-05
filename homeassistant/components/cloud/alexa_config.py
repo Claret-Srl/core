@@ -1,4 +1,4 @@
-"""Alexa configuration for Home Assistant Cloud."""
+"""Alexa configuration for Safegate Pro Cloud."""
 import asyncio
 from contextlib import suppress
 from datetime import timedelta

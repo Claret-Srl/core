@@ -36,7 +36,7 @@ add_to_playlist:
 
 call_method:
   name: Call method
-  description: "Call a Kodi JSONRPC API method with optional parameters. Results of the Kodi API call will be redirected in a Home Assistant event: `kodi_call_method_result`."
+  description: "Call a Kodi JSONRPC API method with optional parameters. Results of the Kodi API call will be redirected in a Safegate Pro event: `kodi_call_method_result`."
   target:
     entity:
       integration: kodi
