@@ -249,9 +249,6 @@ buienradar==1.0.4
 # homeassistant.components.caldav
 caldav==0.7.1
 
-# homeassistant.components.frontend
-claret-assistant-frontend==20210707.0
-
 # homeassistant.components.coinbase
 coinbase==2.1.0
 
@@ -1121,6 +1118,9 @@ rpi-bad-power==0.1.0
 
 # homeassistant.components.yamaha
 rxv==0.6.0
+
+# homeassistant.components.frontend
+safegate-pro-frontend==20210805.0
 
 # homeassistant.components.samsungtv
 samsungctl[websocket]==0.7.1
