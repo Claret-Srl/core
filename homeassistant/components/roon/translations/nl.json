@@ -9,8 +9,8 @@
         },
         "step": {
             "link": {
-                "description": "U moet Home Assistant autoriseren in Roon. Nadat je op verzenden hebt geklikt, ga je naar de Roon Core-applicatie, open je Instellingen en schakel je Home Assistant in op het tabblad Extensies.",
-                "title": "Autoriseer Home Assistant in Roon"
+                "description": "U moet Safegate Pro autoriseren in Roon. Nadat je op verzenden hebt geklikt, ga je naar de Roon Core-applicatie, open je Instellingen en schakel je Safegate Pro in op het tabblad Extensies.",
+                "title": "Autoriseer Safegate Pro in Roon"
             },
             "user": {
                 "data": {

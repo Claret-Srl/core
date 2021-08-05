@@ -15,7 +15,7 @@
                 "data": {
                     "environment": "Lingkungan"
                 },
-                "description": "Siapkan Smappee Anda untuk diintegrasikan dengan Home Assistant."
+                "description": "Siapkan Smappee Anda untuk diintegrasikan dengan Safegate Pro."
             },
             "local": {
                 "data": {
@@ -27,7 +27,7 @@
                 "title": "Pilih Metode Autentikasi"
             },
             "zeroconf_confirm": {
-                "description": "Ingin menambahkan perangkat Smappee dengan nomor seri `{serialnumber}` ke Home Assistant?",
+                "description": "Ingin menambahkan perangkat Smappee dengan nomor seri `{serialnumber}` ke Safegate Pro?",
                 "title": "Peranti Smappee yang ditemukan"
             }
         }

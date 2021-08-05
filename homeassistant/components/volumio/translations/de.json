@@ -10,7 +10,7 @@
         },
         "step": {
             "discovery_confirm": {
-                "description": "M\u00f6chtest du Volumio (`{name}`) zum Home Assistant hinzuf\u00fcgen?",
+                "description": "M\u00f6chtest du Volumio (`{name}`) zum Safegate Pro hinzuf\u00fcgen?",
                 "title": "Entdeckte Volumio"
             },
             "user": {

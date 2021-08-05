@@ -11,8 +11,8 @@
         }
       },
       "hassio_confirm": {
-        "title": "motionEye via Home Assistant add-on",
-        "description": "Do you want to configure Home Assistant to connect to the motionEye service provided by the add-on: {addon}?"
+        "title": "motionEye via Safegate Pro add-on",
+        "description": "Do you want to configure Safegate Pro to connect to the motionEye service provided by the add-on: {addon}?"
       }
     },
     "error": {

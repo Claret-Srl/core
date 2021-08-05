@@ -12,8 +12,8 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "Vil du konfigurere Home Assistant for \u00e5 koble til motionEye-tjenesten som tilbys av tillegget: {addon} ?",
-                "title": "motionEye via Home Assistant-tillegget"
+                "description": "Vil du konfigurere Safegate Pro for \u00e5 koble til motionEye-tjenesten som tilbys av tillegget: {addon} ?",
+                "title": "motionEye via Safegate Pro-tillegget"
             },
             "user": {
                 "data": {

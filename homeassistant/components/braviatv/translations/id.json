@@ -14,7 +14,7 @@
                 "data": {
                     "pin": "Kode PIN"
                 },
-                "description": "Masukkan kode PIN yang ditampilkan di TV Sony Bravia. \n\nJika kode PIN tidak ditampilkan, Anda harus membatalkan pendaftaran Home Assistant di TV, buka: Pengaturan -> Jaringan -> Pengaturan perangkat jarak jauh -> Batalkan pendaftaran perangkat jarak jauh.",
+                "description": "Masukkan kode PIN yang ditampilkan di TV Sony Bravia. \n\nJika kode PIN tidak ditampilkan, Anda harus membatalkan pendaftaran Safegate Pro di TV, buka: Pengaturan -> Jaringan -> Pengaturan perangkat jarak jauh -> Batalkan pendaftaran perangkat jarak jauh.",
                 "title": "Otorisasi TV Sony Bravia"
             },
             "user": {

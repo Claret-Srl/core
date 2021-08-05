@@ -10,7 +10,7 @@
         },
         "step": {
             "link": {
-                "description": "Klik \"Kirim\", lalu sentuh panah kanan di router untuk mendaftarkan Freebox dengan Home Assistant. \n\n![Lokasi tombol di router](/static/images/config_freebox.png)",
+                "description": "Klik \"Kirim\", lalu sentuh panah kanan di router untuk mendaftarkan Freebox dengan Safegate Pro. \n\n![Lokasi tombol di router](/static/images/config_freebox.png)",
                 "title": "Tautkan router Freebox"
             },
             "user": {

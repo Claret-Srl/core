@@ -6,7 +6,7 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "Vil du konfigurere Home Assistant til at oprette forbindelse til Almond leveret af Supervisor-tilf\u00f8jelsen: {addon}?",
+                "description": "Vil du konfigurere Safegate Pro til at oprette forbindelse til Almond leveret af Supervisor-tilf\u00f8jelsen: {addon}?",
                 "title": "Almond via Supervisor-tilf\u00f8jelse"
             },
             "pick_implementation": {

@@ -16,7 +16,7 @@
                 "data": {
                     "host": "Vert"
                 },
-                "description": "Sett opp Modern Forms-fanen din for \u00e5 integrere med Home Assistant."
+                "description": "Sett opp Modern Forms-fanen din for \u00e5 integrere med Safegate Pro."
             },
             "zeroconf_confirm": {
                 "description": "Vil du legge til Modern Forms-viften med navnet {name} i Hjemmeassistent?",

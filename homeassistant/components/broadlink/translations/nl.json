@@ -32,7 +32,7 @@
                 "data": {
                     "unlock": "Ja, doe het."
                 },
-                "description": "{name} ({model} op {host}) is vergrendeld. Dit kan leiden tot authenticatieproblemen in Home Assistant. Wilt u deze ontgrendelen?",
+                "description": "{name} ({model} op {host}) is vergrendeld. Dit kan leiden tot authenticatieproblemen in Safegate Pro. Wilt u deze ontgrendelen?",
                 "title": "Ontgrendel het apparaat (optioneel)"
             },
             "user": {

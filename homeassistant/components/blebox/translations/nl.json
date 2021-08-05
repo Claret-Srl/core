@@ -16,7 +16,7 @@
                     "host": "IP-adres",
                     "port": "Poort"
                 },
-                "description": "Stel uw BleBox in om te integreren met Home Assistant.",
+                "description": "Stel uw BleBox in om te integreren met Safegate Pro.",
                 "title": "Stel uw BleBox-apparaat in"
             }
         }

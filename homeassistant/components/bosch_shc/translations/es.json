@@ -7,7 +7,7 @@
         "flow_title": "Bosch SHC: {name}",
         "step": {
             "confirm_discovery": {
-                "description": "Pulse el bot\u00f3n frontal del Smart Home Controller de Bosch hasta que el LED empiece a parpadear.\n\u00bfPreparado para seguir configurando {model} @ {host} con Home Assistant?"
+                "description": "Pulse el bot\u00f3n frontal del Smart Home Controller de Bosch hasta que el LED empiece a parpadear.\n\u00bfPreparado para seguir configurando {model} @ {host} con Safegate Pro?"
             },
             "credentials": {
                 "data": {
@@ -18,7 +18,7 @@
                 "description": "La integraci\u00f3n bosch_shc necesita volver a autentificar su cuenta"
             },
             "user": {
-                "description": "Configura tu Bosch Smart Home Controller para permitir la supervisi\u00f3n y el control con Home Assistant.",
+                "description": "Configura tu Bosch Smart Home Controller para permitir la supervisi\u00f3n y el control con Safegate Pro.",
                 "title": "Par\u00e1metros de autenticaci\u00f3n SHC"
             }
         }

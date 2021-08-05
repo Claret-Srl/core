@@ -13,10 +13,10 @@
                 "data": {
                     "host": "Host"
                 },
-                "description": "Siapkan WLED Anda untuk diintegrasikan dengan Home Assistant."
+                "description": "Siapkan WLED Anda untuk diintegrasikan dengan Safegate Pro."
             },
             "zeroconf_confirm": {
-                "description": "Ingin menambahkan WLED `{name}` ke Home Assistant?",
+                "description": "Ingin menambahkan WLED `{name}` ke Safegate Pro?",
                 "title": "Peranti WLED yang ditemukan"
             }
         }

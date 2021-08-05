@@ -14,7 +14,7 @@
         "flow_title": "Bosch SHC: {name}",
         "step": {
             "confirm_discovery": {
-                "description": "Vajuta palun Bosch Smart Home Controlleri esik\u00fclje nuppu kuni LED hakkab vilkuma.\n Kas oled valmis j\u00e4tkama {model} @ {host} seadistamist Home Assistanti abil?"
+                "description": "Vajuta palun Bosch Smart Home Controlleri esik\u00fclje nuppu kuni LED hakkab vilkuma.\n Kas oled valmis j\u00e4tkama {model} @ {host} seadistamist Safegate Proi abil?"
             },
             "credentials": {
                 "data": {
@@ -29,7 +29,7 @@
                 "data": {
                     "host": "Host"
                 },
-                "description": "Seadista oma Bosch Smart Home Controller, et v\u00f5imaldada j\u00e4lgimist ja juhtimist Home Assistantiga.",
+                "description": "Seadista oma Bosch Smart Home Controller, et v\u00f5imaldada j\u00e4lgimist ja juhtimist Safegate Proiga.",
                 "title": "SHC autentimisparameetrid"
             }
         }

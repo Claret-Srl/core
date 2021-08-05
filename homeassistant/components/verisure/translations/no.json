@@ -13,7 +13,7 @@
                 "data": {
                     "giid": "Installasjon"
                 },
-                "description": "Home Assistant fant flere Verisure-installasjoner i Mine sider-kontoen din. Velg installasjonen du vil legge til i Home Assistant."
+                "description": "Safegate Pro fant flere Verisure-installasjoner i Mine sider-kontoen din. Velg installasjonen du vil legge til i Safegate Pro."
             },
             "reauth_confirm": {
                 "data": {

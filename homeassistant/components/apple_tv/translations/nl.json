@@ -19,7 +19,7 @@
         "flow_title": "{name}",
         "step": {
             "confirm": {
-                "description": "U staat op het punt om de Apple TV met de naam `{name}` toe te voegen aan Home Assistant.\n\n**Om het proces te voltooien, moet u mogelijk meerdere PIN-codes invoeren.**\n\nLet op: u kunt uw Apple TV *niet* uitschakelen met deze integratie. Alleen de mediaspeler in Home Assistant wordt uitgeschakeld!",
+                "description": "U staat op het punt om de Apple TV met de naam `{name}` toe te voegen aan Safegate Pro.\n\n**Om het proces te voltooien, moet u mogelijk meerdere PIN-codes invoeren.**\n\nLet op: u kunt uw Apple TV *niet* uitschakelen met deze integratie. Alleen de mediaspeler in Safegate Pro wordt uitgeschakeld!",
                 "title": "Bevestig het toevoegen van Apple TV"
             },
             "pair_no_pin": {
@@ -54,7 +54,7 @@
         "step": {
             "init": {
                 "data": {
-                    "start_off": "Schakel het apparaat niet in wanneer u Home Assistant start"
+                    "start_off": "Schakel het apparaat niet in wanneer u Safegate Pro start"
                 },
                 "description": "Algemene apparaatinstellingen configureren"
             }

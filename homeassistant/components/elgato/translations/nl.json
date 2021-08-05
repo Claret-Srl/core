@@ -14,10 +14,10 @@
                     "host": "Host",
                     "port": "Poort"
                 },
-                "description": "Stel uw Elgato Key Light in om te integreren met Home Assistant."
+                "description": "Stel uw Elgato Key Light in om te integreren met Safegate Pro."
             },
             "zeroconf_confirm": {
-                "description": "Wilt u de Elgato Key Light met serienummer `{serial_number}` toevoegen aan Home Assistant?",
+                "description": "Wilt u de Elgato Key Light met serienummer `{serial_number}` toevoegen aan Safegate Pro?",
                 "title": "Elgato Light apparaat ontdekt"
             }
         }

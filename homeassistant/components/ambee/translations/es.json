@@ -7,7 +7,7 @@
                 }
             },
             "user": {
-                "description": "Configure Ambee para que se integre con Home Assistant."
+                "description": "Configure Ambee para que se integre con Safegate Pro."
             }
         }
     }

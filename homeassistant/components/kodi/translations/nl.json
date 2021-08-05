@@ -22,7 +22,7 @@
                 "description": "Voer uw Kodi gebruikersnaam en wachtwoord in. Deze zijn te vinden in Systeem / Instellingen / Netwerk / Services."
             },
             "discovery_confirm": {
-                "description": "Wil je Kodi (`{name}`) toevoegen aan Home Assistant?",
+                "description": "Wil je Kodi (`{name}`) toevoegen aan Safegate Pro?",
                 "title": "Kodi ontdekt"
             },
             "user": {

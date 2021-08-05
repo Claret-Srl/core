@@ -3,7 +3,7 @@
         "abort": {
             "already_configured": "Konto wurde bereits konfiguriert",
             "single_instance_allowed": "Bereits konfiguriert. Nur eine einzige Konfiguration m\u00f6glich.",
-            "webhook_not_internet_accessible": "Deine Home Assistant-Instanz muss \u00fcber das Internet erreichbar sein, um Webhook-Nachrichten empfangen zu k\u00f6nnen."
+            "webhook_not_internet_accessible": "Deine Safegate Pro-Instanz muss \u00fcber das Internet erreichbar sein, um Webhook-Nachrichten empfangen zu k\u00f6nnen."
         },
         "create_entry": {
             "default": "Ihr Plaato {device_type} mit dem Namen **{device_name}** wurde erfolgreich eingerichtet!"
@@ -31,7 +31,7 @@
                 "title": "Plaato Ger\u00e4te einrichten"
             },
             "webhook": {
-                "description": "Um Ereignisse an Home Assistant zu senden, muss das Webhook Feature in Plaato Airlock konfiguriert werden.\n\n F\u00fcge die folgenden Informationen ein: \n\n - URL: ` {webhook_url} ` \n - Methode: POST \n \n Weitere Informationen finden sich in der [Dokumentation]({docs_url}).",
+                "description": "Um Ereignisse an Safegate Pro zu senden, muss das Webhook Feature in Plaato Airlock konfiguriert werden.\n\n F\u00fcge die folgenden Informationen ein: \n\n - URL: ` {webhook_url} ` \n - Methode: POST \n \n Weitere Informationen finden sich in der [Dokumentation]({docs_url}).",
                 "title": "Zu verwendender Webhook"
             }
         }

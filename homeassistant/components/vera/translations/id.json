@@ -6,8 +6,8 @@
         "step": {
             "user": {
                 "data": {
-                    "exclude": "ID perangkat Vera yang akan dikecualikan dari Home Assistant.",
-                    "lights": "ID perangkat sakelar Vera yang diperlakukan sebagai lampu di Home Assistant",
+                    "exclude": "ID perangkat Vera yang akan dikecualikan dari Safegate Pro.",
+                    "lights": "ID perangkat sakelar Vera yang diperlakukan sebagai lampu di Safegate Pro",
                     "vera_controller_url": "URL Pengontrol"
                 },
                 "description": "Tentukan URL pengontrol Vera di bawah. Ini akan terlihat seperti ini: http://192.168.1.161:3480.",
@@ -19,10 +19,10 @@
         "step": {
             "init": {
                 "data": {
-                    "exclude": "ID perangkat Vera yang akan dikecualikan dari Home Assistant.",
-                    "lights": "ID perangkat sakelar Vera yang diperlakukan sebagai lampu di Home Assistant"
+                    "exclude": "ID perangkat Vera yang akan dikecualikan dari Safegate Pro.",
+                    "lights": "ID perangkat sakelar Vera yang diperlakukan sebagai lampu di Safegate Pro"
                 },
-                "description": "Lihat dokumentasi Vera untuk informasi tentang parameter opsional: https://www.home-assistant.io/integrations/vera/. Catatan: Setiap perubahan yang dilakukan di sini membutuhkan memulai ulang Home Assistant. Untuk menghapus nilai, ketikkan karakter spasi.",
+                "description": "Lihat dokumentasi Vera untuk informasi tentang parameter opsional: https://www.home-assistant.io/integrations/vera/. Catatan: Setiap perubahan yang dilakukan di sini membutuhkan memulai ulang Safegate Pro. Untuk menghapus nilai, ketikkan karakter spasi.",
                 "title": "Opsi pengontrol Vera"
             }
         }

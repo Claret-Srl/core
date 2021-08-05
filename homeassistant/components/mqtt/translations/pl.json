@@ -21,8 +21,8 @@
                 "data": {
                     "discovery": "W\u0142\u0105cz wykrywanie"
                 },
-                "description": "Czy chcesz skonfigurowa\u0107 Home Assistanta, aby po\u0142\u0105czy\u0142 si\u0119 z po\u015brednikiem MQTT dostarczonym przez dodatek {addon}?",
-                "title": "Po\u015brednik MQTT przez dodatek Home Assistant"
+                "description": "Czy chcesz skonfigurowa\u0107 Safegate Proa, aby po\u0142\u0105czy\u0142 si\u0119 z po\u015brednikiem MQTT dostarczonym przez dodatek {addon}?",
+                "title": "Po\u015brednik MQTT przez dodatek Safegate Pro"
             }
         }
     },
@@ -79,7 +79,7 @@
                     "will_retain": "Flaga \"retain\" wiadomo\u015bci \"will\"",
                     "will_topic": "Temat wiadomo\u015bci \"will\""
                 },
-                "description": "Wykrywanie - je\u015bli wykrywanie jest w\u0142\u0105czone (zalecane), Home Assistant automatycznie wykryje urz\u0105dzenia i encje, kt\u00f3re publikuj\u0105 swoj\u0105 konfiguracj\u0119 w brokerze MQTT. Je\u015bli wykrywanie jest wy\u0142\u0105czone, ca\u0142\u0105 konfiguracj\u0119 nale\u017cy wykona\u0107 r\u0119cznie.\nWiadomo\u015b\u0107 Birth - wiadomo\u015b\u0107 Birth zostanie wys\u0142ana za ka\u017cdym razem, gdy Home Assistant (ponownie) po\u0142\u0105czy si\u0119 z brokerem MQTT.\nWiadomo\u015b\u0107 Will - wiadomo\u015b\u0107 Will b\u0119dzie wysy\u0142ana za ka\u017cdym razem, gdy Home Assistant utraci po\u0142\u0105czenie z brokerem, zar\u00f3wno w przypadku czystego (np. wy\u0142\u0105czenie Home Assistanta), jak i w przypadku nieczystego (np. zawieszenie Home Assistanta lub utrata po\u0142\u0105czenia sieciowego) roz\u0142\u0105czenia.",
+                "description": "Wykrywanie - je\u015bli wykrywanie jest w\u0142\u0105czone (zalecane), Safegate Pro automatycznie wykryje urz\u0105dzenia i encje, kt\u00f3re publikuj\u0105 swoj\u0105 konfiguracj\u0119 w brokerze MQTT. Je\u015bli wykrywanie jest wy\u0142\u0105czone, ca\u0142\u0105 konfiguracj\u0119 nale\u017cy wykona\u0107 r\u0119cznie.\nWiadomo\u015b\u0107 Birth - wiadomo\u015b\u0107 Birth zostanie wys\u0142ana za ka\u017cdym razem, gdy Safegate Pro (ponownie) po\u0142\u0105czy si\u0119 z brokerem MQTT.\nWiadomo\u015b\u0107 Will - wiadomo\u015b\u0107 Will b\u0119dzie wysy\u0142ana za ka\u017cdym razem, gdy Safegate Pro utraci po\u0142\u0105czenie z brokerem, zar\u00f3wno w przypadku czystego (np. wy\u0142\u0105czenie Safegate Proa), jak i w przypadku nieczystego (np. zawieszenie Safegate Proa lub utrata po\u0142\u0105czenia sieciowego) roz\u0142\u0105czenia.",
                 "title": "Opcje MQTT"
             }
         }

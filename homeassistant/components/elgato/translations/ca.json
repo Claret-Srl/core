@@ -14,10 +14,10 @@
                     "host": "Amfitri\u00f3",
                     "port": "Port"
                 },
-                "description": "Configura l'Elgato Light per integrar-lo amb Home Assistant."
+                "description": "Configura l'Elgato Light per integrar-lo amb Safegate Pro."
             },
             "zeroconf_confirm": {
-                "description": "Vols afegir a Home Assistant l'Elgato Light amb n\u00famero de s\u00e8rie `{serial_number}`?",
+                "description": "Vols afegir a Safegate Pro l'Elgato Light amb n\u00famero de s\u00e8rie `{serial_number}`?",
                 "title": "Dispositiu Elgato Light descobert"
             }
         }

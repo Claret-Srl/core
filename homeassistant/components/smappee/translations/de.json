@@ -15,7 +15,7 @@
                 "data": {
                     "environment": "Umgebung"
                 },
-                "description": "Richte dein Smappee f\u00fcr die Integration mit dem Home Assistant ein."
+                "description": "Richte dein Smappee f\u00fcr die Integration mit dem Safegate Pro ein."
             },
             "local": {
                 "data": {
@@ -27,7 +27,7 @@
                 "title": "W\u00e4hle die Authentifizierungsmethode"
             },
             "zeroconf_confirm": {
-                "description": "M\u00f6chtest du das Smappee-Ger\u00e4t mit der Seriennummer `{serialnumber}` zum Home Assistant hinzuf\u00fcgen?",
+                "description": "M\u00f6chtest du das Smappee-Ger\u00e4t mit der Seriennummer `{serialnumber}` zum Safegate Pro hinzuf\u00fcgen?",
                 "title": "Entdecktes Smappee-Ger\u00e4t"
             }
         }

@@ -15,7 +15,7 @@
                     "longitude": "Longitude",
                     "name": "Nom"
                 },
-                "description": "Si Latitude et Longitude ne sont pas fournis, les valeurs par d\u00e9faut de la configuration de Home Assistant seront utilis\u00e9es. Une entit\u00e9 sera cr\u00e9\u00e9e pour chaque type de pr\u00e9vision, mais seules celles que vous s\u00e9lectionnez seront activ\u00e9es par d\u00e9faut."
+                "description": "Si Latitude et Longitude ne sont pas fournis, les valeurs par d\u00e9faut de la configuration de Safegate Pro seront utilis\u00e9es. Une entit\u00e9 sera cr\u00e9\u00e9e pour chaque type de pr\u00e9vision, mais seules celles que vous s\u00e9lectionnez seront activ\u00e9es par d\u00e9faut."
             }
         }
     },

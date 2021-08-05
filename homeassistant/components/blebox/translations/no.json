@@ -16,7 +16,7 @@
                     "host": "IP adresse",
                     "port": "Port"
                 },
-                "description": "Konfigurer BleBox-en til \u00e5 integreres med Home Assistant.",
+                "description": "Konfigurer BleBox-en til \u00e5 integreres med Safegate Pro.",
                 "title": "Konfigurere BleBox-enheten"
             }
         }

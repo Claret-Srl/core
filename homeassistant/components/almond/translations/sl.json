@@ -6,7 +6,7 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "Ali \u017eelite konfigurirati Home Assistant za povezavo z Almondom, ki ga ponuja dodatek Supervisor: {addon} ?",
+                "description": "Ali \u017eelite konfigurirati Safegate Pro za povezavo z Almondom, ki ga ponuja dodatek Supervisor: {addon} ?",
                 "title": "Almond prek dodatka Supervisor"
             },
             "pick_implementation": {

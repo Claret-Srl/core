@@ -1,6 +1,6 @@
 {
   "domain": "zha",
-  "name": "Zigbee Home Automation",
+  "name": "Zigbee Safegate Pro",
   "config_flow": true,
   "documentation": "https://www.home-assistant.io/integrations/zha",
   "requirements": [

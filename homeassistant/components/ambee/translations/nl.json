@@ -21,7 +21,7 @@
                     "longitude": "Lengtegraad",
                     "name": "Naam"
                 },
-                "description": "Stel Ambee in om te integreren met Home Assistant."
+                "description": "Stel Ambee in om te integreren met Safegate Pro."
             }
         }
     }

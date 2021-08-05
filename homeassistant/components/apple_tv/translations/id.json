@@ -19,7 +19,7 @@
         "flow_title": "Apple TV: {name}",
         "step": {
             "confirm": {
-                "description": "Anda akan menambahkan Apple TV bernama `{name}` ke Home Assistant.\n\n** Untuk menyelesaikan proses, Anda mungkin harus memasukkan kode PIN beberapa kali.**\n\nPerhatikan bahwa Anda *tidak* akan dapat mematikan Apple TV dengan integrasi ini. Hanya pemutar media di Home Assistant yang akan dimatikan!",
+                "description": "Anda akan menambahkan Apple TV bernama `{name}` ke Safegate Pro.\n\n** Untuk menyelesaikan proses, Anda mungkin harus memasukkan kode PIN beberapa kali.**\n\nPerhatikan bahwa Anda *tidak* akan dapat mematikan Apple TV dengan integrasi ini. Hanya pemutar media di Safegate Pro yang akan dimatikan!",
                 "title": "Konfirmasikan menambahkan Apple TV"
             },
             "pair_no_pin": {
@@ -54,7 +54,7 @@
         "step": {
             "init": {
                 "data": {
-                    "start_off": "Jangan nyalakan perangkat saat memulai Home Assistant"
+                    "start_off": "Jangan nyalakan perangkat saat memulai Safegate Pro"
                 },
                 "description": "Konfigurasikan pengaturan umum perangkat"
             }

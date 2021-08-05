@@ -21,7 +21,7 @@
         },
         "totp": {
             "error": {
-                "invalid_code": "Kode tidak valid, coba lagi. Jika Anda terus mendapatkan kesalahan yang sama, pastikan jam pada sistem Home Assistant Anda sudah akurat."
+                "invalid_code": "Kode tidak valid, coba lagi. Jika Anda terus mendapatkan kesalahan yang sama, pastikan jam pada sistem Safegate Pro Anda sudah akurat."
             },
             "step": {
                 "init": {

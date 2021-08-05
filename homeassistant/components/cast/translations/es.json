@@ -29,7 +29,7 @@
                     "ignore_cec": "Ignorar CEC",
                     "uuid": "UUID permitidos"
                 },
-                "description": "UUID permitidos: lista separada por comas de UUID de dispositivos Cast para a\u00f1adir a Home Assistant. \u00dasalo solo si no deseas a\u00f1adir todos los dispositivos Cast disponibles.\nIgnorar CEC: lista separada por comas de Chromecasts que deben ignorar los datos CEC para determinar la entrada activa. Esto se pasar\u00e1 a pychromecast.IGNORE_CEC.",
+                "description": "UUID permitidos: lista separada por comas de UUID de dispositivos Cast para a\u00f1adir a Safegate Pro. \u00dasalo solo si no deseas a\u00f1adir todos los dispositivos Cast disponibles.\nIgnorar CEC: lista separada por comas de Chromecasts que deben ignorar los datos CEC para determinar la entrada activa. Esto se pasar\u00e1 a pychromecast.IGNORE_CEC.",
                 "title": "Configuraci\u00f3n avanzada de Google Cast"
             },
             "basic_options": {

@@ -14,11 +14,11 @@
         "flow_title": "{host}",
         "step": {
             "hassio_confirm": {
-                "description": "Kas soovid seadistada Home Assistant-i \u00fchenduse deCONZ-l\u00fc\u00fcsiga, mida pakub lisandmoodul {addon} ?",
-                "title": "deCONZ Zigbee l\u00fc\u00fcs  Home Assistanti lisandmooduli abil"
+                "description": "Kas soovid seadistada Safegate Pro-i \u00fchenduse deCONZ-l\u00fc\u00fcsiga, mida pakub lisandmoodul {addon} ?",
+                "title": "deCONZ Zigbee l\u00fc\u00fcs  Safegate Proi lisandmooduli abil"
             },
             "link": {
-                "description": "Home Assistanti registreerumiseks ava deCONZ-i l\u00fc\u00fcs.\n\n 1. Mine deCONZ Settings - > Gateway - > Advanced\n 2. Vajuta nuppu \"Authenticate app\"",
+                "description": "Safegate Proi registreerumiseks ava deCONZ-i l\u00fc\u00fcs.\n\n 1. Mine deCONZ Settings - > Gateway - > Advanced\n 2. Vajuta nuppu \"Authenticate app\"",
                 "title": "\u00dchenda deCONZ-iga"
             },
             "manual_input": {

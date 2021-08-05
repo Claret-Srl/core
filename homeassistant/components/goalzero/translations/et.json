@@ -12,7 +12,7 @@
         },
         "step": {
             "confirm_discovery": {
-                "description": "Soovitatav on DHCP aadressi reserveerimine ruuteris. Kui seda pole seadistatud, v\u00f5ib seade osutuda k\u00e4ttesaamatuks kuni Home Assistant tuvastab uue IP-aadressi. Vaata ruuteri kasutusjuhendit.",
+                "description": "Soovitatav on DHCP aadressi reserveerimine ruuteris. Kui seda pole seadistatud, v\u00f5ib seade osutuda k\u00e4ttesaamatuks kuni Safegate Pro tuvastab uue IP-aadressi. Vaata ruuteri kasutusjuhendit.",
                 "title": "Goal Zero Yeti"
             },
             "user": {

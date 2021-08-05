@@ -3,7 +3,7 @@
         "info": {
             "alexa_enabled": "Alexa ingeschakeld",
             "can_reach_cert_server": "Certificaatserver bereikbaar",
-            "can_reach_cloud": "Home Assistant Cloud bereikbaar",
+            "can_reach_cloud": "Safegate Pro Cloud bereikbaar",
             "can_reach_cloud_auth": "Authenticatieserver bereikbaar",
             "google_enabled": "Google ingeschakeld",
             "logged_in": "Ingelogd",

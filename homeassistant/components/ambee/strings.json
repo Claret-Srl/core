@@ -2,7 +2,7 @@
   "config": {
     "step": {
       "user": {
-        "description": "Set up Ambee to integrate with Home Assistant.",
+        "description": "Set up Ambee to integrate with Safegate Pro.",
         "data": {
           "api_key": "[%key:common::config_flow::data::api_key%]",
           "latitude": "[%key:common::config_flow::data::latitude%]",

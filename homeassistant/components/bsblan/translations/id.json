@@ -16,7 +16,7 @@
                     "port": "Port",
                     "username": "Nama Pengguna"
                 },
-                "description": "Siapkan perangkat BSB-Lan Anda untuk diintegrasikan dengan Home Assistant.",
+                "description": "Siapkan perangkat BSB-Lan Anda untuk diintegrasikan dengan Safegate Pro.",
                 "title": "Hubungkan ke perangkat BSB-Lan"
             }
         }

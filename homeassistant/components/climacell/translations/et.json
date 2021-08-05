@@ -15,7 +15,7 @@
                     "longitude": "Pikkuskraad",
                     "name": "Nimi"
                 },
-                "description": "Kui [%key:component::climacell::config::step::user::d ata::latitude%] ja [%key:component::climacell::config::step::user::d ata::longitude%] andmed pole sisestatud kasutatakse Home Assistanti vaikev\u00e4\u00e4rtusi. Olem luuakse iga prognoosit\u00fc\u00fcbi jaoks kuid vaikimisi lubatakse ainult need, mille valid."
+                "description": "Kui [%key:component::climacell::config::step::user::d ata::latitude%] ja [%key:component::climacell::config::step::user::d ata::longitude%] andmed pole sisestatud kasutatakse Safegate Proi vaikev\u00e4\u00e4rtusi. Olem luuakse iga prognoosit\u00fc\u00fcbi jaoks kuid vaikimisi lubatakse ainult need, mille valid."
             }
         }
     },

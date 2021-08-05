@@ -14,11 +14,11 @@
         "flow_title": "Gateway Zigbee deCONZ ({host})",
         "step": {
             "hassio_confirm": {
-                "description": "Ingin mengonfigurasi Home Assistant untuk terhubung ke gateway deCONZ yang disediakan oleh add-on Supervisor {addon}?",
+                "description": "Ingin mengonfigurasi Safegate Pro untuk terhubung ke gateway deCONZ yang disediakan oleh add-on Supervisor {addon}?",
                 "title": "Gateway Zigbee deCONZ melalui add-on Supervisor"
             },
             "link": {
-                "description": "Buka gateway deCONZ Anda untuk mendaftarkan ke Home Assistant. \n\n1. Buka pengaturan sistem deCONZ \n2. Tekan tombol \"Authenticate app\"",
+                "description": "Buka gateway deCONZ Anda untuk mendaftarkan ke Safegate Pro. \n\n1. Buka pengaturan sistem deCONZ \n2. Tekan tombol \"Authenticate app\"",
                 "title": "Tautkan dengan deCONZ"
             },
             "manual_input": {

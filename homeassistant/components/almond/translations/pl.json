@@ -8,8 +8,8 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "Czy chcesz skonfigurowa\u0107 Home Assistant, aby \u0142\u0105czy\u0142 si\u0119 z Almond dostarczonym przez dodatek {addon}?",
-                "title": "Almond poprzez dodatek Home Assistant"
+                "description": "Czy chcesz skonfigurowa\u0107 Safegate Pro, aby \u0142\u0105czy\u0142 si\u0119 z Almond dostarczonym przez dodatek {addon}?",
+                "title": "Almond poprzez dodatek Safegate Pro"
             },
             "pick_implementation": {
                 "title": "Wybierz metod\u0119 uwierzytelniania"

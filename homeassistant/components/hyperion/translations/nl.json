@@ -23,7 +23,7 @@
                 "description": "Configureer autorisatie voor uw Hyperion Ambilight-server"
             },
             "confirm": {
-                "description": "Wilt u deze Hyperion Ambilight toevoegen aan Home Assistant? \n\n ** Host: ** {host}\n ** Poort: ** {port}\n ** ID **: {id}",
+                "description": "Wilt u deze Hyperion Ambilight toevoegen aan Safegate Pro? \n\n ** Host: ** {host}\n ** Poort: ** {port}\n ** ID **: {id}",
                 "title": "Bevestig de toevoeging van Hyperion Ambilight-service"
             },
             "create_token": {

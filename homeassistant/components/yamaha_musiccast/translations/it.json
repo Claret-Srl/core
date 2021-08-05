@@ -16,7 +16,7 @@
                 "data": {
                     "host": "Host"
                 },
-                "description": "Configura MusicCast per l'integrazione con Home Assistant."
+                "description": "Configura MusicCast per l'integrazione con Safegate Pro."
             }
         }
     }

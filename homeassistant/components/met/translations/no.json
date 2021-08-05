@@ -1,7 +1,7 @@
 {
     "config": {
         "abort": {
-            "no_home": "Ingen hjemmekoordinater er angitt i Home Assistant-konfigurasjonen"
+            "no_home": "Ingen hjemmekoordinater er angitt i Safegate Pro-konfigurasjonen"
         },
         "error": {
             "already_configured": "Tjenesten er allerede konfigurert"

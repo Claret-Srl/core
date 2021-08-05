@@ -21,8 +21,8 @@
                 "data": {
                     "discovery": "Luba automaatne avastamine"
                 },
-                "description": "Kas soovid seadistada Home Assistanti \u00fchenduse loomiseks lisandmooduli {addon} pakutava MQTT vahendajaga?",
-                "title": "MQTT vahendaja  Home Assistanti lisandmooduli abil"
+                "description": "Kas soovid seadistada Safegate Proi \u00fchenduse loomiseks lisandmooduli {addon} pakutava MQTT vahendajaga?",
+                "title": "MQTT vahendaja  Safegate Proi lisandmooduli abil"
             }
         }
     },
@@ -79,7 +79,7 @@
                     "will_retain": "L\u00f5petamisteate j\u00e4\u00e4dvustamine",
                     "will_topic": "L\u00f5petamisteade"
                 },
-                "description": "Avastamine - kui avastamine on lubatud (soovitatav) avastab Home Assistant automaatselt seadmed ja \u00fcksused, kes avaldavad oma konfiguratsiooni MQTT maakleris. Kui avastamine on keelatud, tuleb kogu seadistamine teha k\u00e4sitsi.\n S\u00fcnnis\u00f5num - s\u00fcnnis\u00f5num saadetakse iga kord kui Home Assistant (uuesti) MQTT maakleriga \u00fchendust v\u00f5tab.\n Tahte s\u00f5num - tahte s\u00f5num saadetakse iga kord kui Home Assistant kaotab \u00fchenduse maakleriga, nii korralisel (nt Home Assistant sulgub) kui ka erakorralisel (nt Home Assistant krahhi v\u00f5i v\u00f5rgu\u00fchenduse kaotamisel) \u00fchenduse kadumisel.",
+                "description": "Avastamine - kui avastamine on lubatud (soovitatav) avastab Safegate Pro automaatselt seadmed ja \u00fcksused, kes avaldavad oma konfiguratsiooni MQTT maakleris. Kui avastamine on keelatud, tuleb kogu seadistamine teha k\u00e4sitsi.\n S\u00fcnnis\u00f5num - s\u00fcnnis\u00f5num saadetakse iga kord kui Safegate Pro (uuesti) MQTT maakleriga \u00fchendust v\u00f5tab.\n Tahte s\u00f5num - tahte s\u00f5num saadetakse iga kord kui Safegate Pro kaotab \u00fchenduse maakleriga, nii korralisel (nt Safegate Pro sulgub) kui ka erakorralisel (nt Safegate Pro krahhi v\u00f5i v\u00f5rgu\u00fchenduse kaotamisel) \u00fchenduse kadumisel.",
                 "title": "MQTT valikud"
             }
         }

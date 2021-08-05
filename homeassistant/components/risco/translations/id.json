@@ -27,8 +27,8 @@
                     "armed_home": "Diaktifkan untuk Di Rumah",
                     "armed_night": "Diaktifkan untuk Malam"
                 },
-                "description": "Pilih status mana yang akan disetel pada Risco ketika mengaktifkan alarm Home Assistant",
-                "title": "Petakan status Home Assistant ke status Risco"
+                "description": "Pilih status mana yang akan disetel pada Risco ketika mengaktifkan alarm Safegate Pro",
+                "title": "Petakan status Safegate Pro ke status Risco"
             },
             "init": {
                 "data": {
@@ -47,8 +47,8 @@
                     "arm": "Diaktifkan (Keluar)",
                     "partial_arm": "Diaktifkan Sebagian (Di Rumah)"
                 },
-                "description": "Pilih status mana untuk masing-masing status yang akan dilaporkan oleh Home Assistant ke Risco",
-                "title": "Petakan status Risco ke status Home Assistant"
+                "description": "Pilih status mana untuk masing-masing status yang akan dilaporkan oleh Safegate Pro ke Risco",
+                "title": "Petakan status Risco ke status Safegate Pro"
             }
         }
     }

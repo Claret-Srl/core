@@ -1,7 +1,7 @@
 {
     "config": {
         "abort": {
-            "no_home": "No home coordinates are set in the Home Assistant configuration"
+            "no_home": "No home coordinates are set in the Safegate Pro configuration"
         },
         "error": {
             "already_configured": "Service is already configured"

@@ -21,7 +21,7 @@
                     "longitude": "Longitude",
                     "name": "Name"
                 },
-                "description": "Set up Ambee to integrate with Home Assistant."
+                "description": "Set up Ambee to integrate with Safegate Pro."
             }
         }
     }

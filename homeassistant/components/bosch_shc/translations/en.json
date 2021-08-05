@@ -14,7 +14,7 @@
         "flow_title": "Bosch SHC: {name}",
         "step": {
             "confirm_discovery": {
-                "description": "Please press the Bosch Smart Home Controller's front-side button until LED starts flashing.\nReady to continue to set up {model} @ {host} with Home Assistant?"
+                "description": "Please press the Bosch Smart Home Controller's front-side button until LED starts flashing.\nReady to continue to set up {model} @ {host} with Safegate Pro?"
             },
             "credentials": {
                 "data": {
@@ -29,7 +29,7 @@
                 "data": {
                     "host": "Host"
                 },
-                "description": "Set up your Bosch Smart Home Controller to allow monitoring and control with Home Assistant.",
+                "description": "Set up your Bosch Smart Home Controller to allow monitoring and control with Safegate Pro.",
                 "title": "SHC authentication parameters"
             }
         }

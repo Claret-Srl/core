@@ -21,8 +21,8 @@
                 "data": {
                     "discovery": "Habilitar descobriment autom\u00e0tic"
                 },
-                "description": "Vols configurar Home Assistant perqu\u00e8 es connecti amb el broker MQTT proporcionat pel complement {addon}?",
-                "title": "Broker MQTT via complement de Home Assistant"
+                "description": "Vols configurar Safegate Pro perqu\u00e8 es connecti amb el broker MQTT proporcionat pel complement {addon}?",
+                "title": "Broker MQTT via complement de Safegate Pro"
             }
         }
     },
@@ -79,7 +79,7 @@
                     "will_retain": "Retenci\u00f3 del missatge d'\u00faltima voluntat",
                     "will_topic": "Topic del missatge d'\u00faltima voluntat"
                 },
-                "description": "Descobriment - Si est\u00e0 activat (recomanat), Home Assistant descobrir\u00e0 autom\u00e0ticament dispositius i entitats que publiquin la seva configuraci\u00f3 al broker MQTT. Si est\u00e0 desactivat, les configuracions s'han de fer manualment.\nMissatge de naixement - S'enviar\u00e0 cada vegada que Home Assistant \u00e9s connecti al broker MQTT.\nMissatge d'\u00faltima voluntat - S'enviar\u00e0 cada vegada que Home Assistant perdi la connexi\u00f3 amb el broker, tant si \u00e9s una desconnexi\u00f3 neta (per exemple si s'apaga Home Assistant) com si \u00e9s una desconnexi\u00f3 dolenta (per exemple si Home Assistant falla o perd la connexi\u00f3 a Internet).",
+                "description": "Descobriment - Si est\u00e0 activat (recomanat), Safegate Pro descobrir\u00e0 autom\u00e0ticament dispositius i entitats que publiquin la seva configuraci\u00f3 al broker MQTT. Si est\u00e0 desactivat, les configuracions s'han de fer manualment.\nMissatge de naixement - S'enviar\u00e0 cada vegada que Safegate Pro \u00e9s connecti al broker MQTT.\nMissatge d'\u00faltima voluntat - S'enviar\u00e0 cada vegada que Safegate Pro perdi la connexi\u00f3 amb el broker, tant si \u00e9s una desconnexi\u00f3 neta (per exemple si s'apaga Safegate Pro) com si \u00e9s una desconnexi\u00f3 dolenta (per exemple si Safegate Pro falla o perd la connexi\u00f3 a Internet).",
                 "title": "Opcions d'MQTT"
             }
         }

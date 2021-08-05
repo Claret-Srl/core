@@ -86,7 +86,7 @@
                     "api_host": "Ganti URL host API (opsional)",
                     "blink": "Kedipkan panel LED saat mengirim perubahan status",
                     "discovery": "Tanggapi permintaan penemuan di jaringan Anda",
-                    "override_api_host": "Timpa URL panel host API Home Assistant bawaan"
+                    "override_api_host": "Timpa URL panel host API Safegate Pro bawaan"
                 },
                 "description": "Pilih perilaku yang diinginkan untuk panel Anda",
                 "title": "Konfigurasikan Lainnya"

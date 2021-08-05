@@ -1,6 +1,6 @@
 {
   "domain": "frontend",
-  "name": "Home Assistant Frontend",
+  "name": "Safegate Pro Frontend",
   "documentation": "https://www.home-assistant.io/integrations/frontend",
   "requirements": [
     "claret-assistant-frontend==20210707.0"

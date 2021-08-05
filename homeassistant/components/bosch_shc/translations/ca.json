@@ -14,7 +14,7 @@
         "flow_title": "Bosch SHC: {name}",
         "step": {
             "confirm_discovery": {
-                "description": "Prem el bot\u00f3 de la part frontal/lateral del controlador Bosh Smart Home fins que el LED parpellegi.\nPreparat per continuar la configuraci\u00f3 de {model} @ {host} amb Home Assistant?"
+                "description": "Prem el bot\u00f3 de la part frontal/lateral del controlador Bosh Smart Home fins que el LED parpellegi.\nPreparat per continuar la configuraci\u00f3 de {model} @ {host} amb Safegate Pro?"
             },
             "credentials": {
                 "data": {
@@ -29,7 +29,7 @@
                 "data": {
                     "host": "Amfitri\u00f3"
                 },
-                "description": "Configura Bosch Smart Controller per poder controlar i monitoritzar-lo des de Home Assistant.",
+                "description": "Configura Bosch Smart Controller per poder controlar i monitoritzar-lo des de Safegate Pro.",
                 "title": "Par\u00e0metres d'autenticaci\u00f3 SHC"
             }
         }

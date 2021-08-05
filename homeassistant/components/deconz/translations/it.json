@@ -14,11 +14,11 @@
         "flow_title": "{host}",
         "step": {
             "hassio_confirm": {
-                "description": "Vuoi configurare Home Assistant per connettersi al gateway deCONZ fornito dal componente aggiuntivo: {addon}?",
-                "title": "Gateway deCONZ Zigbee tramite il componente aggiuntivo di Home Assistant"
+                "description": "Vuoi configurare Safegate Pro per connettersi al gateway deCONZ fornito dal componente aggiuntivo: {addon}?",
+                "title": "Gateway deCONZ Zigbee tramite il componente aggiuntivo di Safegate Pro"
             },
             "link": {
-                "description": "Sblocca il tuo gateway deCONZ per registrarti con Home Assistant.\n\n1. Vai a Impostazioni deCONZ -> Gateway -> Avanzate\n2. Premere il pulsante \"Autentica app\"",
+                "description": "Sblocca il tuo gateway deCONZ per registrarti con Safegate Pro.\n\n1. Vai a Impostazioni deCONZ -> Gateway -> Avanzate\n2. Premere il pulsante \"Autentica app\"",
                 "title": "Collega con deCONZ"
             },
             "manual_input": {

@@ -16,7 +16,7 @@
                     "port": "Port Nummer",
                     "username": "Benutzername"
                 },
-                "description": "Richte dein BSB-Lan Ger\u00e4t f\u00fcr die Integration mit dem Home Assistant ein.",
+                "description": "Richte dein BSB-Lan Ger\u00e4t f\u00fcr die Integration mit dem Safegate Pro ein.",
                 "title": "Verbinden mit dem BSB-Lan Ger\u00e4t"
             }
         }

@@ -21,7 +21,7 @@
                 "data": {
                     "discovery": "Aktivera uppt\u00e4ckt"
                 },
-                "description": "Vill du konfigurera Home Assistant att ansluta till den MQTT-broker som tillhandah\u00e5lls av Supervisor-till\u00e4gget \"{addon}\"?",
+                "description": "Vill du konfigurera Safegate Pro att ansluta till den MQTT-broker som tillhandah\u00e5lls av Supervisor-till\u00e4gget \"{addon}\"?",
                 "title": "MQTT Broker via Supervisor till\u00e4gg"
             }
         }

@@ -14,7 +14,7 @@
         "flow_title": "Bosch SHC: {name}",
         "step": {
             "confirm_discovery": {
-                "description": "Naci\u015bnij przycisk z przodu kontrolera Bosch Smart Home, a\u017c dioda LED zacznie miga\u0107. Chcesz kontynuowa\u0107 konfiguracj\u0119 {model} @ {host} z Home Assistantem?"
+                "description": "Naci\u015bnij przycisk z przodu kontrolera Bosch Smart Home, a\u017c dioda LED zacznie miga\u0107. Chcesz kontynuowa\u0107 konfiguracj\u0119 {model} @ {host} z Safegate Proem?"
             },
             "credentials": {
                 "data": {
@@ -29,7 +29,7 @@
                 "data": {
                     "host": "Nazwa hosta lub adres IP"
                 },
-                "description": "Skonfiguruj kontroler Bosch Smart Home, aby umo\u017cliwi\u0107 monitorowanie i sterowanie za pomoc\u0105 Home Assistanta.",
+                "description": "Skonfiguruj kontroler Bosch Smart Home, aby umo\u017cliwi\u0107 monitorowanie i sterowanie za pomoc\u0105 Safegate Proa.",
                 "title": "Parametry uwierzytelniania SHC"
             }
         }

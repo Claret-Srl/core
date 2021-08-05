@@ -15,7 +15,7 @@
                     "longitude": "Longitud",
                     "name": "Nombre"
                 },
-                "description": "Si no se proporcionan Latitud y Longitud , se utilizar\u00e1n los valores predeterminados en la configuraci\u00f3n de Home Assistant. Se crear\u00e1 una entidad para cada tipo de pron\u00f3stico, pero solo las que seleccione estar\u00e1n habilitadas de forma predeterminada."
+                "description": "Si no se proporcionan Latitud y Longitud , se utilizar\u00e1n los valores predeterminados en la configuraci\u00f3n de Safegate Pro. Se crear\u00e1 una entidad para cada tipo de pron\u00f3stico, pero solo las que seleccione estar\u00e1n habilitadas de forma predeterminada."
             }
         }
     },

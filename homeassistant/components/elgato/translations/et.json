@@ -14,10 +14,10 @@
                     "host": "",
                     "port": ""
                 },
-                "description": "Seadista oma Elegato Light sidumine Home Assistant-iga."
+                "description": "Seadista oma Elegato Light sidumine Safegate Pro-iga."
             },
             "zeroconf_confirm": {
-                "description": "Kas soovid lisada Home Assistanti Elegato Light'i seerianumbriga \" {serial_number} \"?",
+                "description": "Kas soovid lisada Safegate Proi Elegato Light'i seerianumbriga \" {serial_number} \"?",
                 "title": "Leitud ElegatoLight seade"
             }
         }

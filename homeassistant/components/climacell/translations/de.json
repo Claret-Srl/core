@@ -15,7 +15,7 @@
                     "longitude": "L\u00e4ngengrad",
                     "name": "Name"
                 },
-                "description": "Wenn Breitengrad und L\u00e4ngengrad nicht angegeben werden, werden die Standardwerte in der Home Assistant-Konfiguration verwendet. F\u00fcr jeden Vorhersagetyp wird eine Entit\u00e4t erstellt, aber nur die von Ihnen ausgew\u00e4hlten werden standardm\u00e4\u00dfig aktiviert."
+                "description": "Wenn Breitengrad und L\u00e4ngengrad nicht angegeben werden, werden die Standardwerte in der Safegate Pro-Konfiguration verwendet. F\u00fcr jeden Vorhersagetyp wird eine Entit\u00e4t erstellt, aber nur die von Ihnen ausgew\u00e4hlten werden standardm\u00e4\u00dfig aktiviert."
             }
         }
     },

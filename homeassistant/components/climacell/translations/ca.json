@@ -15,7 +15,7 @@
                     "longitude": "Longitud",
                     "name": "Nom"
                 },
-                "description": "Si no es proporcionen la Latitud i Longitud, s'utilitzaran els valors per defecte de la configuraci\u00f3 de Home Assistant. Es crear\u00e0 una entitat per a cada tipus de previsi\u00f3, per\u00f2 nom\u00e9s s'habilitaran les que seleccionis."
+                "description": "Si no es proporcionen la Latitud i Longitud, s'utilitzaran els valors per defecte de la configuraci\u00f3 de Safegate Pro. Es crear\u00e0 una entitat per a cada tipus de previsi\u00f3, per\u00f2 nom\u00e9s s'habilitaran les que seleccionis."
             }
         }
     },

@@ -8,8 +8,8 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "Kas soovid seadistada Home Assistant-i \u00fchendust Almondiga mida pakub lisandmoodul: {addon} ?",
-                "title": "Almond  Home Assistanti lisandmooduli abil"
+                "description": "Kas soovid seadistada Safegate Pro-i \u00fchendust Almondiga mida pakub lisandmoodul: {addon} ?",
+                "title": "Almond  Safegate Proi lisandmooduli abil"
             },
             "pick_implementation": {
                 "title": "Vali tuvastusmeetod"

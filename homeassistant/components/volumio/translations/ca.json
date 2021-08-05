@@ -10,7 +10,7 @@
         },
         "step": {
             "discovery_confirm": {
-                "description": "Vols afegir el Volumio (`{name}`) a Home Assistant?",
+                "description": "Vols afegir el Volumio (`{name}`) a Safegate Pro?",
                 "title": "Volumio descobert"
             },
             "user": {

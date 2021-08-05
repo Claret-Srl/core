@@ -8,7 +8,7 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "Voulez-vous configurer Home Assistant pour qu'il se connecte \u00e0 Almond fourni par le module compl\u00e9mentaire Hass.io: {addon} ?",
+                "description": "Voulez-vous configurer Safegate Pro pour qu'il se connecte \u00e0 Almond fourni par le module compl\u00e9mentaire Hass.io: {addon} ?",
                 "title": "Amande via le module compl\u00e9mentaire Hass.io"
             },
             "pick_implementation": {

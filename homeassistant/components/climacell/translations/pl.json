@@ -15,7 +15,7 @@
                     "longitude": "D\u0142ugo\u015b\u0107 geograficzna",
                     "name": "Nazwa"
                 },
-                "description": "Je\u015bli szeroko\u015b\u0107 i d\u0142ugo\u015b\u0107 geograficzna nie zostan\u0105 podane, zostan\u0105 u\u017cyte domy\u015blne warto\u015bci z konfiguracji Home Assistanta. Zostanie utworzona encja dla ka\u017cdego typu prognozy, ale domy\u015blnie w\u0142\u0105czone bed\u0105 tylko te, kt\u00f3re wybierzesz."
+                "description": "Je\u015bli szeroko\u015b\u0107 i d\u0142ugo\u015b\u0107 geograficzna nie zostan\u0105 podane, zostan\u0105 u\u017cyte domy\u015blne warto\u015bci z konfiguracji Safegate Proa. Zostanie utworzona encja dla ka\u017cdego typu prognozy, ale domy\u015blnie w\u0142\u0105czone bed\u0105 tylko te, kt\u00f3re wybierzesz."
             }
         }
     },
