@@ -196,7 +196,7 @@ jobs:
         uses: claret-srl/actions/helpers/version-push@master
         with:
           key: "homeassistant[]"
-          key-description: "Home Assistant Core"
+          key-description: "Safegate Pro Core"
           version: ${{ needs.init.outputs.version }}
           channel: ${{ needs.init.outputs.channel }}
 
@@ -205,7 +205,7 @@ jobs:
         uses: claret-srl/actions/helpers/version-push@master
         with:
           key: "homeassistant[]"
-          key-description: "Home Assistant Core"
+          key-description: "Safegate Pro Core"
           version: ${{ needs.init.outputs.version }}
           channel: beta
 

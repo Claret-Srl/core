@@ -1,5 +1,5 @@
-name: Report an issue with Home Assistant Core
-description: Report an issue with Home Assistant Core.
+name: Report an issue with Safegate Pro Core
+description: Report an issue with Safegate Pro Core.
 body:
   - type: markdown
     attributes:
@@ -28,13 +28,13 @@ body:
     validations:
       required: true
     attributes:
-      label: What is version of Home Assistant Core has the issue?
+      label: What is version of Safegate Pro Core has the issue?
       placeholder: core-
       description: >
         Can be found in the Configuration panel -> Info.
   - type: input
     attributes:
-      label: What was the last working version of Home Assistant Core?
+      label: What was the last working version of Safegate Pro Core?
       placeholder: core-
       description: >
         If known, otherwise leave blank.
@@ -46,10 +46,10 @@ body:
       description: >
         If you don't know, you can find it in: Configuration panel -> Info.
       options:
-        - Home Assistant OS
-        - Home Assistant Container
-        - Home Assistant Supervised
-        - Home Assistant Core
+        - Safegate Pro OS
+        - Safegate Pro Container
+        - Safegate Pro Supervised
+        - Safegate Pro Core
   - type: input
     id: integration_name
     attributes:
