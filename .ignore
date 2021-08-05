@@ -4,3 +4,4 @@
 /homeassistant/components/frontend/www_static/*.html
 /homeassistant/components/frontend/www_static/*.js
 /homeassistant/components/frontend/www_static/panels/*.html
+/stocazzo/
