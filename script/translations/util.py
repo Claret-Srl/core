@@ -9,7 +9,7 @@ from .error import ExitApp
 
 def get_base_arg_parser() -> argparse.ArgumentParser:
     """Get a base argument parser."""
-    parser = argparse.ArgumentParser(description="Home Assistant Translations")
+    parser = argparse.ArgumentParser(description="Safegate Pro Translations")
     parser.add_argument(
         "action",
         type=str,

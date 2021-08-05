@@ -14,10 +14,10 @@
                     "host": "Vert",
                     "port": "Port"
                 },
-                "description": "Sett opp Elgato Light for \u00e5 integrere med Home Assistant."
+                "description": "Sett opp Elgato Light for \u00e5 integrere med Safegate Pro."
             },
             "zeroconf_confirm": {
-                "description": "Vil du legge til Elgato Light med serienummeret \" {serial_number} \" i Home Assistant?",
+                "description": "Vil du legge til Elgato Light med serienummeret \" {serial_number} \" i Safegate Pro?",
                 "title": "Oppdaget Elgato Light-enhet"
             }
         }

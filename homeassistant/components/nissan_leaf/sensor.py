@@ -84,7 +84,7 @@ class LeafRangeSensor(LeafEntity, SensorEntity):
     def log_registration(self):
         """Log registration."""
         _LOGGER.debug(
-            "Registered LeafRangeSensor integration with Home Assistant for VIN %s",
+            "Registered LeafRangeSensor integration with Safegate Pro for VIN %s",
             self.car.leaf.vin,
         )
 

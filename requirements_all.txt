@@ -1,4 +1,4 @@
-# Home Assistant Core, full dependency set
+# Safegate Pro Core, full dependency set
 -r requirements.txt
 
 # homeassistant.components.aemet
@@ -436,9 +436,6 @@ circuit-webhook==1.0.1
 
 # homeassistant.components.cisco_mobility_express
 ciscomobilityexpress==0.3.9
-
-# homeassistant.components.frontend
-claret-assistant-frontend==20210707.0
 
 # homeassistant.components.cppm_tracker
 clearpasspy==1.0.2
@@ -2051,6 +2048,9 @@ russound_rio==0.1.7
 
 # homeassistant.components.yamaha
 rxv==0.6.0
+
+# homeassistant.components.frontend
+safegate-pro-frontend==20210805.0
 
 # homeassistant.components.samsungtv
 samsungctl[websocket]==0.7.1

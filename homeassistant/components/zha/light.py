@@ -1,4 +1,4 @@
-"""Lights on Zigbee Home Automation networks."""
+"""Lights on Zigbee Safegate Pro networks."""
 from __future__ import annotations
 
 from collections import Counter
@@ -101,7 +101,7 @@ class LightColorMode(enum.IntEnum):
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    """Set up the Zigbee Home Automation light from config entry."""
+    """Set up the Zigbee Safegate Pro light from config entry."""
     entities_to_create = hass.data[DATA_ZHA][light.DOMAIN]
 
     unsub = async_dispatcher_connect(

@@ -1,4 +1,4 @@
-"""The tests for Home Assistant ffmpeg."""
+"""The tests for Safegate Pro ffmpeg."""
 
 import os
 import shutil

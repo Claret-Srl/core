@@ -1,4 +1,4 @@
-"""Home Assistant auth provider."""
+"""Safegate Pro auth provider."""
 from __future__ import annotations
 
 import asyncio
@@ -97,7 +97,7 @@ class Data:
                 self.is_legacy = True
 
                 logging.getLogger(__name__).warning(
-                    "Home Assistant auth provider is running in legacy mode "
+                    "Safegate Pro auth provider is running in legacy mode "
                     "because we detected usernames that are case-insensitive"
                     "equivalent. Please change the username: '%s'.",
                     username,
@@ -112,7 +112,7 @@ class Data:
                 self.is_legacy = True
 
                 logging.getLogger(__name__).warning(
-                    "Home Assistant auth provider is running in legacy mode "
+                    "Safegate Pro auth provider is running in legacy mode "
                     "because we detected usernames that start or end in a "
                     "space. Please change the username: '%s'.",
                     username,
@@ -215,12 +215,12 @@ class Data:
 
 @AUTH_PROVIDERS.register("homeassistant")
 class HassAuthProvider(AuthProvider):
-    """Auth provider based on a local storage of users in Home Assistant config dir."""
+    """Auth provider based on a local storage of users in Safegate Pro config dir."""
 
-    DEFAULT_TITLE = "Home Assistant Local"
+    DEFAULT_TITLE = "Safegate Pro Local"
 
     def __init__(self, *args: Any, **kwargs: Any) -> None:
-        """Initialize an Home Assistant auth provider."""
+        """Initialize an Safegate Pro auth provider."""
         super().__init__(*args, **kwargs)
         self.data: Data | None = None
         self._init_lock = asyncio.Lock()

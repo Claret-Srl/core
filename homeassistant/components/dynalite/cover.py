@@ -33,7 +33,7 @@ async def async_setup_entry(
 
 
 class DynaliteCover(DynaliteBase, CoverEntity):
-    """Representation of a Dynalite Channel as a Home Assistant Cover."""
+    """Representation of a Dynalite Channel as a Safegate Pro Cover."""
 
     @property
     def device_class(self) -> str:
@@ -82,7 +82,7 @@ class DynaliteCover(DynaliteBase, CoverEntity):
 
 
 class DynaliteCoverWithTilt(DynaliteCover):
-    """Representation of a Dynalite Channel as a Home Assistant Cover that uses up and down for tilt."""
+    """Representation of a Dynalite Channel as a Safegate Pro Cover that uses up and down for tilt."""
 
     @property
     def current_cover_tilt_position(self) -> int:

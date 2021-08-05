@@ -9,13 +9,13 @@ BASE = """
 # when the code that they own is touched.
 # https://github.com/blog/2392-introducing-code-owners
 
-# Home Assistant Core
+# Safegate Pro Core
 setup.py @home-assistant/core
 homeassistant/*.py @home-assistant/core
 homeassistant/helpers/* @home-assistant/core
 homeassistant/util/* @home-assistant/core
 
-# Home Assistant Supervisor
+# Safegate Pro Supervisor
 build.json @home-assistant/supervisor
 machine/* @home-assistant/supervisor
 rootfs/* @home-assistant/supervisor

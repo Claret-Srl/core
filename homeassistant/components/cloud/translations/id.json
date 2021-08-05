@@ -3,7 +3,7 @@
         "info": {
             "alexa_enabled": "Alexa Diaktifkan",
             "can_reach_cert_server": "Keterjangkauan Server Sertifikat",
-            "can_reach_cloud": "Keterjangkauan Home Assistant Cloud",
+            "can_reach_cloud": "Keterjangkauan Safegate Pro Cloud",
             "can_reach_cloud_auth": "Keterjangkauan Server Autentikasi",
             "google_enabled": "Google Diaktifkan",
             "logged_in": "Masuk",

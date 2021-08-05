@@ -1,4 +1,4 @@
-"""Test Home Assistant package util methods."""
+"""Test Safegate Pro package util methods."""
 import asyncio
 import logging
 import os

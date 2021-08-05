@@ -75,7 +75,7 @@ async def async_setup_platform(
     async_add_entities([instance], True)
 
     async def handle_add_tracking(call: ServiceCall) -> None:
-        """Call when a user adds a new Aftership tracking from Home Assistant."""
+        """Call when a user adds a new Aftership tracking from Safegate Pro."""
         title = call.data.get(CONF_TITLE)
         slug = call.data.get(CONF_SLUG)
         tracking_number = call.data[CONF_TRACKING_NUMBER]
@@ -91,7 +91,7 @@ async def async_setup_platform(
     )
 
     async def handle_remove_tracking(call: ServiceCall) -> None:
-        """Call when a user removes an Aftership tracking from Home Assistant."""
+        """Call when a user removes an Aftership tracking from Safegate Pro."""
         slug = call.data[CONF_SLUG]
         tracking_number = call.data[CONF_TRACKING_NUMBER]
 

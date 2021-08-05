@@ -3,7 +3,7 @@
         "abort": {
             "already_configured": "A fi\u00f3k m\u00e1r konfigur\u00e1lva van",
             "single_instance_allowed": "M\u00e1r konfigur\u00e1lva van. Csak egy konfigur\u00e1ci\u00f3 lehets\u00e9ges.",
-            "webhook_not_internet_accessible": "A Home Assistant rendszerednek el\u00e9rhet\u0151nek kell lennie az internetr\u0151l a webhook \u00fczenetek fogad\u00e1s\u00e1hoz."
+            "webhook_not_internet_accessible": "A Safegate Pro rendszerednek el\u00e9rhet\u0151nek kell lennie az internetr\u0151l a webhook \u00fczenetek fogad\u00e1s\u00e1hoz."
         },
         "create_entry": {
             "default": "A Plaato {device_type} **{device_name}** n\u00e9vvel sikeresen telep\u00edtve lett!"

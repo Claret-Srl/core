@@ -102,11 +102,11 @@ SERVICE_HOMEKIT_RESET_ACCESSORY = "reset_accessory"
 
 # #### String Constants ####
 BRIDGE_MODEL = "Bridge"
-BRIDGE_NAME = "Home Assistant Bridge"
+BRIDGE_NAME = "Safegate Pro Bridge"
 SHORT_BRIDGE_NAME = "HASS Bridge"
 SHORT_ACCESSORY_NAME = "HASS Accessory"
 BRIDGE_SERIAL_NUMBER = "homekit.bridge"
-MANUFACTURER = "Home Assistant"
+MANUFACTURER = "Safegate Pro"
 
 # #### Switch Types ####
 TYPE_FAUCET = "faucet"

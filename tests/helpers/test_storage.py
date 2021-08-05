@@ -24,7 +24,7 @@ MOCK_DATA2 = {"goodbye": "cruel world"}
 
 @pytest.fixture
 def store(hass):
-    """Fixture of a store that prevents writing on Home Assistant stop."""
+    """Fixture of a store that prevents writing on Safegate Pro stop."""
     yield storage.Store(hass, MOCK_VERSION, MOCK_KEY)
 
 
@@ -84,7 +84,7 @@ async def test_saving_with_delay(hass, store, hass_storage):
 
 
 async def test_saving_on_final_write(hass, hass_storage):
-    """Test delayed saves trigger when we quit Home Assistant."""
+    """Test delayed saves trigger when we quit Safegate Pro."""
     store = storage.Store(hass, MOCK_VERSION, MOCK_KEY)
     store.async_delay_save(lambda: MOCK_DATA, 5)
     assert store.key not in hass_storage
@@ -120,7 +120,7 @@ async def test_not_delayed_saving_while_stopping(hass, hass_storage):
 
 
 async def test_not_delayed_saving_after_stopping(hass, hass_storage):
-    """Test delayed saves don't write after stop if issued before stopping Home Assistant."""
+    """Test delayed saves don't write after stop if issued before stopping Safegate Pro."""
     store = storage.Store(hass, MOCK_VERSION, MOCK_KEY)
     store.async_delay_save(lambda: MOCK_DATA, 10)
     assert store.key not in hass_storage
@@ -136,7 +136,7 @@ async def test_not_delayed_saving_after_stopping(hass, hass_storage):
 
 
 async def test_not_saving_while_stopping(hass, hass_storage):
-    """Test saves don't write when stopping Home Assistant."""
+    """Test saves don't write when stopping Safegate Pro."""
     store = storage.Store(hass, MOCK_VERSION, MOCK_KEY)
     hass.state = CoreState.stopping
     await store.async_save(MOCK_DATA)

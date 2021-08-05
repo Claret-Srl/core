@@ -16,10 +16,10 @@
                 "data": {
                     "host": "Host"
                 },
-                "description": "Seadista Modern Forms'i ventilaator sidumiseks Home Assistantiga."
+                "description": "Seadista Modern Forms'i ventilaator sidumiseks Safegate Proiga."
             },
             "zeroconf_confirm": {
-                "description": "Kas lisada Modern Forms'i ventilaator nimega `{nimi}` Home Assistanti?",
+                "description": "Kas lisada Modern Forms'i ventilaator nimega `{nimi}` Safegate Proi?",
                 "title": "Leitud Modern Forms ventilaator"
             }
         }

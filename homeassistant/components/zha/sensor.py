@@ -1,4 +1,4 @@
-"""Sensors on Zigbee Home Automation networks."""
+"""Sensors on Zigbee Safegate Pro networks."""
 from __future__ import annotations
 
 import functools
@@ -78,7 +78,7 @@ async def async_setup_entry(
     config_entry: ConfigEntry,
     async_add_entities: AddEntitiesCallback,
 ) -> None:
-    """Set up the Zigbee Home Automation sensor from config entry."""
+    """Set up the Zigbee Safegate Pro sensor from config entry."""
     entities_to_create = hass.data[DATA_ZHA][DOMAIN]
 
     unsub = async_dispatcher_connect(

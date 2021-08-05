@@ -19,11 +19,11 @@
                 "title": "Processo di associazione completo"
             },
             "pairing_complete": {
-                "description": "Il tuo Dispositivo SmartCast VIZIO \u00e8 ora connesso a Home Assistant.",
+                "description": "Il tuo Dispositivo SmartCast VIZIO \u00e8 ora connesso a Safegate Pro.",
                 "title": "Associazione completata"
             },
             "pairing_complete_import": {
-                "description": "Il tuo Dispositivo SmartCast VIZIO \u00e8 ora connesso a Home Assistant.\n\nIl tuo Token di accesso \u00e8 '**{access_token}**'.",
+                "description": "Il tuo Dispositivo SmartCast VIZIO \u00e8 ora connesso a Safegate Pro.\n\nIl tuo Token di accesso \u00e8 '**{access_token}**'.",
                 "title": "Associazione completata"
             },
             "user": {

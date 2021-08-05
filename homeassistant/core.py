@@ -1,7 +1,7 @@
 """
-Core components of Home Assistant.
+Core components of Safegate Pro.
 
-Home Assistant is a Home Automation framework for observing the state
+Safegate Pro is a Safegate Pro framework for observing the state
 of entities and react to changes.
 """
 from __future__ import annotations
@@ -192,7 +192,7 @@ def _get_callable_job_type(target: Callable) -> HassJobType:
 
 
 class CoreState(enum.Enum):
-    """Represent the current state of Home Assistant."""
+    """Represent the current state of Safegate Pro."""
 
     not_running = "NOT_RUNNING"
     starting = "STARTING"
@@ -207,14 +207,14 @@ class CoreState(enum.Enum):
 
 
 class HomeAssistant:
-    """Root object of the Home Assistant home automation."""
+    """Root object of the Safegate Pro Safegate Pro automation."""
 
     auth: AuthManager
     http: HomeAssistantHTTP = None  # type: ignore
     config_entries: ConfigEntries = None  # type: ignore
 
     def __init__(self) -> None:
-        """Initialize new Home Assistant object."""
+        """Initialize new Safegate Pro object."""
         self.loop = asyncio.get_running_loop()
         self._pending_tasks: list = []
         self._track_task = True
@@ -235,16 +235,16 @@ class HomeAssistant:
 
     @property
     def is_running(self) -> bool:
-        """Return if Home Assistant is running."""
+        """Return if Safegate Pro is running."""
         return self.state in (CoreState.starting, CoreState.running)
 
     @property
     def is_stopping(self) -> bool:
-        """Return if Home Assistant is stopping."""
+        """Return if Safegate Pro is stopping."""
         return self.state in (CoreState.stopping, CoreState.final_write)
 
     def start(self) -> int:
-        """Start Home Assistant.
+        """Start Safegate Pro.
 
         Note: This function is only used for testing.
         For regular use, use "await hass.run()".
@@ -254,19 +254,19 @@ class HomeAssistant:
 
         # Run forever
         # Block until stopped
-        _LOGGER.info("Starting Home Assistant core loop")
+        _LOGGER.info("Starting Safegate Pro core loop")
         self.loop.run_forever()
         return self.exit_code
 
     async def async_run(self, *, attach_signals: bool = True) -> int:
-        """Home Assistant main entry point.
+        """Safegate Pro main entry point.
 
-        Start Home Assistant and block until stopped.
+        Start Safegate Pro and block until stopped.
 
         This method is a coroutine.
         """
         if self.state != CoreState.not_running:
-            raise RuntimeError("Home Assistant is already running")
+            raise RuntimeError("Safegate Pro is already running")
 
         # _async_stop will set this instead of stopping the loop
         self._stopped = asyncio.Event()
@@ -286,7 +286,7 @@ class HomeAssistant:
 
         This method is a coroutine.
         """
-        _LOGGER.info("Starting Home Assistant")
+        _LOGGER.info("Starting Safegate Pro")
         setattr(self.loop, "_thread_ident", threading.get_ident())
 
         self.state = CoreState.starting
@@ -300,7 +300,7 @@ class HomeAssistant:
                 await self.async_block_till_done()
         except asyncio.TimeoutError:
             _LOGGER.warning(
-                "Something is blocking Home Assistant from wrapping up the "
+                "Something is blocking Safegate Pro from wrapping up the "
                 "start up phase. We're going to continue anyway. Please "
                 "report the following info at https://github.com/home-assistant/core/issues: %s",
                 ", ".join(self.config.components),
@@ -311,7 +311,7 @@ class HomeAssistant:
 
         if self.state != CoreState.starting:
             _LOGGER.warning(
-                "Home Assistant startup has been interrupted. "
+                "Safegate Pro startup has been interrupted. "
                 "Its state may be inconsistent"
             )
             return
@@ -497,16 +497,16 @@ class HomeAssistant:
                 _LOGGER.debug("Waited %s seconds for task: %s", wait_time, task)
 
     def stop(self) -> None:
-        """Stop Home Assistant and shuts down all threads."""
+        """Stop Safegate Pro and shuts down all threads."""
         if self.state == CoreState.not_running:  # just ignore
             return
         fire_coroutine_threadsafe(self.async_stop(), self.loop)
 
     async def async_stop(self, exit_code: int = 0, *, force: bool = False) -> None:
-        """Stop Home Assistant and shuts down all threads.
+        """Stop Safegate Pro and shuts down all threads.
 
         The "force" flag commands async_stop to proceed regardless of
-        Home Assistan't current state. You should not set this flag
+        Safegate Pro't current state. You should not set this flag
         unless you're testing.
 
         This method is a coroutine.
@@ -522,7 +522,7 @@ class HomeAssistant:
             if self.state == CoreState.starting:
                 # This may not work
                 _LOGGER.warning(
-                    "Stopping Home Assistant before startup has completed may fail"
+                    "Stopping Safegate Pro before startup has completed may fail"
                 )
 
         # stage 1
@@ -1531,7 +1531,7 @@ class ServiceRegistry:
 
 
 class Config:
-    """Configuration settings for Home Assistant."""
+    """Configuration settings for Safegate Pro."""
 
     def __init__(self, hass: HomeAssistant) -> None:
         """Initialize a new config object."""
@@ -1569,14 +1569,14 @@ class Config:
         # Dictionary of Media folders that integrations may use
         self.media_dirs: dict[str, str] = {}
 
-        # If Home Assistant is running in safe mode
+        # If Safegate Pro is running in safe mode
         self.safe_mode: bool = False
 
         # Use legacy template behavior
         self.legacy_templates: bool = False
 
     def distance(self, lat: float, lon: float) -> float | None:
-        """Calculate distance from Home Assistant.
+        """Calculate distance from Safegate Pro.
 
         Async friendly.
         """

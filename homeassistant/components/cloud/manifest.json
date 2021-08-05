@@ -1,6 +1,6 @@
 {
   "domain": "cloud",
-  "name": "Home Assistant Cloud",
+  "name": "Safegate Pro Cloud",
   "documentation": "https://www.home-assistant.io/integrations/cloud",
   "requirements": ["hass-nabucasa==0.44.0"],
   "dependencies": ["http", "webhook"],

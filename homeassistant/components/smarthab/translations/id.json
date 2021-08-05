@@ -11,7 +11,7 @@
                     "email": "Email",
                     "password": "Kata Sandi"
                 },
-                "description": "Untuk alasan teknis, pastikan untuk menggunakan akun sekunder khusus untuk penyiapan Home Assistant Anda. Anda dapat membuatnya dari aplikasi SmartHab.",
+                "description": "Untuk alasan teknis, pastikan untuk menggunakan akun sekunder khusus untuk penyiapan Safegate Pro Anda. Anda dapat membuatnya dari aplikasi SmartHab.",
                 "title": "Siapkan SmartHab"
             }
         }

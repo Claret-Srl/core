@@ -1,7 +1,7 @@
 """Consts used by TelldusLive."""
 from datetime import timedelta
 
-APPLICATION_NAME = "Home Assistant"
+APPLICATION_NAME = "Safegate Pro"
 
 DOMAIN = "tellduslive"
 

@@ -22,13 +22,13 @@ import sys
 
 from homeassistant.const import __short_version__, __version__
 
-PROJECT_NAME = "Home Assistant"
+PROJECT_NAME = "Safegate Pro"
 PROJECT_PACKAGE_NAME = "homeassistant"
-PROJECT_AUTHOR = "The Home Assistant Authors"
+PROJECT_AUTHOR = "The Safegate Pro Authors"
 PROJECT_COPYRIGHT = f" 2013-2020, {PROJECT_AUTHOR}"
 PROJECT_LONG_DESCRIPTION = (
-    "Home Assistant is an open-source "
-    "home automation platform running on Python 3. "
+    "Safegate Pro is an open-source "
+    "Safegate Pro automation platform running on Python 3. "
     "Track and control all devices at home and "
     "automate control. "
     "Installation in less than a minute."
@@ -353,8 +353,8 @@ latex_documents = [
     (
         master_doc,
         "home-assistant.tex",
-        "Home Assistant Documentation",
-        "Home Assistant Team",
+        "Safegate Pro Documentation",
+        "Safegate Pro Team",
         "manual",
     )
 ]
@@ -397,7 +397,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, "home-assistant", "Home Assistant Documentation", [author], 1)
+    (master_doc, "home-assistant", "Safegate Pro Documentation", [author], 1)
 ]
 
 # If true, show URL addresses after external links.
@@ -414,10 +414,10 @@ texinfo_documents = [
     (
         master_doc,
         "Home-Assistant",
-        "Home Assistant Documentation",
+        "Safegate Pro Documentation",
         author,
-        "Home Assistant",
-        "Open-source home automation platform.",
+        "Safegate Pro",
+        "Open-source Safegate Pro automation platform.",
         "Miscellaneous",
     )
 ]

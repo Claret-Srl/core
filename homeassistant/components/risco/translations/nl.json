@@ -27,8 +27,8 @@
                     "armed_home": "Ingeschakeld thuis",
                     "armed_night": "Ingeschakeld nacht"
                 },
-                "description": "Selecteer in welke staat u uw Risco-alarm wilt instellen wanneer u het Home Assistant-alarm inschakelt",
-                "title": "Wijs Home Assistant-staten toe aan Risco-staten"
+                "description": "Selecteer in welke staat u uw Risco-alarm wilt instellen wanneer u het Safegate Pro-alarm inschakelt",
+                "title": "Wijs Safegate Pro-staten toe aan Risco-staten"
             },
             "init": {
                 "data": {
@@ -47,8 +47,8 @@
                     "arm": "Ingeschakeld (AFWEZIG)",
                     "partial_arm": "Gedeeltelijk ingeschakeld (AANWEZIG)"
                 },
-                "description": "Selecteer welke staat uw Home Assistant alarm zal melden voor elke staat gemeld door Risco",
-                "title": "Wijs Risco-staten toe aan Home Assistant-staten"
+                "description": "Selecteer welke staat uw Safegate Pro alarm zal melden voor elke staat gemeld door Risco",
+                "title": "Wijs Risco-staten toe aan Safegate Pro-staten"
             }
         }
     }

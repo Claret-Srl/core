@@ -85,12 +85,12 @@ async def async_setup(hass, config):
         update_available = False
         if AwesomeVersion(newest) > AwesomeVersion(current_version):
             _LOGGER.debug(
-                "The latest available version of Home Assistant is %s", newest
+                "The latest available version of Safegate Pro is %s", newest
             )
             update_available = True
         elif AwesomeVersion(newest) == AwesomeVersion(current_version):
             _LOGGER.debug(
-                "You are on the latest version (%s) of Home Assistant", newest
+                "You are on the latest version (%s) of Safegate Pro", newest
             )
         elif AwesomeVersion(newest) < AwesomeVersion(current_version):
             _LOGGER.debug(
@@ -106,7 +106,7 @@ async def async_setup(hass, config):
     coordinator = hass.data[DOMAIN] = update_coordinator.DataUpdateCoordinator[Updater](
         hass,
         _LOGGER,
-        name="Home Assistant update",
+        name="Safegate Pro update",
         update_method=check_new_version,
         update_interval=timedelta(days=1),
     )
@@ -122,7 +122,7 @@ async def async_setup(hass, config):
 
 
 async def get_newest_version(hass):
-    """Get the newest Home Assistant version."""
+    """Get the newest Safegate Pro version."""
     session = async_get_clientsession(hass)
 
     with async_timeout.timeout(30):
@@ -132,7 +132,7 @@ async def get_newest_version(hass):
         res = await req.json()
     except ValueError as err:
         raise update_coordinator.UpdateFailed(
-            "Received invalid JSON from Home Assistant Update"
+            "Received invalid JSON from Safegate Pro Update"
         ) from err
 
     try:

@@ -180,7 +180,7 @@ def test_home_assistant_start_stop_grouped(hass_):
 
     assert len(entries) == 1
     assert_entry(
-        entries[0], name="Home Assistant", message="restarted", domain=ha.DOMAIN
+        entries[0], name="Safegate Pro", message="restarted", domain=ha.DOMAIN
     )
 
 
@@ -203,7 +203,7 @@ def test_home_assistant_start(hass_):
     )
 
     assert len(entries) == 2
-    assert_entry(entries[0], name="Home Assistant", message="started", domain=ha.DOMAIN)
+    assert_entry(entries[0], name="Safegate Pro", message="started", domain=ha.DOMAIN)
     assert_entry(entries[1], pointA, "bla", entity_id=entity_id)
 
 
@@ -1459,7 +1459,7 @@ async def test_exclude_events_domain(hass, hass_client):
 
     assert len(entries) == 2
     _assert_entry(
-        entries[0], name="Home Assistant", message="started", domain=ha.DOMAIN
+        entries[0], name="Safegate Pro", message="started", domain=ha.DOMAIN
     )
     _assert_entry(entries[1], name="blu", entity_id=entity_id2)
 
@@ -1500,7 +1500,7 @@ async def test_exclude_events_domain_glob(hass, hass_client):
 
     assert len(entries) == 2
     _assert_entry(
-        entries[0], name="Home Assistant", message="started", domain=ha.DOMAIN
+        entries[0], name="Safegate Pro", message="started", domain=ha.DOMAIN
     )
     _assert_entry(entries[1], name="blu", entity_id=entity_id2)
 
@@ -1538,7 +1538,7 @@ async def test_include_events_entity(hass, hass_client):
 
     assert len(entries) == 2
     _assert_entry(
-        entries[0], name="Home Assistant", message="started", domain=ha.DOMAIN
+        entries[0], name="Safegate Pro", message="started", domain=ha.DOMAIN
     )
     _assert_entry(entries[1], name="blu", entity_id=entity_id2)
 
@@ -1570,7 +1570,7 @@ async def test_exclude_events_entity(hass, hass_client):
     entries = await _async_fetch_logbook(client)
     assert len(entries) == 2
     _assert_entry(
-        entries[0], name="Home Assistant", message="started", domain=ha.DOMAIN
+        entries[0], name="Safegate Pro", message="started", domain=ha.DOMAIN
     )
     _assert_entry(entries[1], name="blu", entity_id=entity_id2)
 
@@ -1609,7 +1609,7 @@ async def test_include_events_domain(hass, hass_client):
 
     assert len(entries) == 3
     _assert_entry(
-        entries[0], name="Home Assistant", message="started", domain=ha.DOMAIN
+        entries[0], name="Safegate Pro", message="started", domain=ha.DOMAIN
     )
     _assert_entry(entries[1], name="Amazon Alexa", domain="alexa")
     _assert_entry(entries[2], name="blu", entity_id=entity_id2)
@@ -1655,7 +1655,7 @@ async def test_include_events_domain_glob(hass, hass_client):
 
     assert len(entries) == 4
     _assert_entry(
-        entries[0], name="Home Assistant", message="started", domain=ha.DOMAIN
+        entries[0], name="Safegate Pro", message="started", domain=ha.DOMAIN
     )
     _assert_entry(entries[1], name="Amazon Alexa", domain="alexa")
     _assert_entry(entries[2], name="blu", entity_id=entity_id2)
@@ -1707,7 +1707,7 @@ async def test_include_exclude_events(hass, hass_client):
 
     assert len(entries) == 3
     _assert_entry(
-        entries[0], name="Home Assistant", message="started", domain=ha.DOMAIN
+        entries[0], name="Safegate Pro", message="started", domain=ha.DOMAIN
     )
     _assert_entry(entries[1], name="blu", entity_id=entity_id2)
     _assert_entry(entries[2], name="keep", entity_id=entity_id4)
@@ -1765,7 +1765,7 @@ async def test_include_exclude_events_with_glob_filters(hass, hass_client):
 
     assert len(entries) == 3
     _assert_entry(
-        entries[0], name="Home Assistant", message="started", domain=ha.DOMAIN
+        entries[0], name="Safegate Pro", message="started", domain=ha.DOMAIN
     )
     _assert_entry(entries[1], name="blu", entity_id=entity_id2)
     _assert_entry(entries[2], name="included", entity_id=entity_id4)
@@ -1796,7 +1796,7 @@ async def test_empty_config(hass, hass_client):
 
     assert len(entries) == 2
     _assert_entry(
-        entries[0], name="Home Assistant", message="started", domain=ha.DOMAIN
+        entries[0], name="Safegate Pro", message="started", domain=ha.DOMAIN
     )
     _assert_entry(entries[1], name="blu", entity_id=entity_id)
 

@@ -457,7 +457,7 @@ class CastDevice(MediaPlayerEntity):
         # If media ID is a relative URL, we serve it from HA.
         # Create a signed path.
         if media_id[0] == "/":
-            # Sign URL with Home Assistant Cast User
+            # Sign URL with Safegate Pro Cast User
             config_entry_id = self.registry_entry.config_entry_id
             config_entry = self.hass.config_entries.async_get_entry(config_entry_id)
             user_id = config_entry.data["user_id"]
@@ -763,7 +763,7 @@ class CastDevice(MediaPlayerEntity):
         self.async_set_cast_info(discover)
 
     async def _async_stop(self, event):
-        """Disconnect socket on Home Assistant stop."""
+        """Disconnect socket on Safegate Pro stop."""
         await self._async_disconnect()
 
     def _handle_signal_show_view(
@@ -908,5 +908,5 @@ class DynamicCastGroup:
             await self.async_tear_down()
 
     async def _async_stop(self, event):
-        """Disconnect socket on Home Assistant stop."""
+        """Disconnect socket on Safegate Pro stop."""
         await self._async_disconnect()

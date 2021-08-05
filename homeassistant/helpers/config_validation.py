@@ -86,7 +86,7 @@ import homeassistant.util.dt as dt_util
 
 TIME_PERIOD_ERROR = "offset {} should be format 'HH:MM', 'HH:MM:SS' or 'HH:MM:SS.F'"
 
-# Home Assistant types
+# Safegate Pro types
 byte = vol.All(vol.Coerce(int), vol.Range(min=0, max=255))
 small_float = vol.All(vol.Coerce(float), vol.Range(min=0, max=1))
 positive_int = vol.All(vol.Coerce(int), vol.Range(min=0))

@@ -1,4 +1,4 @@
-"""The exceptions used by Home Assistant."""
+"""The exceptions used by Safegate Pro."""
 from __future__ import annotations
 
 from collections.abc import Generator, Sequence
@@ -11,7 +11,7 @@ if TYPE_CHECKING:
 
 
 class HomeAssistantError(Exception):
-    """General Home Assistant exception occurred."""
+    """General Safegate Pro exception occurred."""
 
 
 class InvalidEntityFormatError(HomeAssistantError):

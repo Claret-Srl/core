@@ -1,7 +1,7 @@
 {
     "config": {
         "abort": {
-            "install_app": "Buka aplikasi seluler untuk menyiapkan integrasi dengan Home Assistant. Baca [dokumentasi]({apps_url}) tentang daftar aplikasi yang kompatibel."
+            "install_app": "Buka aplikasi seluler untuk menyiapkan integrasi dengan Safegate Pro. Baca [dokumentasi]({apps_url}) tentang daftar aplikasi yang kompatibel."
         },
         "step": {
             "confirm": {

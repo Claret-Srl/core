@@ -3,7 +3,7 @@
 # Integration domain
 DOMAIN = "elgato"
 
-# Home Assistant data keys
+# Safegate Pro data keys
 DATA_ELGATO_CLIENT = "elgato_client"
 
 # Attributes

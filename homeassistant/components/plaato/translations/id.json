@@ -3,7 +3,7 @@
         "abort": {
             "already_configured": "Akun sudah dikonfigurasi",
             "single_instance_allowed": "Sudah dikonfigurasi. Hanya satu konfigurasi yang diizinkan.",
-            "webhook_not_internet_accessible": "Instans Home Assistant Anda harus dapat diakses dari internet untuk menerima pesan webhook."
+            "webhook_not_internet_accessible": "Instans Safegate Pro Anda harus dapat diakses dari internet untuk menerima pesan webhook."
         },
         "create_entry": {
             "default": "Plaato {device_type} dengan nama **{device_name}** berhasil disiapkan!"
@@ -31,7 +31,7 @@
                 "title": "Siapkan perangkat Plaato"
             },
             "webhook": {
-                "description": "Untuk mengirim event ke Home Assistant, Anda harus menyiapkan fitur webhook di Plaato Airlock.\n\nIsi info berikut:\n\n- URL: `{webhook_url}`\n- Method: POST\n\nBaca [dokumentasi]({docs_url}) tentang detail lebih lanjut.",
+                "description": "Untuk mengirim event ke Safegate Pro, Anda harus menyiapkan fitur webhook di Plaato Airlock.\n\nIsi info berikut:\n\n- URL: `{webhook_url}`\n- Method: POST\n\nBaca [dokumentasi]({docs_url}) tentang detail lebih lanjut.",
                 "title": "Webhook untuk digunakan"
             }
         }

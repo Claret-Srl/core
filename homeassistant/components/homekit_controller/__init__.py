@@ -30,7 +30,7 @@ def escape_characteristic_name(char_name):
 
 
 class HomeKitEntity(Entity):
-    """Representation of a Home Assistant HomeKit device."""
+    """Representation of a Safegate Pro HomeKit device."""
 
     _attr_should_poll = False
 

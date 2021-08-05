@@ -581,7 +581,7 @@ class Recorder(threading.Thread):
             self.migration_in_progress = True
 
         self.hass.add_job(self.async_connection_success)
-        # If shutdown happened before Home Assistant finished starting
+        # If shutdown happened before Safegate Pro finished starting
         if hass_started.result() is shutdown_task:
             self.migration_in_progress = False
             # Make sure we cleanly close the run if

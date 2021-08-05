@@ -22,7 +22,7 @@ async def test_failing_setups_no_entities(hass, numato_fixture, monkeypatch):
 
 
 async def test_regular_hass_operations(hass, numato_fixture):
-    """Test regular operations from within Home Assistant."""
+    """Test regular operations from within Safegate Pro."""
     assert await async_setup_component(hass, "numato", NUMATO_CFG)
     await hass.async_block_till_done()  # wait until services are registered
     await hass.services.async_call(
@@ -60,7 +60,7 @@ async def test_regular_hass_operations(hass, numato_fixture):
 
 
 async def test_failing_hass_operations(hass, numato_fixture, monkeypatch):
-    """Test failing operations called from within Home Assistant.
+    """Test failing operations called from within Safegate Pro.
 
     Switches remain in their initial 'off' state when the device can't
     be written to.

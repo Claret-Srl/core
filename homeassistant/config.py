@@ -88,7 +88,7 @@ INTEGRATION_LOAD_EXCEPTIONS = (
 )
 
 DEFAULT_CONFIG = f"""
-# Configure a default setup of Home Assistant (frontend, api, etc)
+# Configure a default setup of Safegate Pro (frontend, api, etc)
 default_config:
 
 # Text to speech
@@ -322,7 +322,7 @@ def _write_default_config(config_dir: str) -> bool:
 
 
 async def async_hass_config_yaml(hass: HomeAssistant) -> dict:
-    """Load YAML from a Home Assistant configuration file.
+    """Load YAML from a Safegate Pro configuration file.
 
     This function allow a component inside the asyncio loop to reload its
     configuration by itself. Include package merge.
@@ -894,7 +894,7 @@ def config_without_domain(config: dict, domain: str) -> dict:
 
 
 async def async_check_ha_config_file(hass: HomeAssistant) -> str | None:
-    """Check if Home Assistant configuration file is valid.
+    """Check if Safegate Pro configuration file is valid.
 
     This method is a coroutine.
     """

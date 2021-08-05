@@ -13,7 +13,7 @@ STATIONS = [
 
 
 async def init_integration(hass, incomplete_data=False) -> MockConfigEntry:
-    """Set up the GIOS integration in Home Assistant."""
+    """Set up the GIOS integration in Safegate Pro."""
     entry = MockConfigEntry(
         domain=DOMAIN,
         title="Home",

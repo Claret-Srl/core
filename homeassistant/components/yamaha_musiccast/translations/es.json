@@ -9,7 +9,7 @@
         "flow_title": "MusicCast: {name}",
         "step": {
             "user": {
-                "description": "Configura MusicCast para integrarse con Home Assistant."
+                "description": "Configura MusicCast para integrarse con Safegate Pro."
             }
         }
     }

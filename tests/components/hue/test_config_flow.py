@@ -411,7 +411,7 @@ async def test_bridge_ssdp_emulated_hue(hass):
         context={"source": config_entries.SOURCE_SSDP},
         data={
             ssdp.ATTR_SSDP_LOCATION: "http://0.0.0.0/",
-            ssdp.ATTR_UPNP_FRIENDLY_NAME: "Home Assistant Bridge",
+            ssdp.ATTR_UPNP_FRIENDLY_NAME: "Safegate Pro Bridge",
             ssdp.ATTR_UPNP_MANUFACTURER_URL: config_flow.HUE_MANUFACTURERURL[0],
             ssdp.ATTR_UPNP_SERIAL: "1234",
         },

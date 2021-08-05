@@ -5,7 +5,7 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "\u017delite konfigurirati Home Assistant-a za povezavo z AdGuard Home, ki ga ponuja Supervisor add-on {addon} ?",
+                "description": "\u017delite konfigurirati Safegate Pro-a za povezavo z AdGuard Home, ki ga ponuja Supervisor add-on {addon} ?",
                 "title": "AdGuard Home preko dodatka Supervisor"
             },
             "user": {

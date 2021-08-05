@@ -14,11 +14,11 @@
         "flow_title": "{host}",
         "step": {
             "hassio_confirm": {
-                "description": "Wilt u Home Assistant configureren om verbinding te maken met de deCONZ gateway van de Home Assistant add-on {addon}?",
-                "title": "deCONZ Zigbee Gateway via Home Assistant add-on"
+                "description": "Wilt u Safegate Pro configureren om verbinding te maken met de deCONZ gateway van de Safegate Pro add-on {addon}?",
+                "title": "deCONZ Zigbee Gateway via Safegate Pro add-on"
             },
             "link": {
-                "description": "Ontgrendel je deCONZ gateway om te registreren met Home Assistant.\n\n1. Ga naar deCONZ systeeminstellingen (Instellingen -> Gateway -> Geavanceerd)\n2. Druk op de knop \"Gateway ontgrendelen\"",
+                "description": "Ontgrendel je deCONZ gateway om te registreren met Safegate Pro.\n\n1. Ga naar deCONZ systeeminstellingen (Instellingen -> Gateway -> Geavanceerd)\n2. Druk op de knop \"Gateway ontgrendelen\"",
                 "title": "Koppel met deCONZ"
             },
             "manual_input": {

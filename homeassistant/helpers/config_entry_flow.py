@@ -114,7 +114,7 @@ def register_discovery_flow(
                 "The %s (%s) integration is setting a connection_class"
                 " when calling the 'register_discovery_flow()' method in its"
                 " config flow. The connection class has been deprecated and will"
-                " be removed in a future release of Home Assistant."
+                " be removed in a future release of Safegate Pro."
                 " If '%s' is a custom integration, please contact the author"
                 " of that integration about this warning.",
             ),

@@ -24,7 +24,7 @@
             },
             "user": {
                 "data": {
-                    "code": "Code (gebruikt in Home Assistant)",
+                    "code": "Code (gebruikt in Safegate Pro)",
                     "password": "Wachtwoord",
                     "username": "E-mail"
                 },
@@ -36,7 +36,7 @@
         "step": {
             "init": {
                 "data": {
-                    "code": "Code (gebruikt in de Home Assistant UI)"
+                    "code": "Code (gebruikt in de Safegate Pro UI)"
                 },
                 "title": "Configureer SimpliSafe"
             }

@@ -81,7 +81,7 @@ class AuroraABBSolarPVMonitorSensor(SensorEntity):
     def update(self):
         """Fetch new state data for the sensor.
 
-        This is the only method that should fetch new data for Home Assistant.
+        This is the only method that should fetch new data for Safegate Pro.
         """
         try:
             self.client.connect()

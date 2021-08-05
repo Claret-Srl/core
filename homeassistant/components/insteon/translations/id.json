@@ -76,7 +76,7 @@
                     "port": "Port",
                     "username": "Nama Pengguna"
                 },
-                "description": "Ubah informasi koneksi Insteon Hub. Anda harus memulai ulang Home Assistant setelah melakukan perubahan ini. Ini tidak mengubah konfigurasi Hub itu sendiri. Untuk mengubah konfigurasi di Hub, gunakan aplikasi Hub.",
+                "description": "Ubah informasi koneksi Insteon Hub. Anda harus memulai ulang Safegate Pro setelah melakukan perubahan ini. Ini tidak mengubah konfigurasi Hub itu sendiri. Untuk mengubah konfigurasi di Hub, gunakan aplikasi Hub.",
                 "title": "Insteon"
             },
             "init": {

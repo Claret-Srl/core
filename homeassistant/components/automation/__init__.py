@@ -525,7 +525,7 @@ class AutomationEntity(ToggleEntity, RestoreEntity):
                 automation_trace.set_error(err)
 
     async def async_will_remove_from_hass(self):
-        """Remove listeners when removing automation from Home Assistant."""
+        """Remove listeners when removing automation from Safegate Pro."""
         await super().async_will_remove_from_hass()
         await self.async_disable()
 

@@ -52,5 +52,5 @@ ATTR_REPOSITORY = "repository"
 class SupervisorEntityModel(str, Enum):
     """Supervisor entity model."""
 
-    ADDON = "Home Assistant Add-on"
-    OS = "Home Assistant Operating System"
+    ADDON = "Safegate Pro Add-on"
+    OS = "Safegate Pro Operating System"

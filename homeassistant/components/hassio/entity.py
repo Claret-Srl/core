@@ -78,7 +78,7 @@ class HassioOSEntity(CoordinatorEntity):
     @property
     def name(self) -> str:
         """Return entity name."""
-        return f"Home Assistant Operating System: {self.sensor_name}"
+        return f"Safegate Pro Operating System: {self.sensor_name}"
 
     @property
     def entity_registry_enabled_default(self) -> bool:

@@ -1,4 +1,4 @@
-"""Config flow for Home Assistant Supervisor integration."""
+"""Config flow for Safegate Pro Supervisor integration."""
 import logging
 
 from homeassistant import config_entries
@@ -9,7 +9,7 @@ _LOGGER = logging.getLogger(__name__)
 
 
 class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
-    """Handle a config flow for Home Assistant Supervisor."""
+    """Handle a config flow for Safegate Pro Supervisor."""
 
     VERSION = 1
 

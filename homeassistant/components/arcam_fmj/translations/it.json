@@ -12,7 +12,7 @@
         "flow_title": "{host}",
         "step": {
             "confirm": {
-                "description": "Vuoi aggiungere Arcam FMJ su `{host}` a Home Assistant?"
+                "description": "Vuoi aggiungere Arcam FMJ su `{host}` a Safegate Pro?"
             },
             "user": {
                 "data": {

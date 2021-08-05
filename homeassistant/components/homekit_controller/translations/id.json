@@ -6,7 +6,7 @@
             "already_in_progress": "Alur konfigurasi sedang berlangsung",
             "already_paired": "Aksesori ini sudah dipasangkan ke perangkat lain. Setel ulang aksesori dan coba lagi.",
             "ignored_model": "Dukungan HomeKit untuk model ini diblokir karena integrasi asli dengan fitur lebih lengkap telah tersedia.",
-            "invalid_config_entry": "Perangkat ini ditampilkan sebagai siap untuk dipasangkan tetapi sudah ada entri konfigurasi yang bertentangan untuk perangkat tersebut dalam Home Assistant, yang harus dihapus terlebih dulu.",
+            "invalid_config_entry": "Perangkat ini ditampilkan sebagai siap untuk dipasangkan tetapi sudah ada entri konfigurasi yang bertentangan untuk perangkat tersebut dalam Safegate Pro, yang harus dihapus terlebih dulu.",
             "invalid_properties": "Properti tidak valid diumumkan oleh perangkat.",
             "no_devices": "Tidak ada perangkat yang belum dipasangkan yang dapat ditemukan"
         },

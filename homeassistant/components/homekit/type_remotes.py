@@ -154,7 +154,7 @@ class RemoteInputSelectAccessory(HomeAccessory):
                 self.char_input_source.set_value(index)
         elif hk_state:
             _LOGGER.warning(
-                "%s: Sources out of sync. Restart Home Assistant",
+                "%s: Sources out of sync. Restart Safegate Pro",
                 self.entity_id,
             )
             if self.char_input_source.value != 0:

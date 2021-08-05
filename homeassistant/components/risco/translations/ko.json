@@ -27,8 +27,8 @@
                     "armed_home": "\uacbd\ube44 \uc911 (\uc7ac\uc2e4)",
                     "armed_night": "\uc57c\uac04 \uacbd\ube44 \uc911"
                 },
-                "description": "Home Assistant \uc54c\ub78c\uc744 \uc124\uc815\ud560 \ub54c Risco \uc54c\ub78c\uc744 \uc124\uc815\ud560 \uc0c1\ud0dc\ub97c \uc120\ud0dd\ud558\uae30",
-                "title": "Home Assistant \uc0c1\ud0dc\ub97c Risco \uc0c1\ud0dc\uc5d0 \ub9e4\ud551\ud558\uae30"
+                "description": "Safegate Pro \uc54c\ub78c\uc744 \uc124\uc815\ud560 \ub54c Risco \uc54c\ub78c\uc744 \uc124\uc815\ud560 \uc0c1\ud0dc\ub97c \uc120\ud0dd\ud558\uae30",
+                "title": "Safegate Pro \uc0c1\ud0dc\ub97c Risco \uc0c1\ud0dc\uc5d0 \ub9e4\ud551\ud558\uae30"
             },
             "init": {
                 "data": {
@@ -47,8 +47,8 @@
                     "arm": "\uacbd\ube44 \uc911 (\uc678\ucd9c)",
                     "partial_arm": "\ubd80\ubd84 \uacbd\ube44 \uc911 (\uc7ac\uc2e4)"
                 },
-                "description": "Risco\uac00 \ubcf4\uace0\ud558\ub294 \ubaa8\ub4e0 \uc0c1\ud0dc\uc5d0 \ub300\ud574 Home Assistant \uc54c\ub78c\uc774 \ubcf4\uace0\ud560 \uc0c1\ud0dc\ub97c \uc120\ud0dd\ud558\uae30",
-                "title": "Risco \uc0c1\ud0dc\ub97c Home Assistant \uc0c1\ud0dc\uc5d0 \ub9e4\ud551\ud558\uae30"
+                "description": "Risco\uac00 \ubcf4\uace0\ud558\ub294 \ubaa8\ub4e0 \uc0c1\ud0dc\uc5d0 \ub300\ud574 Safegate Pro \uc54c\ub78c\uc774 \ubcf4\uace0\ud560 \uc0c1\ud0dc\ub97c \uc120\ud0dd\ud558\uae30",
+                "title": "Risco \uc0c1\ud0dc\ub97c Safegate Pro \uc0c1\ud0dc\uc5d0 \ub9e4\ud551\ud558\uae30"
             }
         }
     }

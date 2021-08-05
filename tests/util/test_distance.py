@@ -1,4 +1,4 @@
-"""Test Home Assistant distance utility functions."""
+"""Test Safegate Pro distance utility functions."""
 
 import pytest
 

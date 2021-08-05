@@ -21,7 +21,7 @@
                 "title": "Pilih Access Point HomematicIP"
             },
             "link": {
-                "description": "Tekan tombol biru pada access point dan tombol sukirimbmit untuk mendaftarkan HomematicIP dengan Home Assistant.\n\n![Lokasi tombol di bridge](/static/images/config_flows/config_homematicip_cloud.png)",
+                "description": "Tekan tombol biru pada access point dan tombol sukirimbmit untuk mendaftarkan HomematicIP dengan Safegate Pro.\n\n![Lokasi tombol di bridge](/static/images/config_flows/config_homematicip_cloud.png)",
                 "title": "Tautkan Titik akses"
             }
         }

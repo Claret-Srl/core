@@ -3,7 +3,7 @@
         "abort": {
             "already_configured": "Device is already configured",
             "already_in_progress": "Configuration flow is already in progress",
-            "auth_missing": "Home Assistant is not authorized to connect to this Samsung TV. Check your TV's External Device Manager settings to authorize Home Assistant.",
+            "auth_missing": "Safegate Pro is not authorized to connect to this Samsung TV. Check your TV's External Device Manager settings to authorize Safegate Pro.",
             "cannot_connect": "Failed to connect",
             "id_missing": "This Samsung device doesn't have a SerialNumber.",
             "not_supported": "This Samsung device is currently not supported.",
@@ -11,12 +11,12 @@
             "unknown": "Unexpected error"
         },
         "error": {
-            "auth_missing": "Home Assistant is not authorized to connect to this Samsung TV. Check your TV's External Device Manager settings to authorize Home Assistant."
+            "auth_missing": "Safegate Pro is not authorized to connect to this Samsung TV. Check your TV's External Device Manager settings to authorize Safegate Pro."
         },
         "flow_title": "{device}",
         "step": {
             "confirm": {
-                "description": "Do you want to set up {device}? If you never connected Home Assistant before you should see a popup on your TV asking for authorization.",
+                "description": "Do you want to set up {device}? If you never connected Safegate Pro before you should see a popup on your TV asking for authorization.",
                 "title": "Samsung TV"
             },
             "reauth_confirm": {
@@ -27,7 +27,7 @@
                     "host": "Host",
                     "name": "Name"
                 },
-                "description": "Enter your Samsung TV information. If you never connected Home Assistant before you should see a popup on your TV asking for authorization."
+                "description": "Enter your Samsung TV information. If you never connected Safegate Pro before you should see a popup on your TV asking for authorization."
             }
         }
     }

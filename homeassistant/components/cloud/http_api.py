@@ -82,7 +82,7 @@ _CLOUD_ERRORS = {
     ),
     asyncio.TimeoutError: (
         HTTP_BAD_GATEWAY,
-        "Unable to reach the Home Assistant cloud.",
+        "Unable to reach the Safegate Pro cloud.",
     ),
     aiohttp.ClientError: (
         HTTP_INTERNAL_SERVER_ERROR,
@@ -210,7 +210,7 @@ class GoogleActionsSyncView(HomeAssistantView):
 
 
 class CloudLoginView(HomeAssistantView):
-    """Login to Home Assistant cloud."""
+    """Login to Safegate Pro cloud."""
 
     url = "/api/cloud/login"
     name = "api:cloud:login"
@@ -229,7 +229,7 @@ class CloudLoginView(HomeAssistantView):
 
 
 class CloudLogoutView(HomeAssistantView):
-    """Log out of the Home Assistant cloud."""
+    """Log out of the Safegate Pro cloud."""
 
     url = "/api/cloud/logout"
     name = "api:cloud:logout"
@@ -247,7 +247,7 @@ class CloudLogoutView(HomeAssistantView):
 
 
 class CloudRegisterView(HomeAssistantView):
-    """Register on the Home Assistant cloud."""
+    """Register on the Safegate Pro cloud."""
 
     url = "/api/cloud/register"
     name = "api:cloud:register"
@@ -416,7 +416,7 @@ async def websocket_update_prefs(hass, connection, msg):
             connection.send_error(
                 msg["id"],
                 "alexa_relink",
-                "Please go to the Alexa app and re-link the Home Assistant "
+                "Please go to the Alexa app and re-link the Safegate Pro "
                 "skill and then try to enable state reporting.",
             )
             return
@@ -623,7 +623,7 @@ async def alexa_sync(hass, connection, msg):
             connection.send_error(
                 msg["id"],
                 "alexa_relink",
-                "Please go to the Alexa app and re-link the Home Assistant skill.",
+                "Please go to the Alexa app and re-link the Safegate Pro skill.",
             )
             return
 

@@ -1,4 +1,4 @@
-"""Support for exposing Home Assistant via Zeroconf."""
+"""Support for exposing Safegate Pro via Zeroconf."""
 from __future__ import annotations
 
 import asyncio
@@ -142,7 +142,7 @@ def _async_use_default_interface(adapters: list[Adapter]) -> bool:
 
 
 async def async_setup(hass: HomeAssistant, config: dict) -> bool:
-    """Set up Zeroconf and make Home Assistant discoverable."""
+    """Set up Zeroconf and make Safegate Pro discoverable."""
     zc_args: dict = {}
 
     adapters = await network.async_get_adapters(hass)
@@ -172,7 +172,7 @@ async def async_setup(hass: HomeAssistant, config: dict) -> bool:
     await discovery.async_setup()
 
     async def _async_zeroconf_hass_start(_event: Event) -> None:
-        """Expose Home Assistant on zeroconf when it starts.
+        """Expose Safegate Pro on zeroconf when it starts.
 
         Wait till started or otherwise HTTP is not up and running.
         """
@@ -245,7 +245,7 @@ async def _async_register_hass_zc_service(
         await aio_zc.async_register_service(info)
     except NonUniqueNameException:
         _LOGGER.error(
-            "Home Assistant instance with identical name present in the local network"
+            "Safegate Pro instance with identical name present in the local network"
         )
 
 

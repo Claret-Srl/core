@@ -1,4 +1,4 @@
-"""This library brings support for forked_daapd to Home Assistant."""
+"""This library brings support for forked_daapd to Safegate Pro."""
 import asyncio
 from collections import defaultdict
 import logging

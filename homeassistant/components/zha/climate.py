@@ -1,5 +1,5 @@
 """
-Climate on Zigbee Home Automation networks.
+Climate on Zigbee Safegate Pro networks.
 
 For more details on this platform, please refer to the documentation
 at https://home-assistant.io/components/zha.climate/
@@ -152,7 +152,7 @@ ZCL_TEMP = 100
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    """Set up the Zigbee Home Automation sensor from config entry."""
+    """Set up the Zigbee Safegate Pro sensor from config entry."""
     entities_to_create = hass.data[DATA_ZHA][DOMAIN]
     unsub = async_dispatcher_connect(
         hass,

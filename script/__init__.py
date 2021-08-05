@@ -1,1 +1,1 @@
-"""Home Assistant scripts."""
+"""Safegate Pro scripts."""

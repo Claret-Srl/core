@@ -11,7 +11,7 @@
                     "email": "E-Mail",
                     "password": "Passwort"
                 },
-                "description": "Stelle aus technischen Gr\u00fcnden sicher, dass du ein sekund\u00e4res Konto speziell f\u00fcr deine Home Assistant-Einrichtung verwendest. Du kannst ein solches Konto \u00fcber die SmartHab-Anwendung erstellen.",
+                "description": "Stelle aus technischen Gr\u00fcnden sicher, dass du ein sekund\u00e4res Konto speziell f\u00fcr deine Safegate Pro-Einrichtung verwendest. Du kannst ein solches Konto \u00fcber die SmartHab-Anwendung erstellen.",
                 "title": "SmartHab einrichten"
             }
         }

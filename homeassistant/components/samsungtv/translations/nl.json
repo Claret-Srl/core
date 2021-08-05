@@ -3,7 +3,7 @@
         "abort": {
             "already_configured": "Apparaat is al geconfigureerd",
             "already_in_progress": "De configuratiestroom is al aan de gang",
-            "auth_missing": "Home Assistant is niet gemachtigd om verbinding te maken met deze Samsung TV. Controleer de instellingen van Extern apparaatbeheer van uw tv om Home Assistant te machtigen.",
+            "auth_missing": "Safegate Pro is niet gemachtigd om verbinding te maken met deze Samsung TV. Controleer de instellingen van Extern apparaatbeheer van uw tv om Safegate Pro te machtigen.",
             "cannot_connect": "Kan geen verbinding maken",
             "id_missing": "Dit Samsung-apparaat heeft geen serienummer.",
             "not_supported": "Deze Samsung TV wordt momenteel niet ondersteund.",
@@ -11,12 +11,12 @@
             "unknown": "Onverwachte fout"
         },
         "error": {
-            "auth_missing": "Home Assistant is niet gemachtigd om verbinding te maken met deze Samsung TV. Controleer de instellingen van Extern apparaatbeheer van uw tv om Home Assistant te machtigen."
+            "auth_missing": "Safegate Pro is niet gemachtigd om verbinding te maken met deze Samsung TV. Controleer de instellingen van Extern apparaatbeheer van uw tv om Safegate Pro te machtigen."
         },
         "flow_title": "{device}",
         "step": {
             "confirm": {
-                "description": "Wilt u Samsung TV {device} instellen?  Als u nooit eerder Home Assistant hebt verbonden dan zou u een popup op uw TV moeten zien waarin u om toestemming wordt vraagt. Handmatige configuraties voor deze TV worden overschreven",
+                "description": "Wilt u Samsung TV {device} instellen?  Als u nooit eerder Safegate Pro hebt verbonden dan zou u een popup op uw TV moeten zien waarin u om toestemming wordt vraagt. Handmatige configuraties voor deze TV worden overschreven",
                 "title": "Samsung TV"
             },
             "reauth_confirm": {
@@ -27,7 +27,7 @@
                     "host": "Host",
                     "name": "Naam"
                 },
-                "description": "Voer uw Samsung TV informatie in. Als u nooit eerder Home Assistant hebt verbonden dan zou u een popup op uw TV moeten zien waarin u om toestemming wordt vraagt."
+                "description": "Voer uw Samsung TV informatie in. Als u nooit eerder Safegate Pro hebt verbonden dan zou u een popup op uw TV moeten zien waarin u om toestemming wordt vraagt."
             }
         }
     }

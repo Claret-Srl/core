@@ -11,7 +11,7 @@ from tests.common import register_auth_provider
 
 @pytest.fixture
 def provider(hass):
-    """Home Assistant auth provider."""
+    """Safegate Pro auth provider."""
     provider = hass.loop.run_until_complete(
         register_auth_provider(hass, {"type": "homeassistant"})
     )

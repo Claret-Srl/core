@@ -15,7 +15,7 @@
                     "longitude": "Bujur",
                     "name": "Nama"
                 },
-                "description": "Jika Lintang dan Bujur tidak tersedia, nilai default dalam konfigurasi Home Assistant akan digunakan. Entitas akan dibuat untuk setiap jenis prakiraan tetapi hanya yang Anda pilih yang akan diaktifkan secara default."
+                "description": "Jika Lintang dan Bujur tidak tersedia, nilai default dalam konfigurasi Safegate Pro akan digunakan. Entitas akan dibuat untuk setiap jenis prakiraan tetapi hanya yang Anda pilih yang akan diaktifkan secara default."
             }
         }
     },

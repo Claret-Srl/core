@@ -1,4 +1,4 @@
-"""Binary sensors on Zigbee Home Automation networks."""
+"""Binary sensors on Zigbee Safegate Pro networks."""
 import functools
 
 from homeassistant.components.binary_sensor import (
@@ -31,7 +31,7 @@ from .core.const import (
 from .core.registries import ZHA_ENTITIES
 from .entity import ZhaEntity
 
-# Zigbee Cluster Library Zone Type to Home Assistant device class
+# Zigbee Cluster Library Zone Type to Safegate Pro device class
 CLASS_MAPPING = {
     0x000D: DEVICE_CLASS_MOTION,
     0x0015: DEVICE_CLASS_OPENING,
@@ -45,7 +45,7 @@ STRICT_MATCH = functools.partial(ZHA_ENTITIES.strict_match, DOMAIN)
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    """Set up the Zigbee Home Automation binary sensor from config entry."""
+    """Set up the Zigbee Safegate Pro binary sensor from config entry."""
     entities_to_create = hass.data[DATA_ZHA][DOMAIN]
 
     unsub = async_dispatcher_connect(

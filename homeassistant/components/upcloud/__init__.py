@@ -110,7 +110,7 @@ class UpCloudDataUpdateCoordinator(
 
 @dataclasses.dataclass
 class UpCloudHassData:
-    """Home Assistant UpCloud runtime data."""
+    """Safegate Pro UpCloud runtime data."""
 
     coordinators: dict[str, UpCloudDataUpdateCoordinator] = dataclasses.field(
         default_factory=dict

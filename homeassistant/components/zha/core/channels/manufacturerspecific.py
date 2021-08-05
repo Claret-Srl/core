@@ -1,4 +1,4 @@
-"""Manufacturer specific channels module for Zigbee Home Automation."""
+"""Manufacturer specific channels module for Zigbee Safegate Pro."""
 from homeassistant.core import callback
 
 from .. import registries

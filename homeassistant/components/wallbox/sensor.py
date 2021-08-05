@@ -1,4 +1,4 @@
-"""Home Assistant component for accessing the Wallbox Portal API. The sensor component creates multiple sensors regarding wallbox performance."""
+"""Safegate Pro component for accessing the Wallbox Portal API. The sensor component creates multiple sensors regarding wallbox performance."""
 
 from homeassistant.helpers.entity import Entity
 from homeassistant.helpers.update_coordinator import CoordinatorEntity

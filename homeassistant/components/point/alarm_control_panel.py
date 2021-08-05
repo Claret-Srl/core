@@ -37,7 +37,7 @@ async def async_setup_entry(hass, config_entry, async_add_entities):
 
 
 class MinutPointAlarmControl(AlarmControlPanelEntity):
-    """The platform class required by Home Assistant."""
+    """The platform class required by Safegate Pro."""
 
     def __init__(self, point_client, home_id):
         """Initialize the entity."""

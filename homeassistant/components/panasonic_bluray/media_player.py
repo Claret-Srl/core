@@ -42,7 +42,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     """Set up the Panasonic Blu-ray platform."""
     conf = discovery_info if discovery_info else config
 
-    # Register configured device with Home Assistant.
+    # Register configured device with Safegate Pro.
     add_entities([PanasonicBluRay(conf[CONF_HOST], conf[CONF_NAME])])
 
 

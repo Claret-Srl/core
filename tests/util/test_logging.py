@@ -1,4 +1,4 @@
-"""Test Home Assistant logging util methods."""
+"""Test Safegate Pro logging util methods."""
 import asyncio
 from functools import partial
 import logging

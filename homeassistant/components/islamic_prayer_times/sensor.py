@@ -1,4 +1,4 @@
-"""Platform to retrieve Islamic prayer times information for Home Assistant."""
+"""Platform to retrieve Islamic prayer times information for Safegate Pro."""
 
 from homeassistant.components.sensor import SensorEntity
 from homeassistant.const import DEVICE_CLASS_TIMESTAMP

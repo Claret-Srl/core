@@ -1,31 +1,31 @@
 volume_up:
   name: Volume up
   description:
-    Simulates a key press of the "Volume Up" button on Home Assistant's host
+    Simulates a key press of the "Volume Up" button on Safegate Pro's host
     machine
 
 volume_down:
   name: Volume down
   description:
-    Simulates a key press of the "Volume Down" button on Home Assistant's host
+    Simulates a key press of the "Volume Down" button on Safegate Pro's host
     machine
 
 volume_mute:
   name: Volume mute
   description:
-    Simulates a key press of the "Volume Mute" button on Home Assistant's host
+    Simulates a key press of the "Volume Mute" button on Safegate Pro's host
     machine
 
 media_play_pause:
   name: Media play/pause
   description:
-    Simulates a key press of the "Media Play/Pause" button on Home Assistant's
+    Simulates a key press of the "Media Play/Pause" button on Safegate Pro's
     host machine
 
 media_next_track:
   name: Media next track
   description:
-    Simulates a key press of the "Media Next Track" button on Home Assistant's
+    Simulates a key press of the "Media Next Track" button on Safegate Pro's
     host machine
 
 media_prev_track:

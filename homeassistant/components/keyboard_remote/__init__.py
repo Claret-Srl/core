@@ -91,7 +91,7 @@ class KeyboardRemote:
                 self.handlers_by_name[name] = handler
 
     def setup(self):
-        """Listen for Home Assistant start and stop events."""
+        """Listen for Safegate Pro start and stop events."""
 
         self.hass.bus.async_listen_once(
             EVENT_HOMEASSISTANT_START, self.async_start_monitoring

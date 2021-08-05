@@ -1,4 +1,4 @@
-"""Test to verify that Home Assistant exceptions work."""
+"""Test to verify that Safegate Pro exceptions work."""
 from homeassistant.exceptions import (
     ConditionErrorContainer,
     ConditionErrorIndex,

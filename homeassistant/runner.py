@@ -1,4 +1,4 @@
-"""Run Home Assistant."""
+"""Run Safegate Pro."""
 from __future__ import annotations
 
 import asyncio
@@ -30,7 +30,7 @@ MAX_EXECUTOR_WORKERS = 64
 
 @dataclasses.dataclass
 class RuntimeConfig:
-    """Class to hold the information for running Home Assistant."""
+    """Class to hold the information for running Safegate Pro."""
 
     config_dir: str
     skip_pip: bool = False
@@ -47,7 +47,7 @@ class RuntimeConfig:
 
 
 class HassEventLoopPolicy(asyncio.DefaultEventLoopPolicy):  # type: ignore[valid-type,misc]
-    """Event loop policy for Home Assistant."""
+    """Event loop policy for Safegate Pro."""
 
     def __init__(self, debug: bool) -> None:
         """Init the event loop policy."""
@@ -90,7 +90,7 @@ def _async_loop_exception_handler(_: Any, context: dict[str, Any]) -> None:
 
 
 async def setup_and_run_hass(runtime_config: RuntimeConfig) -> int:
-    """Set up Home Assistant and run."""
+    """Set up Safegate Pro and run."""
     hass = await bootstrap.async_setup_hass(runtime_config)
 
     if hass is None:
@@ -103,6 +103,6 @@ async def setup_and_run_hass(runtime_config: RuntimeConfig) -> int:
 
 
 def run(runtime_config: RuntimeConfig) -> int:
-    """Run Home Assistant."""
+    """Run Safegate Pro."""
     asyncio.set_event_loop_policy(HassEventLoopPolicy(runtime_config.debug))
     return asyncio.run(setup_and_run_hass(runtime_config))

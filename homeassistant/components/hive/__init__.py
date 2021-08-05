@@ -123,7 +123,7 @@ class HiveEntity(Entity):
         self._unique_id = f'{self.device["hiveID"]}-{self.device["hiveType"]}'
 
     async def async_added_to_hass(self):
-        """When entity is added to Home Assistant."""
+        """When entity is added to Safegate Pro."""
         self.async_on_remove(
             async_dispatcher_connect(self.hass, DOMAIN, self.async_write_ha_state)
         )

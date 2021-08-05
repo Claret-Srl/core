@@ -14,10 +14,10 @@
                     "host": "Host",
                     "port": "Port"
                 },
-                "description": "Set up your Elgato Light to integrate with Home Assistant."
+                "description": "Set up your Elgato Light to integrate with Safegate Pro."
             },
             "zeroconf_confirm": {
-                "description": "Do you want to add the Elgato Light with serial number `{serial_number}` to Home Assistant?",
+                "description": "Do you want to add the Elgato Light with serial number `{serial_number}` to Safegate Pro?",
                 "title": "Discovered Elgato Light device"
             }
         }

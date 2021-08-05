@@ -116,7 +116,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         host,
         port,
         password,
-        client_info=f"Home Assistant {const.__version__}",
+        client_info=f"Safegate Pro {const.__version__}",
         zeroconf_instance=zeroconf_instance,
     )
 
@@ -133,7 +133,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         await _cleanup_instance(hass, entry)
 
     # Use async_listen instead of async_listen_once so that we don't deregister
-    # the callback twice when shutting down Home Assistant.
+    # the callback twice when shutting down Safegate Pro.
     # "Unable to remove unknown listener <function EventBus.async_listen_once.<locals>.onetime_listener>"
     entry_data.cleanup_callbacks.append(
         hass.bus.async_listen(EVENT_HOMEASSISTANT_STOP, on_stop)
@@ -191,7 +191,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     async def _send_home_assistant_state(
         entity_id: str, attribute: str | None, state: State | None
     ) -> None:
-        """Forward Home Assistant states to ESPHome."""
+        """Forward Safegate Pro states to ESPHome."""
         if state is None or (attribute and attribute not in state.attributes):
             return
 
@@ -211,7 +211,7 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
         """Subscribe and forward states for requested entities."""
 
         async def send_home_assistant_state_event(event: Event) -> None:
-            """Forward Home Assistant states updates to ESPHome."""
+            """Forward Safegate Pro states updates to ESPHome."""
 
             # Only communicate changes to the state or attribute tracked
             if (
@@ -737,7 +737,7 @@ async def platform_async_setup_entry(
         # Then update the actual info
         entry_data.info[component_key] = new_infos
 
-        # Add entities to Home Assistant
+        # Add entities to Safegate Pro
         async_add_entities(add_entities)
 
     signal = f"esphome_{entry.entry_id}_on_list"
@@ -763,7 +763,7 @@ def esphome_state_property(func):
     """Wrap a state property of an esphome entity.
 
     This checks if the state object in the entity is set, and
-    prevents writing NAN values to the Home Assistant state machine.
+    prevents writing NAN values to the Safegate Pro state machine.
     """
 
     @property
@@ -772,7 +772,7 @@ def esphome_state_property(func):
             return None
         val = func(self)
         if isinstance(val, float) and math.isnan(val):
-            # Home Assistant doesn't use NAN values in state machine
+            # Safegate Pro doesn't use NAN values in state machine
             # (not JSON serializable)
             return None
         return val

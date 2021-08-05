@@ -1,4 +1,4 @@
-"""Tests Home Assistant location helpers."""
+"""Tests Safegate Pro location helpers."""
 from homeassistant.const import ATTR_LATITUDE, ATTR_LONGITUDE
 from homeassistant.core import State
 from homeassistant.helpers import location

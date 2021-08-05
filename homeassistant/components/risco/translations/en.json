@@ -27,8 +27,8 @@
                     "armed_home": "Armed Home",
                     "armed_night": "Armed Night"
                 },
-                "description": "Select what state to set your Risco alarm to when arming the Home Assistant alarm",
-                "title": "Map Home Assistant states to Risco states"
+                "description": "Select what state to set your Risco alarm to when arming the Safegate Pro alarm",
+                "title": "Map Safegate Pro states to Risco states"
             },
             "init": {
                 "data": {
@@ -47,8 +47,8 @@
                     "arm": "Armed (AWAY)",
                     "partial_arm": "Partially Armed (STAY)"
                 },
-                "description": "Select what state your Home Assistant alarm will report for every state reported by Risco",
-                "title": "Map Risco states to Home Assistant states"
+                "description": "Select what state your Safegate Pro alarm will report for every state reported by Risco",
+                "title": "Map Risco states to Safegate Pro states"
             }
         }
     }

@@ -32,7 +32,7 @@
                 "data": {
                     "unlock": "Ya, lakukan."
                 },
-                "description": "{name} ({model} di {host}) dikunci. Hal ini dapat menyebabkan masalah autentikasi di Home Assistant. Apakah Anda ingin membukanya?",
+                "description": "{name} ({model} di {host}) dikunci. Hal ini dapat menyebabkan masalah autentikasi di Safegate Pro. Apakah Anda ingin membukanya?",
                 "title": "Buka kunci perangkat (opsional)"
             },
             "user": {

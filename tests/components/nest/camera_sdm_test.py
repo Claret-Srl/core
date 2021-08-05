@@ -564,7 +564,7 @@ async def test_event_image_becomes_expired(hass, auth):
     # Note: This test does not override the "now" logic within the underlying
     # python library that tracks active events. Instead, it exercises the
     # alarm behavior only. That is, the library may still think the event is
-    # active even though Home Assistant does not due to patching time.
+    # active even though Safegate Pro does not due to patching time.
     next_update = event_timestamp + datetime.timedelta(seconds=180)
     await fire_alarm(hass, next_update)
 

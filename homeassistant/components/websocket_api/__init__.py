@@ -1,4 +1,4 @@
-"""WebSocket based API for Home Assistant."""
+"""WebSocket based API for Safegate Pro."""
 from __future__ import annotations
 
 from typing import Final, cast

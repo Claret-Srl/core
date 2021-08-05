@@ -20,9 +20,9 @@ set_level:
   description: Set log level for integrations.
   fields:
     homeassistant.core:
-      name: Home Assistant Core
+      name: Safegate Pro Core
       description:
-        "Example on how to change the logging level for a Home Assistant Core
+        "Example on how to change the logging level for a Safegate Pro Core
         integrations."
       selector:
         select:
@@ -35,7 +35,7 @@ set_level:
             - 'warn'
             - 'warning'
     homeassistant.components.mqtt:
-      name: Home Assistant components mqtt
+      name: Safegate Pro components mqtt
       description:
         "Example on how to change the logging level for an Integration."
       selector:

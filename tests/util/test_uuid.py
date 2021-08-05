@@ -1,4 +1,4 @@
-"""Test Home Assistant uuid util methods."""
+"""Test Safegate Pro uuid util methods."""
 
 import uuid
 

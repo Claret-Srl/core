@@ -15,7 +15,7 @@ from homeassistant.const import ATTR_NAME
 
 from tests.common import MockConfigEntry, async_capture_events
 
-TEST_API_CALL_ARGS = {"text": "Use API from Home Assistant", "type": "todo"}
+TEST_API_CALL_ARGS = {"text": "Use API from Safegate Pro", "type": "todo"}
 TEST_USER_NAME = "test_user"
 
 

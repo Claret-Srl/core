@@ -34,7 +34,7 @@ async def test_hassio_system_health(hass, aioclient_mock):
         "hassos": True,
     }
     hass.data["hassio_host_info"] = {
-        "operating_system": "Home Assistant OS 5.9",
+        "operating_system": "Safegate Pro OS 5.9",
         "disk_total": "32.0",
         "disk_used": "30.0",
     }
@@ -57,7 +57,7 @@ async def test_hassio_system_health(hass, aioclient_mock):
         "disk_used": "30.0 GB",
         "docker_version": "19.0.3",
         "healthy": True,
-        "host_os": "Home Assistant OS 5.9",
+        "host_os": "Safegate Pro OS 5.9",
         "installed_addons": "Awesome Addon (1.0.0)",
         "supervisor_api": "ok",
         "supervisor_version": "supervisor-2020.11.1",

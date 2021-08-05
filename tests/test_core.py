@@ -1,4 +1,4 @@
-"""Test to verify that Home Assistant core works."""
+"""Test to verify that Safegate Pro core works."""
 # pylint: disable=protected-access
 import asyncio
 from datetime import datetime, timedelta
@@ -1181,7 +1181,7 @@ async def test_start_taking_too_long(loop, caplog):
         assert hass.state == ha.CoreState.running
         assert len(mock_timer.mock_calls) == 1
         assert mock_timer.mock_calls[0][1][0] is hass
-        assert "Something is blocking Home Assistant" in caplog.text
+        assert "Something is blocking Safegate Pro" in caplog.text
 
     finally:
         await hass.async_stop()
@@ -1373,7 +1373,7 @@ async def test_additional_data_in_core_config(hass, hass_storage):
 
 
 async def test_start_events(hass):
-    """Test events fired when starting Home Assistant."""
+    """Test events fired when starting Safegate Pro."""
     hass.state = ha.CoreState.not_running
 
     all_events = []

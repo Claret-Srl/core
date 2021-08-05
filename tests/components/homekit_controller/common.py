@@ -108,7 +108,7 @@ async def setup_test_accessories(hass, accessories):
 
 
 async def device_config_changed(hass, accessories):
-    """Discover new devices added to Home Assistant at runtime."""
+    """Discover new devices added to Safegate Pro at runtime."""
     # Update the accessories our FakePairing knows about
     controller = hass.data[CONTROLLER]
     pairing = controller.pairings["00:00:00:00:00:00"]
@@ -163,7 +163,7 @@ async def setup_test_component(hass, setup_accessory, capitalize=False, suffix=N
             domain = HOMEKIT_ACCESSORY_DISPATCH[service_name]
             break
 
-    assert domain, "Cannot map test homekit services to Home Assistant domain"
+    assert domain, "Cannot map test homekit services to Safegate Pro domain"
 
     config_entry, pairing = await setup_test_accessories(hass, [accessory])
     entity = "testdevice" if suffix is None else f"testdevice_{suffix}"

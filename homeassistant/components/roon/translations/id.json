@@ -9,7 +9,7 @@
         },
         "step": {
             "link": {
-                "description": "Anda harus mengotorisasi Home Assistant di Roon. Setelah Anda mengeklik kirim, buka aplikasi Roon Core, buka Pengaturan dan aktifkan HomeAssistant pada tab Ekstensi.",
+                "description": "Anda harus mengotorisasi Safegate Pro di Roon. Setelah Anda mengeklik kirim, buka aplikasi Roon Core, buka Pengaturan dan aktifkan HomeAssistant pada tab Ekstensi.",
                 "title": "Otorisasi HomeAssistant di Roon"
             },
             "user": {

@@ -43,7 +43,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     key = config.get(CONF_API_KEY)
 
     if None in (lat, lon):
-        _LOGGER.error("Latitude or longitude not set in Home Assistant config")
+        _LOGGER.error("Latitude or longitude not set in Safegate Pro config")
 
     tides = WorldTidesInfoSensor(name, lat, lon, key)
     tides.update()

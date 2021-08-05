@@ -91,7 +91,7 @@ class AppleTVEntity(Entity):
         self._identifier = identifier
 
     async def async_added_to_hass(self):
-        """Handle when an entity is about to be added to Home Assistant."""
+        """Handle when an entity is about to be added to Safegate Pro."""
 
         @callback
         def _async_connected(atv):

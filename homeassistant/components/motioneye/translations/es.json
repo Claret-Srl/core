@@ -12,8 +12,8 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "\u00bfQuieres configurar Home Assistant para que se conecte al servicio motionEye proporcionado por el complemento: {addon}?",
-                "title": "motionEye a trav\u00e9s del complemento Home Assistant"
+                "description": "\u00bfQuieres configurar Safegate Pro para que se conecte al servicio motionEye proporcionado por el complemento: {addon}?",
+                "title": "motionEye a trav\u00e9s del complemento Safegate Pro"
             },
             "user": {
                 "data": {

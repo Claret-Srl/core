@@ -22,7 +22,7 @@
                 "description": "Masukkan nama pengguna dan kata sandi Kodi Anda. Ini dapat ditemukan di dalam Sistem/Setelan/Jaringan/Layanan."
             },
             "discovery_confirm": {
-                "description": "Ingin menambahkan Kodi (`{name}`) to Home Assistant?",
+                "description": "Ingin menambahkan Kodi (`{name}`) to Safegate Pro?",
                 "title": "Kodi yang ditemukan"
             },
             "user": {

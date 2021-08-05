@@ -1,4 +1,4 @@
-"""Connect two Home Assistant instances via MQTT."""
+"""Connect two Safegate Pro instances via MQTT."""
 import json
 
 import voluptuous as vol

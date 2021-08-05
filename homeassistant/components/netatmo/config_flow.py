@@ -56,7 +56,7 @@ class NetatmoFlowHandler(
             "write_thermostat",
         ]
 
-        if self.flow_impl.name != "Home Assistant Cloud":
+        if self.flow_impl.name != "Safegate Pro Cloud":
             scopes.extend(["access_camera", "access_presence"])
             scopes.sort()
 

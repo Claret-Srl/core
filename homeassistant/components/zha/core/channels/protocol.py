@@ -1,4 +1,4 @@
-"""Protocol channels module for Zigbee Home Automation."""
+"""Protocol channels module for Zigbee Safegate Pro."""
 import zigpy.zcl.clusters.protocol as protocol
 
 from .. import registries

@@ -1,4 +1,4 @@
-"""Test Home Assistant date util methods."""
+"""Test Safegate Pro date util methods."""
 from datetime import datetime, timedelta
 
 import pytest

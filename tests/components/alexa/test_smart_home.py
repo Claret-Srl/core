@@ -2407,7 +2407,7 @@ async def test_entity_config(hass):
     assert appliance["endpointId"] == "light#test_1"
     assert appliance["displayCategories"][0] == "SWITCH"
     assert appliance["friendlyName"] == "Config name"
-    assert appliance["description"] == "Config description via Home Assistant"
+    assert appliance["description"] == "Config description via Safegate Pro"
     assert_endpoint_capabilities(
         appliance, "Alexa.PowerController", "Alexa.EndpointHealth", "Alexa"
     )
@@ -2416,7 +2416,7 @@ async def test_entity_config(hass):
     assert scene["endpointId"] == "scene#test_1"
     assert scene["displayCategories"][0] == "SCENE_TRIGGER"
     assert scene["friendlyName"] == "Test 1"
-    assert scene["description"] == "Config description via Home Assistant (Scene)"
+    assert scene["description"] == "Config description via Safegate Pro (Scene)"
 
 
 async def test_logging_request(hass, events):

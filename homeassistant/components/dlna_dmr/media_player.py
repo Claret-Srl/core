@@ -190,7 +190,7 @@ class DlnaDmrDevice(MediaPlayerEntity):
         return self._available
 
     async def _async_on_hass_stop(self, event):
-        """Event handler on Home Assistant stop."""
+        """Event handler on Safegate Pro stop."""
         async with self.hass.data[DLNA_DMR_DATA]["lock"]:
             await self._device.async_unsubscribe_services()
 
@@ -313,7 +313,7 @@ class DlnaDmrDevice(MediaPlayerEntity):
     async def async_play_media(self, media_type, media_id, **kwargs):
         """Play a piece of media."""
         _LOGGER.debug("Playing media: %s, %s, %s", media_type, media_id, kwargs)
-        title = "Home Assistant"
+        title = "Safegate Pro"
 
         # Stop current playing media
         if self._device.can_stop:

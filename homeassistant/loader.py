@@ -1,5 +1,5 @@
 """
-The methods for loading Home Assistant integrations.
+The methods for loading Safegate Pro integrations.
 
 This module has quite some complex parts. I have tried to add as much
 documentation as possible to keep it understandable.
@@ -48,9 +48,9 @@ PACKAGE_CUSTOM_COMPONENTS = "custom_components"
 PACKAGE_BUILTIN = "homeassistant.components"
 CUSTOM_WARNING = (
     "We found a custom integration %s which has not "
-    "been tested by Home Assistant. This component might "
+    "been tested by Safegate Pro. This component might "
     "cause stability problems, be sure to disable it if you "
-    "experience issues with Home Assistant"
+    "experience issues with Safegate Pro"
 )
 
 _UNDEF = object()  # Internal; not helpers.typing.UNDEFINED due to circular dependency
@@ -269,7 +269,7 @@ async def async_get_mqtt(hass: HomeAssistant) -> dict[str, list[str]]:
 
 
 class Integration:
-    """An integration in Home Assistant."""
+    """An integration in Safegate Pro."""
 
     @classmethod
     def resolve_from_root(

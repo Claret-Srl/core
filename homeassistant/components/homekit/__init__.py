@@ -422,7 +422,7 @@ def _async_register_events_and_services(hass: HomeAssistant):
 
 
 class HomeKit:
-    """Class to handle all actions between HomeKit and Home Assistant."""
+    """Class to handle all actions between HomeKit and Safegate Pro."""
 
     def __init__(
         self,

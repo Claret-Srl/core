@@ -13,7 +13,7 @@
                 "data": {
                     "giid": "Instalasi"
                 },
-                "description": "Home Assistant menemukan beberapa instalasi Verisure di akun My Pages. Pilih instalasi untuk ditambahkan ke Home Assistant."
+                "description": "Safegate Pro menemukan beberapa instalasi Verisure di akun My Pages. Pilih instalasi untuk ditambahkan ke Safegate Pro."
             },
             "reauth_confirm": {
                 "data": {

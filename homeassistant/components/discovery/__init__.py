@@ -206,7 +206,7 @@ async def async_setup(hass, config):
 
     @callback
     def schedule_first(event):
-        """Schedule the first discovery when Home Assistant starts up."""
+        """Schedule the first discovery when Safegate Pro starts up."""
         async_track_point_in_utc_time(hass, scan_devices, dt_util.utcnow())
 
     hass.bus.async_listen_once(EVENT_HOMEASSISTANT_STARTED, schedule_first)

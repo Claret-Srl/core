@@ -1,4 +1,4 @@
-"""Selectors for Home Assistant."""
+"""Selectors for Safegate Pro."""
 from __future__ import annotations
 
 from typing import Any, Callable, cast

@@ -118,7 +118,7 @@ async def test_relay_as_light(hass, mqtt_mock, setup_tasmota):
     """Test relay does not show up as switch in light mode."""
     config = copy.deepcopy(DEFAULT_CONFIG)
     config["rl"][0] = 1
-    config["so"]["30"] = 1  # Enforce Home Assistant auto-discovery as light
+    config["so"]["30"] = 1  # Enforce Safegate Pro auto-discovery as light
     mac = config["mac"]
 
     async_fire_mqtt_message(
@@ -189,10 +189,10 @@ async def test_discovery_removal_relay_as_light(hass, mqtt_mock, caplog, setup_t
     """Test removal of discovered relay as light."""
     config1 = copy.deepcopy(DEFAULT_CONFIG)
     config1["rl"][0] = 1
-    config1["so"]["30"] = 0  # Disable Home Assistant auto-discovery as light
+    config1["so"]["30"] = 0  # Disable Safegate Pro auto-discovery as light
     config2 = copy.deepcopy(DEFAULT_CONFIG)
     config2["rl"][0] = 1
-    config2["so"]["30"] = 1  # Enforce Home Assistant auto-discovery as light
+    config2["so"]["30"] = 1  # Enforce Safegate Pro auto-discovery as light
 
     await help_test_discovery_removal(
         hass, mqtt_mock, caplog, switch.DOMAIN, config1, config2

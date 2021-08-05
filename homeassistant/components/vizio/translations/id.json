@@ -19,11 +19,11 @@
                 "title": "Selesaikan Proses Pemasangan"
             },
             "pairing_complete": {
-                "description": "Perangkat VIZIO SmartCast sekarang terhubung ke Home Assistant.",
+                "description": "Perangkat VIZIO SmartCast sekarang terhubung ke Safegate Pro.",
                 "title": "Pemasangan Selesai"
             },
             "pairing_complete_import": {
-                "description": "Perangkat VIZIO SmartCast sekarang terhubung ke Home Assistant. \n\nToken Akses adalah '**{access_token}**'.",
+                "description": "Perangkat VIZIO SmartCast sekarang terhubung ke Safegate Pro. \n\nToken Akses adalah '**{access_token}**'.",
                 "title": "Pemasangan Selesai"
             },
             "user": {

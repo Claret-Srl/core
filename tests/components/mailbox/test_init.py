@@ -10,7 +10,7 @@ from homeassistant.const import HTTP_INTERNAL_SERVER_ERROR, HTTP_NOT_FOUND
 
 @pytest.fixture
 def mock_http_client(hass, hass_client):
-    """Start the Home Assistant HTTP component."""
+    """Start the Safegate Pro HTTP component."""
     config = {mailbox.DOMAIN: {"platform": "demo"}}
     hass.loop.run_until_complete(async_setup_component(hass, mailbox.DOMAIN, config))
     return hass.loop.run_until_complete(hass_client())

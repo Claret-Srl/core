@@ -3,7 +3,7 @@
         "info": {
             "alexa_enabled": "Alexa \ud65c\uc131\ud654",
             "can_reach_cert_server": "\uc778\uc99d\uc11c \uc11c\ubc84 \uc5f0\uacb0",
-            "can_reach_cloud": "Home Assistant Cloud \uc5f0\uacb0",
+            "can_reach_cloud": "Safegate Pro Cloud \uc5f0\uacb0",
             "can_reach_cloud_auth": "\uc778\uc99d \uc11c\ubc84 \uc5f0\uacb0",
             "google_enabled": "Google Assistant \ud65c\uc131\ud654",
             "logged_in": "\ub85c\uadf8\uc778",

@@ -1,4 +1,4 @@
-"""Support for a Hue API to control Home Assistant."""
+"""Support for a Hue API to control Safegate Pro."""
 import asyncio
 import hashlib
 from ipaddress import ip_address
@@ -744,7 +744,7 @@ def entity_to_json(config, entity):
         },
         "name": config.get_entity_name(entity),
         "uniqueid": unique_id,
-        "manufacturername": "Home Assistant",
+        "manufacturername": "Safegate Pro",
         "swversion": "123",
     }
 

@@ -12,8 +12,8 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "Kas konfigureerida Home Assistanti \u00fchenduse loomiseks lisandmooduli pakutava motionEye teenusega: {addon} ?",
-                "title": "motionEye Home Assistanti lisandmooduli kaudu"
+                "description": "Kas konfigureerida Safegate Proi \u00fchenduse loomiseks lisandmooduli pakutava motionEye teenusega: {addon} ?",
+                "title": "motionEye Safegate Proi lisandmooduli kaudu"
             },
             "user": {
                 "data": {

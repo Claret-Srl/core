@@ -41,7 +41,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
 async def async_setup_platform(hass, config, async_add_entities, discovery_info=None):
     """Set up the ToD sensors."""
     if hass.config.time_zone is None:
-        _LOGGER.error("Timezone is not set in Home Assistant configuration")
+        _LOGGER.error("Timezone is not set in Safegate Pro configuration")
         return
 
     after = config[CONF_AFTER]
@@ -177,7 +177,7 @@ class TodSensor(BinarySensorEntity):
             self._time_before += timedelta(days=1)
 
     async def async_added_to_hass(self):
-        """Call when entity about to be added to Home Assistant."""
+        """Call when entity about to be added to Safegate Pro."""
         self._calculate_boudary_time()
         self._calculate_next_update()
 

@@ -232,7 +232,7 @@ class HangoutsBot:
             await self._client.disconnect()
 
     async def async_handle_hass_stop(self, _):
-        """Run once when Home Assistant stops."""
+        """Run once when Safegate Pro stops."""
         await self.async_disconnect()
 
     async def _async_send_message(self, message, targets, data):

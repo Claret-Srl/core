@@ -70,7 +70,7 @@ async def test_user_setup(hass):
         "ignore_cec": [],
         "known_hosts": [],
         "uuid": [],
-        "user_id": users[0].id,  # Home Assistant cast user
+        "user_id": users[0].id,  # Safegate Pro cast user
     }
 
 
@@ -92,7 +92,7 @@ async def test_user_setup_options(hass):
         "ignore_cec": [],
         "known_hosts": ["192.168.0.1", "192.168.0.2"],
         "uuid": [],
-        "user_id": users[0].id,  # Home Assistant cast user
+        "user_id": users[0].id,  # Safegate Pro cast user
     }
 
 
@@ -112,7 +112,7 @@ async def test_zeroconf_setup(hass):
         "ignore_cec": [],
         "known_hosts": [],
         "uuid": [],
-        "user_id": users[0].id,  # Home Assistant cast user
+        "user_id": users[0].id,  # Safegate Pro cast user
     }
 
 

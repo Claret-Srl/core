@@ -61,7 +61,7 @@ async def init_integration(
     unique_id: str = MOCK_ZONE,
     skip_setup: bool = False,
 ) -> MockConfigEntry:
-    """Set up the Cloudflare integration in Home Assistant."""
+    """Set up the Cloudflare integration in Safegate Pro."""
     entry = MockConfigEntry(
         domain=DOMAIN,
         data=data,

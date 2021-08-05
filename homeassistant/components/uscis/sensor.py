@@ -23,7 +23,7 @@ PLATFORM_SCHEMA = PLATFORM_SCHEMA.extend(
 
 
 def setup_platform(hass, config, add_entities, discovery_info=None):
-    """Set up the platform in Home Assistant and Case Information."""
+    """Set up the platform in Safegate Pro and Case Information."""
     uscis = UscisSensor(config["case_id"], config[CONF_NAME])
     uscis.update()
     if uscis.valid_case_id:

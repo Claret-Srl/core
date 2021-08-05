@@ -1,4 +1,4 @@
-"""Integrates Native Apps to Home Assistant."""
+"""Integrates Native Apps to Safegate Pro."""
 from contextlib import suppress
 
 import voluptuous as vol

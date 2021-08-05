@@ -141,6 +141,6 @@ class VerisureSmartcam(CoordinatorEntity, Camera):
             LOGGER.error("Could not capture image, %s", ex)
 
     async def async_added_to_hass(self) -> None:
-        """Entity added to Home Assistant."""
+        """Entity added to Safegate Pro."""
         await super().async_added_to_hass()
         self.hass.bus.async_listen_once(EVENT_HOMEASSISTANT_STOP, self.delete_image)

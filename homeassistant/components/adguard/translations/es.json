@@ -9,7 +9,7 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "\u00bfDesea configurar Home Assistant para conectarse al AdGuard Home proporcionado por el complemento Supervisor: {addon} ?",
+                "description": "\u00bfDesea configurar Safegate Pro para conectarse al AdGuard Home proporcionado por el complemento Supervisor: {addon} ?",
                 "title": "AdGuard Home a trav\u00e9s del complemento Supervisor"
             },
             "user": {

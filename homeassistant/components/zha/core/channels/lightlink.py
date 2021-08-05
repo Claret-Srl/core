@@ -1,4 +1,4 @@
-"""Lightlink channels module for Zigbee Home Automation."""
+"""Lightlink channels module for Zigbee Safegate Pro."""
 import asyncio
 
 import zigpy.exceptions

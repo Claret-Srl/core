@@ -35,7 +35,7 @@ class OnboadingStorage(Store):
 @bind_hass
 @callback
 def async_is_onboarded(hass):
-    """Return if Home Assistant has been onboarded."""
+    """Return if Safegate Pro has been onboarded."""
     data = hass.data.get(DOMAIN)
     return data is None or data is True
 

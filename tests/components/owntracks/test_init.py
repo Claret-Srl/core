@@ -40,7 +40,7 @@ def mock_dev_track(mock_device_tracker_conf):
 
 @pytest.fixture
 def mock_client(hass, aiohttp_client):
-    """Start the Home Assistant HTTP component."""
+    """Start the Safegate Pro HTTP component."""
     mock_component(hass, "group")
     mock_component(hass, "zone")
     mock_component(hass, "device_tracker")

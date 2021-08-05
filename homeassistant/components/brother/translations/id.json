@@ -22,7 +22,7 @@
                 "data": {
                     "type": "Jenis printer"
                 },
-                "description": "Ingin menambahkan Printer Brother {model} dengan nomor seri `{serial_number}` ke Home Assistant?",
+                "description": "Ingin menambahkan Printer Brother {model} dengan nomor seri `{serial_number}` ke Safegate Pro?",
                 "title": "Perangkat Printer Brother yang Ditemukan"
             }
         }

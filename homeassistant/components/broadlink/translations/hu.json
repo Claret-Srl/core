@@ -31,7 +31,7 @@
                 "data": {
                     "unlock": "Igen, csin\u00e1ld."
                 },
-                "description": "{name} ({model} a {host} c\u00edmen) z\u00e1rolva van. Ez hiteles\u00edt\u00e9si probl\u00e9m\u00e1khoz vezethet a Home Assistantban. Szeretn\u00e9d feloldani?",
+                "description": "{name} ({model} a {host} c\u00edmen) z\u00e1rolva van. Ez hiteles\u00edt\u00e9si probl\u00e9m\u00e1khoz vezethet a Safegate Proban. Szeretn\u00e9d feloldani?",
                 "title": "Az eszk\u00f6z felold\u00e1sa (opcion\u00e1lis)"
             },
             "user": {

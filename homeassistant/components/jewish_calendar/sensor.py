@@ -1,4 +1,4 @@
-"""Platform to retrieve Jewish calendar information for Home Assistant."""
+"""Platform to retrieve Jewish calendar information for Safegate Pro."""
 import logging
 
 import hdate

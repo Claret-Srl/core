@@ -24,7 +24,7 @@ from .const import (
     TELLDUS_DISCOVERY_NEW,
 )
 
-APPLICATION_NAME = "Home Assistant"
+APPLICATION_NAME = "Safegate Pro"
 
 _LOGGER = logging.getLogger(__name__)
 

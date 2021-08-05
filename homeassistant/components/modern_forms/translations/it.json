@@ -16,10 +16,10 @@
                 "data": {
                     "host": "Host"
                 },
-                "description": "Configura il tuo ventilatore Modern Forms per integrarlo con Home Assistant."
+                "description": "Configura il tuo ventilatore Modern Forms per integrarlo con Safegate Pro."
             },
             "zeroconf_confirm": {
-                "description": "Vuoi aggiungere il ventilatore di Modern Forms chiamato `{name}` a Home Assistant?",
+                "description": "Vuoi aggiungere il ventilatore di Modern Forms chiamato `{name}` a Safegate Pro?",
                 "title": "Rilevato il dispositivo ventilatore di Modern Forms"
             }
         }

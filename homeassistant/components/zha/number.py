@@ -234,7 +234,7 @@ ICONS = {
 
 
 async def async_setup_entry(hass, config_entry, async_add_entities):
-    """Set up the Zigbee Home Automation Analog Output from config entry."""
+    """Set up the Zigbee Safegate Pro Analog Output from config entry."""
     entities_to_create = hass.data[DATA_ZHA][DOMAIN]
 
     unsub = async_dispatcher_connect(

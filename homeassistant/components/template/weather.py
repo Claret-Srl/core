@@ -219,7 +219,7 @@ class WeatherTemplate(TemplateEntity, WeatherEntity):
     def attribution(self):
         """Return the attribution."""
         if self._attribution is None:
-            return "Powered by Home Assistant"
+            return "Powered by Safegate Pro"
         return self._attribution
 
     @property

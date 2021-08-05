@@ -1,4 +1,4 @@
-"""Helper methods to handle the time in Home Assistant."""
+"""Helper methods to handle the time in Safegate Pro."""
 from __future__ import annotations
 
 import bisect

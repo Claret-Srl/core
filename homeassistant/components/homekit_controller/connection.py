@@ -164,7 +164,7 @@ class HKDevice:
         self.hass.helpers.dispatcher.async_dispatcher_send(self.signal_state_updated)
 
     async def async_setup(self):
-        """Prepare to use a paired HomeKit device in Home Assistant."""
+        """Prepare to use a paired HomeKit device in Safegate Pro."""
         cache = self.hass.data[ENTITY_MAP].get_map(self.unique_id)
         if not cache:
             if await self.async_refresh_entity_map(self.config_num):
@@ -464,7 +464,7 @@ class HKDevice:
         return await self.pairing.get_characteristics(*args, **kwargs)
 
     async def put_characteristics(self, characteristics):
-        """Control a HomeKit device state from Home Assistant."""
+        """Control a HomeKit device state from Safegate Pro."""
         results = await self.pairing.put_characteristics(characteristics)
 
         # Feed characteristics back into HA and update the current state

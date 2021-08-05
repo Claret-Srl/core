@@ -175,14 +175,14 @@ class MatrixBot:
         self._client.start_listener_thread(exception_handler=handle_matrix_exception)
 
         def stop_client(_):
-            """Run once when Home Assistant stops."""
+            """Run once when Safegate Pro stops."""
             self._client.stop_listener_thread()
 
         self.hass.bus.listen_once(EVENT_HOMEASSISTANT_STOP, stop_client)
 
         # Joining rooms potentially does a lot of I/O, so we defer it
         def handle_startup(_):
-            """Run once when Home Assistant finished startup."""
+            """Run once when Safegate Pro finished startup."""
             self._join_rooms()
 
         self.hass.bus.listen_once(EVENT_HOMEASSISTANT_START, handle_startup)

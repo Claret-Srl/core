@@ -1,4 +1,4 @@
-"""Script to manage users for the Home Assistant auth provider."""
+"""Script to manage users for the Safegate Pro auth provider."""
 import argparse
 import asyncio
 import logging
@@ -14,14 +14,14 @@ from homeassistant.core import HomeAssistant
 
 
 def run(args):
-    """Handle Home Assistant auth provider script."""
-    parser = argparse.ArgumentParser(description="Manage Home Assistant users")
+    """Handle Safegate Pro auth provider script."""
+    parser = argparse.ArgumentParser(description="Manage Safegate Pro users")
     parser.add_argument("--script", choices=["auth"])
     parser.add_argument(
         "-c",
         "--config",
         default=get_default_config_dir(),
-        help="Directory that contains the Home Assistant configuration",
+        help="Directory that contains the Safegate Pro configuration",
     )
 
     subparsers = parser.add_subparsers(dest="func")

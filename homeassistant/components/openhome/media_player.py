@@ -186,7 +186,7 @@ class OpenhomeDevice(MediaPlayerEntity):
                 MEDIA_TYPE_MUSIC,
             )
             return
-        track_details = {"title": "Home Assistant", "uri": media_id}
+        track_details = {"title": "Safegate Pro", "uri": media_id}
         await self._device.play_media(track_details)
 
     @catch_request_errors()

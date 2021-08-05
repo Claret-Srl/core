@@ -8,7 +8,7 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "Be szeretn\u00e9 \u00e1ll\u00edtani a Home Assistant alkalmaz\u00e1st az Almondhoz val\u00f3 csatlakoz\u00e1shoz, amelyet a Supervisor kieg\u00e9sz\u00edt\u0151 biztos\u00edt: {addon} ?",
+                "description": "Be szeretn\u00e9 \u00e1ll\u00edtani a Safegate Pro alkalmaz\u00e1st az Almondhoz val\u00f3 csatlakoz\u00e1shoz, amelyet a Supervisor kieg\u00e9sz\u00edt\u0151 biztos\u00edt: {addon} ?",
                 "title": "Almond a Supervisor kieg\u00e9sz\u00edt\u0151n kereszt\u00fcl"
             },
             "pick_implementation": {

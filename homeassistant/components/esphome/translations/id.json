@@ -18,7 +18,7 @@
                 "description": "Masukkan kata sandi yang ditetapkan di konfigurasi Anda untuk {name}."
             },
             "discovery_confirm": {
-                "description": "Ingin menambahkan node ESPHome `{name}` ke Home Assistant?",
+                "description": "Ingin menambahkan node ESPHome `{name}` ke Safegate Pro?",
                 "title": "Perangkat node ESPHome yang ditemukan"
             },
             "user": {

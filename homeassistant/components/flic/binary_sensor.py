@@ -71,7 +71,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
         return
 
     def new_button_callback(address):
-        """Set up newly verified button as device in Home Assistant."""
+        """Set up newly verified button as device in Safegate Pro."""
         setup_button(hass, config, add_entities, client, address)
 
     client.on_new_verified_button = new_button_callback

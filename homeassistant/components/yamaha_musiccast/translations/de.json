@@ -16,7 +16,7 @@
                 "data": {
                     "host": "[%key::common::config_flow::data::host%]"
                 },
-                "description": "Einrichten von MusicCast zur Integration mit Home Assistant."
+                "description": "Einrichten von MusicCast zur Integration mit Safegate Pro."
             }
         }
     }

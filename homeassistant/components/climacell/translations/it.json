@@ -15,7 +15,7 @@
                     "longitude": "Logitudine",
                     "name": "Nome"
                 },
-                "description": "Se Latitudine e Logitudine non vengono forniti, verranno utilizzati i valori predefiniti nella configurazione di Home Assistant. Verr\u00e0 creata un'entit\u00e0 per ogni tipo di previsione, ma solo quelli selezionati saranno abilitati per impostazione predefinita."
+                "description": "Se Latitudine e Logitudine non vengono forniti, verranno utilizzati i valori predefiniti nella configurazione di Safegate Pro. Verr\u00e0 creata un'entit\u00e0 per ogni tipo di previsione, ma solo quelli selezionati saranno abilitati per impostazione predefinita."
             }
         }
     },

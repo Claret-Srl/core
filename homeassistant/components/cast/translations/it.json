@@ -29,7 +29,7 @@
                     "ignore_cec": "Ignora CEC",
                     "uuid": "UUID consentiti"
                 },
-                "description": "UUID consentiti: un elenco separato da virgole di UUID dei dispositivi di trasmissione da aggiungere a Home Assistant. Utilizza solo se non desideri aggiungere tutti i dispositivi di trasmissione disponibili.\nIgnora CEC: un elenco separato da virgole di Chromecast che dovrebbero ignorare i dati CEC per determinare l'input attivo. Questo verr\u00e0 passato a pychromecast.IGNORE_CEC.",
+                "description": "UUID consentiti: un elenco separato da virgole di UUID dei dispositivi di trasmissione da aggiungere a Safegate Pro. Utilizza solo se non desideri aggiungere tutti i dispositivi di trasmissione disponibili.\nIgnora CEC: un elenco separato da virgole di Chromecast che dovrebbero ignorare i dati CEC per determinare l'input attivo. Questo verr\u00e0 passato a pychromecast.IGNORE_CEC.",
                 "title": "Configurazione avanzata di Google Cast"
             },
             "basic_options": {

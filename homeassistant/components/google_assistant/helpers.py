@@ -579,7 +579,7 @@ class GoogleEntity:
 
     @callback
     def async_update(self):
-        """Update the entity with latest info from Home Assistant."""
+        """Update the entity with latest info from Safegate Pro."""
         self.state = self.hass.states.get(self.entity_id)
 
         if self._traits is None:

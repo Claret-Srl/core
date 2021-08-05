@@ -175,7 +175,7 @@ def area_mock(hass):
 
 
 class TestServiceHelpers(unittest.TestCase):
-    """Test the Home Assistant service helpers."""
+    """Test the Safegate Pro service helpers."""
 
     def setUp(self):  # pylint: disable=invalid-name
         """Set up things to be run when tests are started."""

@@ -244,7 +244,7 @@ class Analytics:
                 if response.status == 200:
                     LOGGER.info(
                         (
-                            "Submitted analytics to Home Assistant servers. "
+                            "Submitted analytics to Safegate Pro servers. "
                             "Information submitted includes %s"
                         ),
                         payload,

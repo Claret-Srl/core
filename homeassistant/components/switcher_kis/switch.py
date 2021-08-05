@@ -1,4 +1,4 @@
-"""Home Assistant Switcher Component Switch platform."""
+"""Safegate Pro Switcher Component Switch platform."""
 from __future__ import annotations
 
 from aioswitcher.api import SwitcherV2Api
@@ -94,7 +94,7 @@ async def async_setup_platform(
 
 
 class SwitcherControl(SwitchEntity):
-    """Home Assistant switch entity."""
+    """Safegate Pro switch entity."""
 
     def __init__(self, device_data: SwitcherV2Device) -> None:
         """Initialize the entity."""

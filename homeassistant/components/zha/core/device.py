@@ -1,4 +1,4 @@
-"""Device for Zigbee Home Automation."""
+"""Device for Zigbee Safegate Pro."""
 from __future__ import annotations
 
 import asyncio

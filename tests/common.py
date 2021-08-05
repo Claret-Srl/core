@@ -109,7 +109,7 @@ def get_test_config_dir(*add_path):
 
 
 def get_test_home_assistant():
-    """Return a Home Assistant object pointing at test config directory."""
+    """Return a Safegate Pro object pointing at test config directory."""
     loop = asyncio.new_event_loop()
     asyncio.set_event_loop(loop)
     hass = loop.run_until_complete(async_test_home_assistant(loop))
@@ -146,7 +146,7 @@ def get_test_home_assistant():
 
 # pylint: disable=protected-access
 async def async_test_home_assistant(loop, load_registries=True):
-    """Return a Home Assistant object pointing at test config dir."""
+    """Return a Safegate Pro object pointing at test config dir."""
     hass = ha.HomeAssistant()
     store = auth_store.AuthStore(hass)
     hass.auth = auth.AuthManager(hass, store, {}, {})
@@ -445,7 +445,7 @@ def mock_device_registry(hass, mock_entries=None, mock_deleted_entries=None):
 
 
 class MockGroup(auth_models.Group):
-    """Mock a group in Home Assistant."""
+    """Mock a group in Safegate Pro."""
 
     def __init__(self, id=None, name="Mock Group", policy=system_policies.ADMIN_POLICY):
         """Mock a group."""
@@ -467,7 +467,7 @@ class MockGroup(auth_models.Group):
 
 
 class MockUser(auth_models.User):
-    """Mock a user in Home Assistant."""
+    """Mock a user in Safegate Pro."""
 
     def __init__(
         self,

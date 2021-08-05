@@ -119,7 +119,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
 
         timeout = service.data.get(CONF_TIMEOUT, entity.timeout)
 
-        _LOGGER.info("Press the key you want Home Assistant to learn")
+        _LOGGER.info("Press the key you want Safegate Pro to learn")
         start_time = utcnow()
         while (utcnow() - start_time) < timedelta(seconds=timeout):
             message = await hass.async_add_executor_job(device.read, slot)

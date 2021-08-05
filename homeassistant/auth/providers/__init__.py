@@ -1,4 +1,4 @@
-"""Auth providers for Home Assistant."""
+"""Auth providers for Safegate Pro."""
 from __future__ import annotations
 
 from collections.abc import Mapping

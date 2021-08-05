@@ -1,4 +1,4 @@
-"""Home Assistant wrapper for a pyWeMo device."""
+"""Safegate Pro wrapper for a pyWeMo device."""
 import logging
 
 from pywemo import PyWeMoException, WeMoDevice
@@ -22,7 +22,7 @@ _LOGGER = logging.getLogger(__name__)
 
 
 class DeviceWrapper:
-    """Home Assistant wrapper for a pyWeMo device."""
+    """Safegate Pro wrapper for a pyWeMo device."""
 
     def __init__(self, hass: HomeAssistant, wemo: WeMoDevice, device_id: str) -> None:
         """Initialize DeviceWrapper."""

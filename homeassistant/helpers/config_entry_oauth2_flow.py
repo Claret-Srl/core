@@ -59,7 +59,7 @@ class AbstractOAuth2Implementation(ABC):
         """Generate a url for the user to authorize.
 
         This step is called when a config flow is initialized. It should redirect the
-        user to the vendor website where they can authorize Home Assistant.
+        user to the vendor website where they can authorize Safegate Pro.
 
         The implementation is responsible to get notified when the user is authorized
         and pass this to the specified config flow. Do as little work as possible once

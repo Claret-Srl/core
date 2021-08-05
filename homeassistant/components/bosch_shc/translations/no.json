@@ -14,7 +14,7 @@
         "flow_title": "Bosch SHC: {name}",
         "step": {
             "confirm_discovery": {
-                "description": "Trykk p\u00e5 Bosch Smart Home Controller-frontknappen til LED-lampen begynner \u00e5 blinke.\n Klar til \u00e5 fortsette \u00e5 konfigurere {model} @ {host} med Home Assistant?"
+                "description": "Trykk p\u00e5 Bosch Smart Home Controller-frontknappen til LED-lampen begynner \u00e5 blinke.\n Klar til \u00e5 fortsette \u00e5 konfigurere {model} @ {host} med Safegate Pro?"
             },
             "credentials": {
                 "data": {
@@ -29,7 +29,7 @@
                 "data": {
                     "host": "Vert"
                 },
-                "description": "Sett opp din Bosch Smart Home Controller for \u00e5 tillate overv\u00e5king og kontroll med Home Assistant.",
+                "description": "Sett opp din Bosch Smart Home Controller for \u00e5 tillate overv\u00e5king og kontroll med Safegate Pro.",
                 "title": "SHC-autentiseringsparametere"
             }
         }

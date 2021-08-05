@@ -38,7 +38,7 @@ async def test_setup_callbacks(hass, numato_fixture, monkeypatch):
 
 
 async def test_hass_binary_sensor_notification(hass, numato_fixture):
-    """Test regular operations from within Home Assistant."""
+    """Test regular operations from within Safegate Pro."""
     assert await async_setup_component(hass, "numato", NUMATO_CFG)
     await hass.async_block_till_done()  # wait until services are registered
     assert (

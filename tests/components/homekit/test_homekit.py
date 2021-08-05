@@ -503,7 +503,7 @@ async def test_homekit_start(hass, hk_driver, mock_zeroconf, device_reg):
         connections={connection},
         manufacturer="Any",
         name="Any",
-        model="Home Assistant HomeKit Bridge",
+        model="Safegate Pro HomeKit Bridge",
     )
 
     hass.states.async_set("light.demo", "on")
@@ -520,7 +520,7 @@ async def test_homekit_start(hass, hk_driver, mock_zeroconf, device_reg):
     await hass.async_block_till_done()
     mock_add_acc.assert_any_call(state)
     mock_setup_msg.assert_called_with(
-        hass, entry.entry_id, "Mock Title (Home Assistant Bridge)", ANY, ANY
+        hass, entry.entry_id, "Mock Title (Safegate Pro Bridge)", ANY, ANY
     )
     assert hk_driver_start.called
     assert homekit.status == STATUS_RUNNING
@@ -587,7 +587,7 @@ async def test_homekit_start_with_a_broken_accessory(hass, hk_driver, mock_zeroc
 
     await hass.async_block_till_done()
     mock_setup_msg.assert_called_with(
-        hass, entry.entry_id, "Mock Title (Home Assistant Bridge)", ANY, ANY
+        hass, entry.entry_id, "Mock Title (Safegate Pro Bridge)", ANY, ANY
     )
     assert hk_driver_start.called
     assert homekit.status == STATUS_RUNNING
@@ -1051,7 +1051,7 @@ async def test_homekit_finds_linked_humidity_sensors(
         config_entry_id=config_entry.entry_id,
         sw_version="0.16.1",
         model="Smart Brainy Clever Humidifier",
-        manufacturer="Home Assistant",
+        manufacturer="Safegate Pro",
         connections={(device_registry.CONNECTION_NETWORK_MAC, "12:34:56:AB:CD:EF")},
     )
 
@@ -1090,7 +1090,7 @@ async def test_homekit_finds_linked_humidity_sensors(
         ANY,
         ANY,
         {
-            "manufacturer": "Home Assistant",
+            "manufacturer": "Safegate Pro",
             "model": "Smart Brainy Clever Humidifier",
             "sw_version": "0.16.1",
             "linked_humidity_sensor": "sensor.humidifier_humidity_sensor",

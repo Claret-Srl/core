@@ -329,7 +329,7 @@ class EntityComponent:
         )
 
     async def _async_shutdown(self, event: Event) -> None:
-        """Call when Home Assistant is stopping."""
+        """Call when Safegate Pro is stopping."""
         await asyncio.gather(
             *[platform.async_shutdown() for platform in chain(self._platforms.values())]
         )

@@ -1,4 +1,4 @@
-"""Entity for Zigbee Home Automation."""
+"""Entity for Zigbee Safegate Pro."""
 from __future__ import annotations
 
 import asyncio
@@ -277,7 +277,7 @@ class ZhaGroupEntity(BaseZhaEntity):
         )
 
     async def async_will_remove_from_hass(self) -> None:
-        """Handle removal from Home Assistant."""
+        """Handle removal from Safegate Pro."""
         await super().async_will_remove_from_hass()
         if self._async_unsub_state_changed is not None:
             self._async_unsub_state_changed()

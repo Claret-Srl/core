@@ -1,6 +1,6 @@
 -c homeassistant/package_constraints.txt
 
-# Home Assistant Core
+# Safegate Pro Core
 aiohttp==3.7.4.post0
 astral==2.2
 async_timeout==3.0.1

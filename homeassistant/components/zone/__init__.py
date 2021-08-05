@@ -177,7 +177,7 @@ class ZoneStorageCollection(collection.StorageCollection):
 
 
 async def async_setup(hass: HomeAssistant, config: dict) -> bool:
-    """Set up configured zones as well as Home Assistant zone if necessary."""
+    """Set up configured zones as well as Safegate Pro zone if necessary."""
     component = entity_component.EntityComponent(_LOGGER, DOMAIN, hass)
     id_manager = collection.IDManager()
 

@@ -1,14 +1,14 @@
-"""Helpers to help with encoding Home Assistant objects in JSON."""
+"""Helpers to help with encoding Safegate Pro objects in JSON."""
 from datetime import datetime, timedelta
 import json
 from typing import Any
 
 
 class JSONEncoder(json.JSONEncoder):
-    """JSONEncoder that supports Home Assistant objects."""
+    """JSONEncoder that supports Safegate Pro objects."""
 
     def default(self, o: Any) -> Any:
-        """Convert Home Assistant objects.
+        """Convert Safegate Pro objects.
 
         Hand other objects to the original method.
         """
@@ -23,7 +23,7 @@ class JSONEncoder(json.JSONEncoder):
 
 
 class ExtendedJSONEncoder(JSONEncoder):
-    """JSONEncoder that supports Home Assistant objects and falls back to repr(o)."""
+    """JSONEncoder that supports Safegate Pro objects and falls back to repr(o)."""
 
     def default(self, o: Any) -> Any:
         """Convert certain objects.

@@ -14,7 +14,7 @@
                 "data": {
                     "pin": "PIN kood"
                 },
-                "description": "Sisesta Sony Bravia teleris kuvatud PIN-kood.\n\n Kui PIN-koodi ei kuvata pead teleri Home Assistan'i sidumise t\u00fchistama. Mine: Seaded - > V\u00f5rk - > Kaugseadme seaded - > Kaugseadme registreerimise t\u00fchistamine.",
+                "description": "Sisesta Sony Bravia teleris kuvatud PIN-kood.\n\n Kui PIN-koodi ei kuvata pead teleri Safegate Pro'i sidumise t\u00fchistama. Mine: Seaded - > V\u00f5rk - > Kaugseadme seaded - > Kaugseadme registreerimise t\u00fchistamine.",
                 "title": "Sony Bravia TV autoriseerimine"
             },
             "user": {

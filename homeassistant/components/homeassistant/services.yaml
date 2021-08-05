@@ -1,8 +1,8 @@
 check_config:
   name: Check configuration
   description:
-    Check the Home Assistant configuration files for errors. Errors will be
-    displayed in the Home Assistant log.
+    Check the Safegate Pro configuration files for errors. Errors will be
+    displayed in the Safegate Pro log.
 
 reload_core_config:
   name: Reload core configuration
@@ -10,11 +10,11 @@ reload_core_config:
 
 restart:
   name: Restart
-  description: Restart the Home Assistant service.
+  description: Restart the Safegate Pro service.
 
 set_location:
   name: Set location
-  description: Update the Home Assistant location.
+  description: Update the Safegate Pro location.
   fields:
     latitude:
       name: Latitude
@@ -33,7 +33,7 @@ set_location:
 
 stop:
   name: Stop
-  description: Stop the Home Assistant service.
+  description: Stop the Safegate Pro service.
 
 toggle:
   name: Generic toggle

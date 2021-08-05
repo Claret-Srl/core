@@ -66,7 +66,7 @@ def setup_platform(hass, config, add_entities, discovery_info=None):
     longitude = config.get(CONF_LONGITUDE, hass.config.longitude)
     name = config[CONF_NAME]
 
-    # Every Home Assistant instance should have their own unique
+    # Every Safegate Pro instance should have their own unique
     # app parameter: https://brottsplatskartan.se/sida/api
     app = f"ha-{uuid.getnode()}"
 

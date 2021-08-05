@@ -77,7 +77,7 @@ class WemoEntity(Entity):
         raise NotImplementedError()
 
     async def async_added_to_hass(self) -> None:
-        """Wemo device added to Home Assistant."""
+        """Wemo device added to Safegate Pro."""
         # Define inside async context so we know our event loop
         self._update_lock = asyncio.Lock()
 
@@ -169,7 +169,7 @@ class WemoSubscriptionEntity(WemoEntity):
         )
 
     async def async_added_to_hass(self) -> None:
-        """Wemo device added to Home Assistant."""
+        """Wemo device added to Safegate Pro."""
         await super().async_added_to_hass()
 
         self.async_on_remove(

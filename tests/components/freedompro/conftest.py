@@ -11,7 +11,7 @@ from tests.components.freedompro.const import DEVICES, DEVICES_STATE
 
 @pytest.fixture
 async def init_integration(hass) -> MockConfigEntry:
-    """Set up the Freedompro integration in Home Assistant."""
+    """Set up the Freedompro integration in Safegate Pro."""
     entry = MockConfigEntry(
         domain=DOMAIN,
         title="Feedompro",
@@ -40,7 +40,7 @@ async def init_integration(hass) -> MockConfigEntry:
 
 @pytest.fixture
 async def init_integration_no_state(hass) -> MockConfigEntry:
-    """Set up the Freedompro integration in Home Assistant without state."""
+    """Set up the Freedompro integration in Safegate Pro without state."""
     entry = MockConfigEntry(
         domain=DOMAIN,
         title="Feedompro",

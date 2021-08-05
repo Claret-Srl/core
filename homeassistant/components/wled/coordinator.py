@@ -93,7 +93,7 @@ class WLEDDataUpdateCoordinator(DataUpdateCoordinator[WLEDDevice]):
             """Close WebSocket connection."""
             await self.wled.disconnect()
 
-        # Clean disconnect WebSocket on Home Assistant shutdown
+        # Clean disconnect WebSocket on Safegate Pro shutdown
         self.unsub = self.hass.bus.async_listen_once(
             EVENT_HOMEASSISTANT_STOP, close_websocket
         )

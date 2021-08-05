@@ -1,4 +1,4 @@
-"""Test Home Assistant Cast."""
+"""Test Safegate Pro Cast."""
 
 from unittest.mock import patch
 

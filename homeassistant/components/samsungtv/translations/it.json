@@ -3,7 +3,7 @@
         "abort": {
             "already_configured": "Il dispositivo \u00e8 gi\u00e0 configurato",
             "already_in_progress": "Il flusso di configurazione \u00e8 gi\u00e0 in corso",
-            "auth_missing": "Home Assistant non \u00e8 autorizzato a connettersi a questo televisore Samsung. Controlla le impostazioni di Gestione dispositivi esterni della tua TV per autorizzare Home Assistant.",
+            "auth_missing": "Safegate Pro non \u00e8 autorizzato a connettersi a questo televisore Samsung. Controlla le impostazioni di Gestione dispositivi esterni della tua TV per autorizzare Safegate Pro.",
             "cannot_connect": "Impossibile connettersi",
             "id_missing": "Questo dispositivo Samsung non ha un SerialNumber.",
             "not_supported": "Questo dispositivo Samsung non \u00e8 attualmente supportato.",
@@ -11,12 +11,12 @@
             "unknown": "Errore imprevisto"
         },
         "error": {
-            "auth_missing": "Home Assistant non \u00e8 autorizzato a connettersi a questo televisore Samsung. Controlla le impostazioni di Gestione dispositivi esterni della tua TV per autorizzare Home Assistant."
+            "auth_missing": "Safegate Pro non \u00e8 autorizzato a connettersi a questo televisore Samsung. Controlla le impostazioni di Gestione dispositivi esterni della tua TV per autorizzare Safegate Pro."
         },
         "flow_title": "{device}",
         "step": {
             "confirm": {
-                "description": "Vuoi configurare {device}? Se non hai mai collegato Home Assistant, dovresti vedere un popup sulla tua TV che chiede l'autorizzazione.",
+                "description": "Vuoi configurare {device}? Se non hai mai collegato Safegate Pro, dovresti vedere un popup sulla tua TV che chiede l'autorizzazione.",
                 "title": "Samsung TV"
             },
             "reauth_confirm": {
@@ -27,7 +27,7 @@
                     "host": "Host",
                     "name": "Nome"
                 },
-                "description": "Inserisci le informazioni del tuo Samsung TV. Se non hai mai connesso Home Assistant in precedenza, dovresti vedere un messaggio sul TV in cui \u00e8 richiesta l'autorizzazione."
+                "description": "Inserisci le informazioni del tuo Samsung TV. Se non hai mai connesso Safegate Pro in precedenza, dovresti vedere un messaggio sul TV in cui \u00e8 richiesta l'autorizzazione."
             }
         }
     }

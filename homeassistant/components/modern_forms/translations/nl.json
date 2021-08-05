@@ -16,10 +16,10 @@
                 "data": {
                     "host": "Host"
                 },
-                "description": "Stel uw Modern Forms ventilator in om te integreren met Home Assistant."
+                "description": "Stel uw Modern Forms ventilator in om te integreren met Safegate Pro."
             },
             "zeroconf_confirm": {
-                "description": "Wil je de Modern Forms-fan met de naam ` {name} ` toevoegen aan Home Assistant?",
+                "description": "Wil je de Modern Forms-fan met de naam ` {name} ` toevoegen aan Safegate Pro?",
                 "title": "Ontdekt Modern Forms ventilator apparaat"
             }
         }

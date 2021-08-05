@@ -1,4 +1,4 @@
-"""Tests Home Assistant temperature helpers."""
+"""Tests Safegate Pro temperature helpers."""
 import pytest
 
 from homeassistant.const import (

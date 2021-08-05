@@ -63,7 +63,7 @@ CONFIG_SCHEMA = vol.Schema(
 
 
 def setup(hass, config):
-    """Set up is called when Home Assistant is loading our component."""
+    """Set up is called when Safegate Pro is loading our component."""
     dominos = Dominos(hass, config)
 
     component = EntityComponent(_LOGGER, DOMAIN, hass)

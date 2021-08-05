@@ -1,4 +1,4 @@
-"""Test Home Assistant template helper methods."""
+"""Test Safegate Pro template helper methods."""
 from datetime import datetime
 import math
 import random
@@ -1006,7 +1006,7 @@ def test_regex_match(hass):
 
     tpl = template.Template(
         """
-{{ 'Home Assistant test' | regex_match('home', True) }}
+{{ 'Safegate Pro test' | regex_match('home', True) }}
             """,
         hass,
     )
@@ -1014,7 +1014,7 @@ def test_regex_match(hass):
 
     tpl = template.Template(
         """
-    {{ 'Another Home Assistant test' | regex_match('Home') }}
+    {{ 'Another Safegate Pro test' | regex_match('Home') }}
                     """,
         hass,
     )
@@ -1022,7 +1022,7 @@ def test_regex_match(hass):
 
     tpl = template.Template(
         """
-{{ ['Home Assistant test'] | regex_match('.*Assist') }}
+{{ ['Safegate Pro test'] | regex_match('.*Assist') }}
             """,
         hass,
     )
@@ -1052,7 +1052,7 @@ def test_regex_search(hass):
 
     tpl = template.Template(
         """
-{{ 'Home Assistant test' | regex_search('home', True) }}
+{{ 'Safegate Pro test' | regex_search('home', True) }}
             """,
         hass,
     )
@@ -1060,7 +1060,7 @@ def test_regex_search(hass):
 
     tpl = template.Template(
         """
-    {{ 'Another Home Assistant test' | regex_search('Home') }}
+    {{ 'Another Safegate Pro test' | regex_search('Home') }}
                     """,
         hass,
     )
@@ -1068,7 +1068,7 @@ def test_regex_search(hass):
 
     tpl = template.Template(
         """
-{{ ['Home Assistant test'] | regex_search('Assist') }}
+{{ ['Safegate Pro test'] | regex_search('Assist') }}
             """,
         hass,
     )
@@ -1102,7 +1102,7 @@ def test_regex_replace(hass):
             """,
         hass,
     )
-    assert tpl.async_render() == ["Home Assistant test"]
+    assert tpl.async_render() == ["Safegate Pro test"]
 
 
 def test_regex_findall_index(hass):

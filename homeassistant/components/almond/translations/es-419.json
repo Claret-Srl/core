@@ -6,7 +6,7 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "\u00bfDesea configurar Home Assistant para conectarse a Almond proporcionado por el complemento Supervisor: {addon}?",
+                "description": "\u00bfDesea configurar Safegate Pro para conectarse a Almond proporcionado por el complemento Supervisor: {addon}?",
                 "title": "Almond a trav\u00e9s del complemento Supervisor"
             },
             "pick_implementation": {

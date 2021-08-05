@@ -23,7 +23,7 @@
                     "url": "URL",
                     "username": "Nama Pengguna"
                 },
-                "description": "Masukkan detail akses perangkat. Menentukan nama pengguna dan kata sandi bersifat opsional, tetapi memungkinkan dukungan untuk fitur integrasi lainnya. Selain itu, penggunaan koneksi resmi dapat menyebabkan masalah mengakses antarmuka web perangkat dari luar Home Assistant saat integrasi aktif, dan sebaliknya.",
+                "description": "Masukkan detail akses perangkat. Menentukan nama pengguna dan kata sandi bersifat opsional, tetapi memungkinkan dukungan untuk fitur integrasi lainnya. Selain itu, penggunaan koneksi resmi dapat menyebabkan masalah mengakses antarmuka web perangkat dari luar Safegate Pro saat integrasi aktif, dan sebaliknya.",
                 "title": "Konfigurasikan Huawei LTE"
             }
         }

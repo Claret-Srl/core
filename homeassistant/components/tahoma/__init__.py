@@ -118,7 +118,7 @@ def setup(hass, config):
 
 
 def map_tahoma_device(tahoma_device):
-    """Map Tahoma device types to Home Assistant platforms."""
+    """Map Tahoma device types to Safegate Pro platforms."""
     return TAHOMA_TYPES.get(tahoma_device.type)
 
 

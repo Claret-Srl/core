@@ -1,4 +1,4 @@
-"""Config flow to connect with Home Assistant."""
+"""Config flow to connect with Safegate Pro."""
 import asyncio
 import logging
 

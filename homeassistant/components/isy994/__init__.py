@@ -212,7 +212,7 @@ async def async_setup_entry(
         isy.websocket.start()
 
     def _stop_auto_update(event) -> None:
-        """Stop the isy auto update on Home Assistant Shutdown."""
+        """Stop the isy auto update on Safegate Pro Shutdown."""
         _LOGGER.debug("ISY Stopping Event Stream and automatic updates")
         isy.websocket.stop()
 

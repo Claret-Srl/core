@@ -21,7 +21,7 @@ SIGNAL_CAST_DISCOVERED = "cast_discovered"
 # removed
 SIGNAL_CAST_REMOVED = "cast_removed"
 
-# Dispatcher signal fired when a Chromecast should show a Home Assistant Cast view.
+# Dispatcher signal fired when a Chromecast should show a Safegate Pro Cast view.
 SIGNAL_HASS_CAST_SHOW_VIEW = "cast_show_view"
 
 CONF_IGNORE_CEC = "ignore_cec"

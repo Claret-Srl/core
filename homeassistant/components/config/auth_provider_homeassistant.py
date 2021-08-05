@@ -1,4 +1,4 @@
-"""Offer API to configure the Home Assistant auth provider."""
+"""Offer API to configure the Safegate Pro auth provider."""
 import voluptuous as vol
 
 from homeassistant.auth.providers import homeassistant as auth_ha
@@ -8,7 +8,7 @@ from homeassistant.exceptions import Unauthorized
 
 
 async def async_setup(hass):
-    """Enable the Home Assistant views."""
+    """Enable the Safegate Pro views."""
     hass.components.websocket_api.async_register_command(websocket_create)
     hass.components.websocket_api.async_register_command(websocket_delete)
     hass.components.websocket_api.async_register_command(websocket_change_password)

@@ -1,4 +1,4 @@
-"""Test Home Assistant yaml loader."""
+"""Test Safegate Pro yaml loader."""
 import io
 import os
 import unittest

@@ -69,7 +69,7 @@ def setup(hass, config):
 
         hass.bus.fire(EVENT_CHECKIN, response.text)
 
-    # Register our service with Home Assistant.
+    # Register our service with Safegate Pro.
     hass.services.register(
         DOMAIN, "checkin", checkin_user, schema=CHECKIN_SERVICE_SCHEMA
     )

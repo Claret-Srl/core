@@ -195,7 +195,7 @@ class UniFiPOEClientSwitch(UniFiClient, SwitchEntity, RestoreEntity):
             self.poe_mode = self.port.poe_mode
 
     async def async_added_to_hass(self):
-        """Call when entity about to be added to Home Assistant."""
+        """Call when entity about to be added to Safegate Pro."""
         await super().async_added_to_hass()
 
         if self.poe_mode:  # POE is enabled and client in a known state

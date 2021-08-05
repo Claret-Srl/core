@@ -13,7 +13,7 @@
                 "data": {
                     "giid": "Paigaldus"
                 },
-                "description": "Home Assistant leidis kontolt Minu lehed mitu Verisure paigaldust. Vali Home Assistantile lisatav paigaldus."
+                "description": "Safegate Pro leidis kontolt Minu lehed mitu Verisure paigaldust. Vali Safegate Proile lisatav paigaldus."
             },
             "reauth_confirm": {
                 "data": {

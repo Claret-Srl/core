@@ -146,7 +146,7 @@ class HumidifierDehumidifier(HomeAccessory):
     async def run(self):
         """Handle accessory driver started event.
 
-        Run inside the Home Assistant event loop.
+        Run inside the Safegate Pro event loop.
         """
         if self.linked_humidity_sensor:
             async_track_state_change_event(

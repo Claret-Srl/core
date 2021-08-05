@@ -1,4 +1,4 @@
-"""Platform to retrieve uptime for Home Assistant."""
+"""Platform to retrieve uptime for Safegate Pro."""
 from __future__ import annotations
 
 import voluptuous as vol

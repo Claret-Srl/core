@@ -1,4 +1,4 @@
-"""Constants used by Home Assistant components."""
+"""Constants used by Safegate Pro components."""
 from __future__ import annotations
 
 from typing import Final
@@ -670,5 +670,5 @@ PRECISION_TENTHS: Final = 0.1
 # cloud, alexa, or google_home components
 CLOUD_NEVER_EXPOSED_ENTITIES: Final[list[str]] = ["group.all_locks"]
 
-# The ID of the Home Assistant Cast App
+# The ID of the Safegate Pro Cast App
 CAST_APP_ID_HOMEASSISTANT: Final = "B12CE3CA"

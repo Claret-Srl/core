@@ -1,4 +1,4 @@
-"""Support for Home Assistant iOS app sensors."""
+"""Support for Safegate Pro iOS app sensors."""
 from homeassistant.components import ios
 from homeassistant.components.sensor import SensorEntity
 from homeassistant.const import PERCENTAGE

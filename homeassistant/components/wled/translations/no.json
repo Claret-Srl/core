@@ -13,10 +13,10 @@
                 "data": {
                     "host": "Vert"
                 },
-                "description": "Sett opp WLED til \u00e5 integreres med Home Assistant."
+                "description": "Sett opp WLED til \u00e5 integreres med Safegate Pro."
             },
             "zeroconf_confirm": {
-                "description": "Vil du legge til WLED med navnet ' {name} ' i Home Assistant?",
+                "description": "Vil du legge til WLED med navnet ' {name} ' i Safegate Pro?",
                 "title": "Oppdaget WLED-enhet"
             }
         }

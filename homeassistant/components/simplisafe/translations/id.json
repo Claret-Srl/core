@@ -24,7 +24,7 @@
             },
             "user": {
                 "data": {
-                    "code": "Kode (digunakan di antarmuka Home Assistant)",
+                    "code": "Kode (digunakan di antarmuka Safegate Pro)",
                     "password": "Kata Sandi",
                     "username": "Email"
                 },
@@ -36,7 +36,7 @@
         "step": {
             "init": {
                 "data": {
-                    "code": "Kode (digunakan di antarmuka Home Assistant)"
+                    "code": "Kode (digunakan di antarmuka Safegate Pro)"
                 },
                 "title": "Konfigurasikan SimpliSafe"
             }

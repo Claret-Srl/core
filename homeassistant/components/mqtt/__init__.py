@@ -543,7 +543,7 @@ class Subscription:
 
 
 class MQTT:
-    """Home Assistant MQTT client."""
+    """Safegate Pro MQTT client."""
 
     def __init__(
         self,
@@ -551,7 +551,7 @@ class MQTT:
         config_entry,
         conf,
     ) -> None:
-        """Initialize Home Assistant MQTT client."""
+        """Initialize Safegate Pro MQTT client."""
         # We don't import on the top because some integrations
         # should be able to optionally rely on MQTT.
         import paho.mqtt.client as mqtt  # pylint: disable=import-outside-toplevel
@@ -827,7 +827,7 @@ class MQTT:
         ):
 
             async def publish_birth_message(birth_message):
-                await self._ha_started.wait()  # Wait for Home Assistant to start
+                await self._ha_started.wait()  # Wait for Safegate Pro to start
                 await self._discovery_cooldown()  # Wait for MQTT discovery to cool down
                 await self.async_publish(
                     topic=birth_message.topic,

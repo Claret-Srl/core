@@ -14,10 +14,10 @@
                     "host": "Nazwa hosta lub adres IP",
                     "port": "Port"
                 },
-                "description": "Skonfiguruj Elgato Light, aby zintegrowa\u0107 go z Home Assistantem."
+                "description": "Skonfiguruj Elgato Light, aby zintegrowa\u0107 go z Safegate Proem."
             },
             "zeroconf_confirm": {
-                "description": "Czy chcesz doda\u0107 urz\u0105dzenie Elgato Light o numerze seryjnym `{serial_number}` do Home Assistanta?",
+                "description": "Czy chcesz doda\u0107 urz\u0105dzenie Elgato Light o numerze seryjnym `{serial_number}` do Safegate Proa?",
                 "title": "Wykryto urz\u0105dzenie Elgato Light"
             }
         }

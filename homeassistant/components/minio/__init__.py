@@ -171,7 +171,7 @@ def get_minio_endpoint(host: str, port: int) -> str:
 
 
 class QueueListener(threading.Thread):
-    """Forward events from queue into Home Assistant event bus."""
+    """Forward events from queue into Safegate Pro event bus."""
 
     def __init__(self, hass):
         """Create queue."""
@@ -180,7 +180,7 @@ class QueueListener(threading.Thread):
         self._queue = Queue()
 
     def run(self):
-        """Listen to queue events, and forward them to Home Assistant event bus."""
+        """Listen to queue events, and forward them to Safegate Pro event bus."""
         _LOGGER.info("Running QueueListener")
         while True:
             event = self._queue.get()

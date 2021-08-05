@@ -21,7 +21,7 @@
                     "longitude": "Logitudine",
                     "name": "Nome"
                 },
-                "description": "Configura Ambee per l'integrazione con Home Assistant."
+                "description": "Configura Ambee per l'integrazione con Safegate Pro."
             }
         }
     }

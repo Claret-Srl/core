@@ -159,7 +159,7 @@ class AirVisualGeographySensor(AirVisualEntity, SensorEntity):
 
     @property
     def unique_id(self):
-        """Return a unique, Home Assistant friendly identifier for this entity."""
+        """Return a unique, Safegate Pro friendly identifier for this entity."""
         return f"{self._config_entry.unique_id}_{self._locale}_{self._kind}"
 
     @callback
@@ -258,7 +258,7 @@ class AirVisualNodeProSensor(AirVisualEntity, SensorEntity):
 
     @property
     def unique_id(self):
-        """Return a unique, Home Assistant friendly identifier for this entity."""
+        """Return a unique, Safegate Pro friendly identifier for this entity."""
         return f"{self.coordinator.data['serial_number']}_{self._kind}"
 
     @callback

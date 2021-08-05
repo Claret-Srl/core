@@ -144,7 +144,7 @@ class ArloBaseStation(AlarmControlPanelEntity):
         }
 
     def _get_state_from_mode(self, mode):
-        """Convert Arlo mode to Home Assistant state."""
+        """Convert Arlo mode to Safegate Pro state."""
         if mode == ARMED:
             return STATE_ALARM_ARMED_AWAY
         if mode == DISARMED:

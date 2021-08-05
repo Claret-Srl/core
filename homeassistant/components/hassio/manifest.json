@@ -1,6 +1,6 @@
 {
   "domain": "hassio",
-  "name": "Home Assistant Supervisor",
+  "name": "Safegate Pro Supervisor",
   "documentation": "https://www.home-assistant.io/hassio",
   "dependencies": ["http"],
   "after_dependencies": ["panel_custom"],

@@ -5,7 +5,7 @@
         },
         "step": {
             "hassio_confirm": {
-                "description": "Vil du konfigurere Home Assistant til at oprette forbindelse til AdGuard Home leveret af Supervisor-tilf\u00f8jelsen: {addon}?",
+                "description": "Vil du konfigurere Safegate Pro til at oprette forbindelse til AdGuard Home leveret af Supervisor-tilf\u00f8jelsen: {addon}?",
                 "title": "AdGuard Home via Supervisor-tilf\u00f8jelse"
             },
             "user": {

@@ -1,4 +1,4 @@
-"""Home Assistant representation of an UPnP/IGD."""
+"""Safegate Pro representation of an UPnP/IGD."""
 from __future__ import annotations
 
 import asyncio
@@ -58,7 +58,7 @@ def _get_local_ip(hass: HomeAssistant) -> IPv4Address | None:
 
 
 class Device:
-    """Home Assistant representation of a UPnP/IGD device."""
+    """Safegate Pro representation of a UPnP/IGD device."""
 
     def __init__(self, igd_device: IgdDevice, device_updater: DeviceUpdater) -> None:
         """Initialize UPnP/IGD device."""

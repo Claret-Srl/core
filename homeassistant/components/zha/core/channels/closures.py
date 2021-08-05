@@ -1,4 +1,4 @@
-"""Closures channels module for Zigbee Home Automation."""
+"""Closures channels module for Zigbee Safegate Pro."""
 import zigpy.zcl.clusters.closures as closures
 
 from homeassistant.core import callback

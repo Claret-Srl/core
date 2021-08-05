@@ -119,7 +119,7 @@ async def test_warning_close_session_integration(hass, caplog):
         await httpx_session.aclose()
 
     assert (
-        "Detected integration that closes the Home Assistant httpx client. "
+        "Detected integration that closes the Safegate Pro httpx client. "
         "Please report issue for hue using this method at "
         "homeassistant/components/hue/light.py, line 23: await session.aclose()"
     ) in caplog.text
@@ -150,7 +150,7 @@ async def test_warning_close_session_custom(hass, caplog):
         httpx_session = client.get_async_client(hass)
         await httpx_session.aclose()
     assert (
-        "Detected integration that closes the Home Assistant httpx client. "
+        "Detected integration that closes the Safegate Pro httpx client. "
         "Please report issue to the custom component author for hue using this method at "
         "custom_components/hue/light.py, line 23: await session.aclose()" in caplog.text
     )

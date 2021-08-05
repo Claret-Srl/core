@@ -29,7 +29,7 @@
                     "ignore_cec": "Negeer CEC",
                     "uuid": "Toegestane UUID's"
                 },
-                "description": "Toegestane UUID's - Een door komma's gescheiden lijst met UUID's van Cast-apparaten om toe te voegen aan Home Assistant. Gebruik dit alleen als u niet alle beschikbare cast-apparaten wilt toevoegen.\n CEC negeren - Een door komma's gescheiden lijst met Chromecasts die CEC-gegevens moeten negeren om de actieve invoer te bepalen. Dit wordt doorgegeven aan pychromecast.IGNORE_CEC.",
+                "description": "Toegestane UUID's - Een door komma's gescheiden lijst met UUID's van Cast-apparaten om toe te voegen aan Safegate Pro. Gebruik dit alleen als u niet alle beschikbare cast-apparaten wilt toevoegen.\n CEC negeren - Een door komma's gescheiden lijst met Chromecasts die CEC-gegevens moeten negeren om de actieve invoer te bepalen. Dit wordt doorgegeven aan pychromecast.IGNORE_CEC.",
                 "title": "Geavanceerde Google Cast configuratie"
             },
             "basic_options": {
