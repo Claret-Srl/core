@@ -711,7 +711,7 @@ async def websocket_get_version(
     frontend = None
 
     for req in integration.requirements:
-        if req.startswith("claret-assistant-frontend=="):
+        if req.startswith("safegate-pro-frontend=="):
             frontend = req.split("==", 1)[1]
 
     if frontend is None:

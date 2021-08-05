@@ -479,7 +479,7 @@ async def test_get_version(hass, ws_client):
     cur_version = next(
         req.split("==", 1)[1]
         for req in frontend.requirements
-        if req.startswith("claret-assistant-frontend==")
+        if req.startswith("safegate-pro-frontend==")
     )
 
     await ws_client.send_json({"id": 5, "type": "frontend/get_version"})

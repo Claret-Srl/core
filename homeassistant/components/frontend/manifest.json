@@ -3,7 +3,7 @@
   "name": "Safegate Pro Frontend",
   "documentation": "https://www.home-assistant.io/integrations/frontend",
   "requirements": [
-    "claret-assistant-frontend==20210707.0"
+    "safegate-pro-frontend==20210805.0"
   ],
   "dependencies": [
     "api",
