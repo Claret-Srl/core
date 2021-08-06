@@ -6,15 +6,15 @@ from setuptools import find_packages, setup
 
 import homeassistant.const as hass_const
 
-PROJECT_NAME = "Dry Patrick"
-PROJECT_PACKAGE_NAME = "drypatrick"
+PROJECT_NAME = "Safegate Pro"
+PROJECT_PACKAGE_NAME = "safegate-pro"
 PROJECT_LICENSE = "Apache License 2.0"
 PROJECT_AUTHOR = "The Safegate Pro Authors"
 PROJECT_COPYRIGHT = f" 2013-{dt.now().year}, {PROJECT_AUTHOR}"
-PROJECT_URL = "https://www.home-assistant.io/"
-PROJECT_EMAIL = "hello@home-assistant.io"
+PROJECT_URL = "https://www.safegatepro.it/"
+PROJECT_EMAIL = "info@safegatepro.com"
 
-PROJECT_GITHUB_USERNAME = "drypatrick"
+PROJECT_GITHUB_USERNAME = "safegate-pro"
 PROJECT_GITHUB_REPOSITORY = "core"
 
 PYPI_URL = f"https://pypi.python.org/pypi/{PROJECT_PACKAGE_NAME}"
